@@ -1,0 +1,25 @@
+---
+date: 2014-05-09 21:00:00
+layout: post
+title: 「fatal error LNK1120:1个无法解析的外部命令」报错解决方法
+thread: 121
+categories: Tutorial
+tags: [debug]
+---
+
+OpenGL作业进行中，突然发现一直提示默认返回类型出错，发现是C++的前向声明问题。好吧，解决完这个问题发现有有些看不懂的字符解析问题出现，提示如下所示：
+
+>\>AccountDlg.obj : error LNK2001: 无法解析的外部符号 "protected: virtual struct AFX_MSGMAP const * __thiscall CglQuaternion75::CglQuaternion75(CglQuaternion75 &)const " (?GetMessageMap@CAccountDlg@@MBEPBUAFX_MSGMAP@@XZ)
+1>E:\code\OpenGL\Debug\example.exe : fatal error LNK1120: 1 个无法解析的外部命令
+
+乍一眼不知道错在哪里...等会儿再看，还是不知道错在哪里，网上一搜明白了。
+
+**出现这种问题的典型原因一般是：文件中有相应函数的定义，却没有相应函数的实现部分。即有了声明，却没有实现的定义部分。**
+
+在上面报错信息中，重要的是
+
+>__thiscall CglQuaternion75::CglQuaternion75(CglQuaternion75 &)
+
+这一部分，通过这部分就能确定出错的函数部分究竟在哪里，定位了之后进行修改就顺利了许多。
+
+于是点到声明部分右键转到定义部分，果然没有反应，于是立马加上漏掉的拷贝构造函数，好的解决了。

@@ -1,0 +1,18 @@
+---
+layout: default
+comments: yes
+---
+
+<article>
+    <header>
+        <div class="page-header">
+            <h1>{{ page.title }}{%if page.excerpt%}<br /><small>{{page.excerpt}}</small>{%endif%}</h1>
+        </div>
+        <span class="author"><p><span class="glyphicon glyphicon-user"></span> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</p></span>
+    </header>
+    <br />
+    <div class="entry">{{ content }}</div><br />
+
+    <footer><!-- additional info --></footer>
+</article>
+

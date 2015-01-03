@@ -1,0 +1,33 @@
+---
+---
+
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="{{site.staticurl}}/stylesheets/sitemap.xls"?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+	<loc>{{ site.url }}</loc>
+	<changefreq>daily</changefreq>
+	<priority>1.0</priority>
+	</url>
+{% for post in site.posts %}
+	<url>
+	<loc>{{ site.baseurl }}{{ post.url }}</loc>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+	</url>
+{% endfor %}
+{% for page in site.pages %}
+    {% if page.url contains '.htaccess' %}
+    {% elsif page.url contains '.xml' %}
+    {% elsif page.url contains '/500/' %}
+    {% elsif page.url contains '/404/' %}
+    {% elsif page.url contains '/freshers/' %}
+    {% else %}
+	<url>
+	<loc>{{ site.baseurl }}{{ page.url }}</loc>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+	</url>
+    {% endif %}
+{% endfor %}
+</urlset>

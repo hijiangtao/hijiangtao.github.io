@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+_site/
+_config-dev.yml
+_old-pages/
+_drafts/

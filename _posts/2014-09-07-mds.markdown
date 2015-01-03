@@ -1,0 +1,15 @@
+---
+title: Modern Data Scientist
+thread: 146
+date: 2014-09-07 10:00:00
+categories: Read
+tags: [data]
+layout: post
+excerpt: Data science skill-set explained, the picture shows below is a modern data scientist skill-set list.
+---
+
+Data science skill-set explained, the picture shows below is a modern data scientist skill-set list.
+
+<!--more-->
+
+![Modern Data Scientist](/assets/2014-09-07-mds.png)

@@ -1,0 +1,10 @@
+<meta property="og:url"             content="{{site.baseurl}}{{page.url}}" />
+<meta property="og:title"           content="{{site.name}} | {{page.title}}" />
+<meta property="og:image"           content="{{site.staticurl}}/images/logos/strathseds-200px.png" />
+<meta property="og:site_name"       content="{{site.name}}">
+<meta property="og:type"            content="blog"/>
+{% if page.exceprt == nil %}
+    <meta property="og:description" content="{{site.description}}"/>
+{% else %}
+    <meta property="og:description" content="{{page.exceprt}}"/>
+{% endif %}

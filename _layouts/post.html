@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+    <header>
+        <div class="page-header">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span> 
+        <span class="categories"><span class="glyphicon glyphicon-tag"></span> 
+    	Categories in {% for cat in page.categories %}
+    	<a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+    	{% endfor %} tagged with 
+    	{% for tag in page.tags %}
+    	<a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+    	{% endfor %}	
+    	</span> 
+        <span class="author"> <span class="glyphicon glyphicon-user"></span> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif %}</span>
+	<link rel="stylesheet" href="/static/stylesheets/pygments.css">
+    </header>
+    <br />
+    <div class="entry">{{ content }}</div>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","qzone","bdysc","renren","tqq","bdxc","kaixin001","tqf","tieba","douban","tsohu","bdhome","thx","ibaidu","taobao","hi","t163","meilishuo","mogujie","diandian","huaban","share189","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","kanshou","wealink","isohu","yaolan","xg","ty","iguba"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","weixin","fbook","twi","linkedin","print","mail","sqq","douban","copy"],"viewText":"Share to: ","viewSize":"24"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    <hr />
+    <p style="color:#000000;">除特别标明外，本博客所有内容均为Data.Blog原创。<br />
+    为如此一来才能大力促进技术的发展与交流，所以我非常愿意将自己掌握的知识与技术和你分享，但请尊重原创与版权，转载请注明本文<a href="{{ post.url }}">源地址</a>与作者<a href="http://hijiangtao.github.io/">{{ site.author }}</a>，感谢。</p>
+    {% include comments.md %}
+</article>

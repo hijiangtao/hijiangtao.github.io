@@ -1,0 +1,54 @@
+---
+layout: page
+title: Blog Posts
+---
+
+<!-- Show all posts here -->
+{% for post in paginator.posts %}
+    <article>
+
+        <header>
+            <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+	        <div class="entry">{% if post.excerpt %}{{ post.excerpt }}{% else %}<p>Click the title link to read more.</p>{% endif%}</div>
+            <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+            <span class="categories"><span class="glyphicon glyphicon-tag"></span> {{ post.categories | categories_links }}</span>
+            <span class="author"><span class="glyphicon glyphicon-user"></span> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
+            
+	    <!--<span class="btn"><a class="btn btn-default" href="{{site.baseurl}}{{post.url}}">View Post</a></span>-->
+        </header>
+    
+    </article>
+{% endfor %}
+
+<hr />
+
+{% if paginator.previous_page %}
+{% if paginator.previous_page == 1 %}
+<a class="btn btn-success" href="/blog/">&lt;前页 / Previous</a>
+{% else %}
+<a class="btn btn-success" href="/blog/page{{paginator.previous_page}}">&lt;前页 / Previous</a>
+{% endif %}
+{% else %}
+<span class="btn btn-success previous disabled">&lt;前页 / Previous</span>
+{% endif %}
+
+{% if paginator.page == 1 %}
+<span class="current-page">1</span>
+{% else %}
+<a class="btn btn-default" href="/blog/">1</a>
+{% endif %}
+
+{% for count in (2..paginator.total_pages) %}
+{% if count == paginator.page %}
+<span class="current-page">{{count}}</span>
+{% else %}
+<a class="btn btn-default" href="/blog/page{{count}}">{{count}}</a>
+{% endif %}
+{% endfor %}
+
+{% if paginator.next_page %}
+<a class="btn btn-success" href="/blog/page{{paginator.next_page}}">后页 / Next&gt;</a>
+{% else %}
+<span class="btn btn-success next disabled" >后页 / Next&gt;</span>
+{% endif %}
+<span class="btn btn-default">(共{{ paginator.total_posts }}篇)</span>
