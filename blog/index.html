@@ -24,12 +24,12 @@ title: Blog Posts
 
 {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}
-<a class="btn btn-success" href="/blog/">&lt;前页 / Previous</a>
+<a class="btn btn-success" href="/blog/">&lt;Previous</a>
 {% else %}
-<a class="btn btn-success" href="/blog/page{{paginator.previous_page}}">&lt;前页 / Previous</a>
+<a class="btn btn-success" href="/blog/page{{paginator.previous_page}}">&lt;Previous</a>
 {% endif %}
 {% else %}
-<span class="btn btn-success previous disabled">&lt;前页 / Previous</span>
+<span class="btn btn-success previous disabled">&lt;Previous</span>
 {% endif %}
 
 {% if paginator.page == 1 %}
@@ -47,8 +47,8 @@ title: Blog Posts
 {% endfor %}
 
 {% if paginator.next_page %}
-<a class="btn btn-success" href="/blog/page{{paginator.next_page}}">后页 / Next&gt;</a>
+<a class="btn btn-success" href="/blog/page{{paginator.next_page}}">Next&gt;</a>
 {% else %}
-<span class="btn btn-success next disabled" >后页 / Next&gt;</span>
+<span class="btn btn-success next disabled" >Next&gt;</span>
 {% endif %}
-<span class="btn btn-default">(共{{ paginator.total_posts }}篇)</span>
+<span class="btn btn-default">(Total {{ paginator.total_posts }} Posts)</span>
