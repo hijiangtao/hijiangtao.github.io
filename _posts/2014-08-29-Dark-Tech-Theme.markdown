@@ -18,7 +18,7 @@ Dark-Tech theme is really a cool ideal personal-blog resolution, which is inspir
 
 ##Theme Installation
 
-``` javascript
+```javascript
 git clone https://github/com/hijiangtao/dark-tech.git themes/dark-tech
 ```
 
@@ -30,7 +30,7 @@ Modify the `theme` setting which is folded in blog folder: change the text behin
 
 ##Update
 
-``` javascript
+```javascript
 cd themes/dark-tech
 git pull
 ```
