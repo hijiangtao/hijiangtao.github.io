@@ -1,11 +1,11 @@
 ---
-title: 一个刚开学的大四狗-下(My Previous Three Years’ life in BIT: Part Two)
+title: 一个刚开学的大四狗-下
 layout: post
 thread: 148
 date: 2014-09-08 11:00:00
 categories: Student
 tags: [BIT]
-excerpt: 三年了，突然成为了这个校园里最大的一批本科生还有点不太适应。
+excerpt: 三年了，突然成为了这个校园里最大的一批本科生还有点不太适应。My Previous Three Years’ life in BIT: Part Two
 ---
 
 我给自己总结了几点，如果这次失败那么它将意味着：

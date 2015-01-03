@@ -5,7 +5,7 @@ date: 2014-10-11 08:00:00
 categories: Documents
 tags: [Visualization]
 layout: post
-excerpt: Study Nodes of Basic Data Visualization. / 科学可视化的早期可视化流水线，描述了从数据空间到可视空间的映射，包含串行处理数据的各个阶段……
+excerpt: Study Nodes of Basic Data Visualization.
 ---
 
 ##数据可视化参考流程

@@ -1,7 +1,7 @@
 ---
 title: Dark-Tech, A New Hexo Theme
 thread: 143
-date: 2015-08-29 20:00
+date: 2014-08-29 20:00
 categories: Tutorial
 tags: [hexo]
 layout: post
