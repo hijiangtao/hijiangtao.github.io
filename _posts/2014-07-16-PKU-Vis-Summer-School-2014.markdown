@@ -1,10 +1,11 @@
 ---
+title: Program of PKU Vis Summer School 2014
 date: 2014-07-16 10:50:00
 layout: post
-title: Program of PKU Vis Summer School 2014
 thread: 141
 categories: Documents
 tags: [可视分析]
+excerpt: Student Registration and Opening Session……
 ---
 
 ##Student Registration and Opening Session

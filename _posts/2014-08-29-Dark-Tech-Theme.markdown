@@ -1,5 +1,5 @@
 ---
-title: Dark-Tech : A New Hexo Theme
+title: Dark-Tech, A New Hexo Theme
 thread: 143
 date: 2015-08-29 20:00
 categories: Tutorial
@@ -128,8 +128,6 @@ ChineseUser: false
 
 * Code Highlight’s Improvement
 * Font-Setting’s Improvement
-
-----
 
 Thanks for halfer53’s working for metro-light theme.
 
