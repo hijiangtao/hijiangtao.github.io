@@ -5,12 +5,13 @@
 		<a href="http://cn.linkedin.com/in/hijiangtao"><img src="{{site.staticurl}}/images/icons/linkedin.png" width="24" height="24"></a>
         <a href="http://github.com/hijiangtao"><img src="{{site.staticurl}}/images/icons/github.png"
         width="24" height="24"></a>
-        <a href="https://www.facebook.com/hijiangtao"><img src="{{site.staticurl}}/images/icons/facebook.png" width="24" height="24"></a><br />
-		<a href="/feed/">RSS</a> &middot; My <a href="/Resume_cn.pdf">CV</a> &middot; <a href="{{site.baseurl}}/about/">ABOUT</a>
+        <a href="https://www.facebook.com/hijiangtao"><img src="{{site.staticurl}}/images/icons/facebook.png" width="24" height="24"></a>
         </span>
         <span class="pull-right">
-        &#169; Data.Blog 2013-{{ site.time | date: '%Y' }} &middot; <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script><br />
-        <span class="text-muted">Powered by Jekyll, designed by StrathSEDS.</span>
+        
+        <span class="text-muted">
+        &#169; Data.Blog 2013-{{ site.time | date: '%Y' }} &middot; <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script> &middot; My <a href="/Resume_cn.pdf">CV</a> &middot; <a href="{{site.baseurl}}/about/">ABOUT</a><br />
+        <a href="/feed/">RSS</a> &middot; Powered by Jekyll, designed by StrathSEDS.</span>
         </span>
     </p>
 </footer>

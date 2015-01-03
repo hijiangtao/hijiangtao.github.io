@@ -2,12 +2,11 @@
         padding-top: 50px;
         padding-bottom: 20px;
         /*background-color: #000;*/
-        font-family: 'Duru Sans', sans-serif, STXihei, "华文细黑", "Microsoft YaHei";
       }
 
       p, img {
         max-width: 100%;
-        font-family: 'Duru Sans', sans-serif, STXihei, "华文细黑", "Microsoft YaHei";
+        font-family: 'Duru Sans';
       }
       /* Custom container */
       .container {
