@@ -6,7 +6,7 @@
 
       p, img {
         max-width: 100%;
-        font-family: 'Duru Sans';
+        font-family: 'Duru Sans', "华文细黑", STHeiti, "Microsoft YaHei", 微软雅黑;
       }
       /* Custom container */
       .container {
