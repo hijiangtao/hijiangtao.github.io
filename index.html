@@ -4,16 +4,16 @@ title: Home
 ---
 
 <div class="jumbotron">
-    <img class="hidden-xs img-responsive" src="http://ww1.sinaimg.cn/large/64221066jw1ep5k7diqwgj21ao0q6nlf.jpg"><br />
-    <a class="btn btn-large btn-success" href="/">My 2014 Summary</a>
+    <img class="hidden-xs img-responsive" src="http://ww2.sinaimg.cn/large/64221066jw1eqnvud0ya6j218g0oyaio.jpg"><br />
+    <a class="btn btn-large btn-success" href="/">Undergraduate Life</a>
 </div>
 <hr class="hidden-xs">
 
 <!-- Example row of columns -->
 <div class="row">
-{% for post in site.posts limit: 4 %}
+{% for post in site.posts limit: 3 %}
     <div class="col-xs-12 col-sm-12 col-md-3">
-        <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+        <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
         <p><span class="glyphicon glyphicon-user"></span>{% if post.author != nil %}{{post.author}}{% else %}{{site.author}}{% endif %}</p>
         <p>{{ post.excerpt }}</p>
         <p><a class="btn btn-default" href="{{site.baseurl}}{{post.url}}">View details</a></p>
@@ -21,4 +21,4 @@ title: Home
 {% endfor %}
 </div>
 
-<p class="text-center"><a class="btn btn-large btn-default" href="{{site.baseurl}}/blog/">More Posts &#187;</a></p>
+<p class="text-center"><a class="btn btn-large btn-success" href="{{site.baseurl}}/blog/">More Posts &#187;</a></p>
