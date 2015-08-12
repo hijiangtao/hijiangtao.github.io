@@ -1,10 +1,11 @@
 <hr /><footer>
     <p>
         <span class="text-left">
-        <a href="https://weibo.com/jiangtaotao"><img src="{{site.staticurl}}/images/icons/weibo.png" width="24" height="24"></a>
-		<a href="http://cn.linkedin.com/in/hijiangtao"><img src="{{site.staticurl}}/images/icons/linkedin.png" width="24" height="24"></a>
         <a href="http://github.com/hijiangtao"><img src="{{site.staticurl}}/images/icons/github.png"
         width="24" height="24"></a>
+        <a href="http://cn.linkedin.com/in/hijiangtao"><img src="{{site.staticurl}}/images/icons/linkedin.png" width="24" height="24"></a>
+        <a href="/Resume.pdf"><img src="{{site.staticurl}}/images/icons/resume.png" width="24" height="24"></a>
+        <a href="https://weibo.com/jiangtaotao"><img src="{{site.staticurl}}/images/icons/weibo.png" width="24" height="24"></a>
         <a href="https://www.facebook.com/hijiangtao"><img src="{{site.staticurl}}/images/icons/facebook.png" width="24" height="24"></a>
         </span>
         <span class="pull-right">

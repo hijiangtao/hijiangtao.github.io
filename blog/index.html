@@ -8,7 +8,7 @@ title: Blog Posts
     <article>
 
         <header>
-            <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
+            <h4><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h4>
 	        <div class="entry">{% if post.excerpt %}{{ post.excerpt }}{% else %}<p>Click the title link to read more.</p>{% endif%}</div>
             <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
             <span class="categories"><span class="glyphicon glyphicon-tag"></span> {{ post.categories | categories_links }}</span>
@@ -20,7 +20,7 @@ title: Blog Posts
     </article>
 {% endfor %}
 
-<hr />
+<br />
 
 {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}

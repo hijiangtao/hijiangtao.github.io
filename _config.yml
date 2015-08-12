@@ -21,7 +21,7 @@ duoshuo: datablog
 freshers: 0
 
 # It's XMAS!Christmas
-xmas: 1
+xmas: 0
 
 # The URL of your actual domain. This will be used to make absolute links in the RSS feed.
 baseurl: 
