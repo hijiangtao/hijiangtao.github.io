@@ -8,13 +8,11 @@ title: Blog Posts
     <article>
 
         <header>
-            <h4><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h4>
-	        <div class="entry">{% if post.excerpt %}{{ post.excerpt }}{% else %}<p>Click the title link to read more.</p>{% endif%}</div>
-            <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
-            <span class="categories"><span class="glyphicon glyphicon-tag"></span> {{ post.categories | categories_links }}</span>
-            <span class="author"><span class="glyphicon glyphicon-user"></span> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
-            
-	    <!--<span class="btn"><a class="btn btn-default" href="{{site.baseurl}}{{post.url}}">View Post</a></span>-->
+            <h4><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}&nbsp;&gt;&nbsp;</time><a href="{{site.baseurl}}{{post.url}}"><b>{{ post.title }} </b></a></h4>
+	        <div class="entry">
+                <text> <a href='http://www.shaonian.eu/'>{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</a> wrote in CATEGORY {{ post.categories | categories_links }}.&nbsp;</text>
+                {% if post.excerpt %}{{ post.excerpt }}{% else %}<text>Click the title link to read more.</text>{% endif%} 
+            </div> 
         </header>
     
     </article>
@@ -22,33 +20,35 @@ title: Blog Posts
 
 <br />
 
-{% if paginator.previous_page %}
-{% if paginator.previous_page == 1 %}
-<a class="btn btn-success" href="/blog/">&lt;Previous</a>
-{% else %}
-<a class="btn btn-success" href="/blog/page{{paginator.previous_page}}">&lt;Previous</a>
-{% endif %}
-{% else %}
-<span class="btn btn-success previous disabled">&lt;Previous</span>
-{% endif %}
+<div class='container'>
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <button type="button" class="btn btn-default" disabled="disabled">&lt;Previous</button>
+        {% else %}
+        <button class='btn btn-info' onclick="window.location.href='/blog/page{{paginator.previous_page}}'">&lt;Previous</a></button>
+        {% endif %}
+    {% else %}
+    <button type="button" class="btn btn-default" disabled="disabled">&lt;Previous</button>
+    {% endif %}
 
-{% if paginator.page == 1 %}
-<span class="current-page">1</span>
-{% else %}
-<a class="btn btn-default" href="/blog/">1</a>
-{% endif %}
+    {% if paginator.page == 1 %}
+    <button type="button" class="btn btn-info" disabled='disabled'>1</button>
+    {% else %}
+    <button type="button" class="btn btn-default" onclick="window.location.href='/blog'">1</button>
+    {% endif %}
 
-{% for count in (2..paginator.total_pages) %}
-{% if count == paginator.page %}
-<span class="current-page">{{count}}</span>
-{% else %}
-<a class="btn btn-default" href="/blog/page{{count}}">{{count}}</a>
-{% endif %}
-{% endfor %}
+    {% for count in (2..paginator.total_pages) %}
+    {% if count == paginator.page %}
+    <button type="button" class="btn btn-info" disabled='disabled'>{{count}}</button>
+    {% else %}
+    <button type="button" class="btn btn-default" onclick="window.location.href='/blog/page{{count}}'">{{count}}</button>
+    {% endif %}
+    {% endfor %}
 
-{% if paginator.next_page %}
-<a class="btn btn-success" href="/blog/page{{paginator.next_page}}">Next&gt;</a>
-{% else %}
-<span class="btn btn-success next disabled" >Next&gt;</span>
-{% endif %}
-<span class="btn btn-default">(Total {{ paginator.total_posts }} Posts)</span>
+    {% if paginator.next_page %}
+    <button class='btn btn-info' onclick="window.location.href='/blog/page{{paginator.next_page}}'">Next&gt;</a></button>
+    {% else %}
+    <button type="button" class="btn btn-default" disabled="disabled">Next&gt;</button>
+    {% endif %}
+    <button type="button" class="btn btn-info" disabled="disabled">Total {{ paginator.total_posts }} Posts</button>
+</div>
