@@ -1,7 +1,7 @@
 {% if site.duoshuo %}
 	{% if page.thread %}
 	<!--define the duoshuo plugin-->
-	<div class="ds-thread" data-thread-key="{{ page.thread }}" data-url="{{ site.url }}{{ page.url }}" data-title="{{ page.title }}" />
+	<div class="ds-thread" data-thread-key="{{ page.thread }}" data-url="{{page.url}}" data-title="{{ page.title }}" />
 	{% else %}
 	<div class="ds-thread"></div>
 	{% endif %}
