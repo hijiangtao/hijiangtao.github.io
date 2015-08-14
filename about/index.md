@@ -4,72 +4,75 @@ title: About
 ---
 
 <ul class="nav nav-tabs" id="about-info">
-    <li class="active"><a href="#intro" data-toggle="tab">Intro</a></li>
-    <li><a href="#focus" data-toggle="tab">Focus</a></li>
-    <li><a href="#contact" data-toggle="tab">Contact</a></li>
-    <li><a href="#links" data-toggle="tab">Links</a></li>
+    <li class="active"><a href="#intro" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Intro</a></li>
+    <li><a href="#focus" data-toggle="tab"><span class="glyphicon glyphicon-map-marker"></span> Focus</a></li>
+    <li><a href="#contact" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+    <li><a href="#links" data-toggle="tab"><span class="glyphicon glyphicon-link"></span> Links</a></li>
 </ul>
 <br/>
 
 <div class="tab-content">
     <div class="tab-pane fade in active" id="intro">
         <section>
-
-            <p>Greetings, I’m an undergraduate student at School of Software, Beijing Institute of Technology.
-                The Director of Data Mining Laboratory, which belongs to the Software Technology Innovation Base of BIT. I’m very interested in things about Internet, including about all knids of products and technologies, I will focus on TMT and related aspects in my free time to help me know more about the world that I loved deeply.<br />
-            I did some Computer Vision job and 3D Game in courses projects, I’d attend some National competitions and got some good awards. I am intersted in Data visualization and Digital Media. I had three years experience in Students’ Union and some Students Society.<br />
-            一名非常平凡但不甘于平凡的大学生，北京理工大学软件学院本科在读。<br />
-            现任北京理工大学软件学院创新创业基地数据智能实验室主任，热爱互联网新奇事物与技术，平时没事时喜欢鼓捣视频剪辑、特效处理的小技术，闲暇之余喜欢关注前端技术、TMT行业动态。参加过一些科技竞赛并获得过国家级奖项，并在大学三年生活中积攒了一些学生工作的组织经验。</p>
-
-            <div class="row">
-                <div class="col-xs-6 col-sm-4"><img class="img-responsive" src="/album/me.jpg" /></div>
-                <div class="col-xs-6 col-sm-4"><img class="img-responsive" src="/album/me.jpg" /></div>
-				<div class="col-xs-6 col-sm-4"><img class="img-responsive" src="/album/me.jpg" /></div>
-            </div>
+            <h4>Self Introduction</h4>
+            <p>Tao Jiang, graduate student in University of Chinese Academy of Sciences, interested in data.</p>
+            <h4>TAGS</h4>
+            <p><code>VISUALIZATION</code> <code>ANALYTICS</code> <code>UNIVERSE</code></p>
         </section>
     </div>
     <div class="tab-pane fade" id="focus">
         <section>
-            <p class="lead">Research Directions / 研究方向</p>
+            <h4>Research Directions / 研究方向</h4>
             <p>Data Mining and visualization.<br>数据挖掘与可视化</p>
-            <p class="lead">Researching Project / 参与项目</p>
-            <p>January,2014 - now: Project about Big Data with Professor Tang in Data Mining and Processing.</p>
-            <p class="lead">Work at / 工作经验</p>
-
-            <p>2013 奇虎360科技有限公司 荣誉顾问<br />
-            2014.12 - Now 新浪云计算SAE中级开发者<br />
-            2012.9 - 2013.6 北京理工大学学生社团联合会主席团直属中心新闻信息中心主任、北京理工大学科学技术协会宣传部部长<br>
-            2013.9 - 2014.1 北京理工大学软件学院学生会宣传部副部长</p>
+            <h4>Researching Experience / 研究经历</h4>
+            <ul>
+                <li><p>March, 2015 - May, 2015: Exchange student in Automating Data Extraction from Chinese Text Project, Leiden University</p></li>
+                <li><p>Janurary, 2015 - June, 2015: Internship in SKLCS, Institute of Sofware, Chinese Academy of Sciences</p> </li>
+            </ul>
+            <h4>Work Experience / 工作经验</h4>
+            <ul>
+                <li><p>July, 2015 - Now: Web Development Engineer Intern at DeepGlint</p> </li>
+                <li><p>2013: Qihoo 360 Honorary Consultant</p></li>
+                <li><p>2014.12 - Now: SinaAppEngine中级开发者</p> </li>
+                <li><p>2012.9 - 2013.6: 北京理工大学学生社团联合会主席团直属中心新闻信息中心主任、北京理工大学科学技术协会宣传部部长</p> </li>
+            </ul>
+            <h4>Resume / 个人简历</h4>
+            <ul class='pager about_ul'>
+                <li><a href="/Resume.pdf">English Version (Update to February, 2015)</a> </li>
+                <li><a href="/Resume_cn.pdf">中文版本 (更新至2015年6月)</a> </li>
+            </ul>
         </section>
-        
     </div>
     <div class="tab-pane fade" id="contact">
         <section>
-            <p class="lead">Contact / 联系方式</p>
-            <p>
-            <span class="glyphicon glyphicon-user"></span> 
-            <a class="btn btn-large btn-success" href="/">主页/HomePage</a>
-            <a class="btn btn-large btn-success" href="/blog/">博客/Blog</a>
-            <a class="btn btn-large btn-success" href="http://weibo.com/jiangtaotao">微博/Weibo</a>
-            <a class="btn btn-large btn-success" href="http://www.zhihu.com/people/hijiangtao">知乎/Zhihu</a>
-            </p>
+            <h4>Contact / 联系方式</h4>
+            <ul class='pager about_ul'>
+                <li><a href="http://hijiangtao.github.io/">Personal Blog</a> </li>
+                <li><a href="https://cn.linkedin.com/in/hijiangtao">LinkedIn</a> </li>
+                <li><a href="mailto:hijiangtao@gmail.com">EMAIL</a> </li>
+                
+            </ul>
+            <h4>Social Network / 社交网络</h4>
+            <ul class='pager about_ul'>
+                <li><a href="http://weibo.com/hijiangtao">Weibo</a> </li>
+                <li><a href="http://www.zhihu.com/people/hijiangtao">Zhihu</a></li>
+                <li><a href="https://www.facebook.com/hijiangtao">Facebook</a> </li>
+            </ul>
             
-            <p class="lead">Address / 联系地址</p>
-            <p>School of Software, Beijing Institute of Technology,5 South Zhongguancun Street, Haidian District, Beijing China, 100081<br />
-            北京市海淀区中关村南大街5号北京理工大学软件学院，100081</p>
-            <table>
-                <tr><td>
-                    <address>
-                        <p>E-mail </td>
-                    <td><a class="btn btn-default" href="mailto:{{site.contact_email}}"><span class="glyphicon glyphicon-envelope"></span> {{site.contact_email}}</a></p>
-                        </address>
-                    </td></tr>
-            </table>
+            <h4>Address / 联系地址</h4>
+            <p>SKLCS, Institute of Sofware, Chinese Academy of Sciences (中国科学院软件研究所)<br>
+                University of Chinese Academy of Sciences (中国科学院大学)<br>
+                Address: Building 5#, Software Park, 4# South 4th Street, Zhongguancun, Haidian District, Beijing, China</p>
         </section>
     </div>
     <div class="tab-pane fade" id="links">
-        * [Jark's Blog](http://wuchong.me/)
-        * [Willzhang's Blog](http://myincubator.sinaapp.com/)
+        <ul>
+            <li><a href="http://getbootstrap.com/components/">Bootstrap</a> </li>
+            <li><a href="http://glyphicons.com/">Glyphicons</a> </li>
+            <li><a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a></li>
+            <li><a href="http://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a> </li>
+            <li><a href="http://www.deepglint.com">DeepGlint</a> </li>
+        </ul>
     </div>
 </div>
 <script>

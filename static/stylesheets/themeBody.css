@@ -28,6 +28,10 @@ body {
   position: relative;
 }
 
+.about_ul {
+   text-align:left;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 

@@ -1,14 +1,12 @@
 ---
+title: 朴素贝叶斯分类算法(Naive Bayesian classification)
 date: 2014-09-08 15:30:00
 layout: post
-title: 朴素贝叶斯分类算法(Naive Bayesian classification)
 thread: 142
 categories: Documents
 tags: [分类算法]
 excerpt: 贝叶斯分类的基础是概率推理，就是在各种条件的存在不确定，仅知其出现概率的情况下，如何完成推理和决策任务。
 ---
-
-**前言：**记些笔记总归是好的，算法实现原理也不难，总结一下看过的对以后使用也算是会有些帮助。
 
 ##定理综述
 

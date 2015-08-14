@@ -5,6 +5,7 @@ title: 学习JavaScript的几点注意事项
 thread: 125
 categories: Documents
 tags: [JavaScript]
+excerpt: Tips in studying JavaScript.
 ---
 
 ###1、有关文档输出
