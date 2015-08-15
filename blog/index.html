@@ -7,16 +7,14 @@ title: Blog Posts
 <div>
     {% for post in paginator.posts %}
     <article>
-
         <header>
             <h4><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}&nbsp;&gt;&nbsp;</time><a href="{{site.baseurl}}{{post.url}}"><b>{{ post.title }} </b></a></h4>
 	        <div class="entry">
                 <text> <a href='http://www.shaonian.eu/'>{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</a> wrote in CATEGORY {{ post.categories | categories_links }}.&nbsp;{% if post.excerpt %}{{ post.excerpt }}{% endif %} </text>
             </div> 
         </header>
-    
     </article>
-{% endfor %}
+    {% endfor %}
 </div>
 
 <br />

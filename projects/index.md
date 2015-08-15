@@ -3,6 +3,7 @@ layout: page
 title: Projects
 ---
 
+<div>
     <p>This is a few of the projects Joe Jiang has been involved with</p>
     <section>
         <div class="row">
@@ -22,3 +23,4 @@ title: Projects
             </div>
         </div>
     </section>
+</div>
