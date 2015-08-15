@@ -4,7 +4,8 @@ title: Blog Posts
 ---
 
 <!-- Show all posts here -->
-{% for post in paginator.posts %}
+<div>
+    {% for post in paginator.posts %}
     <article>
 
         <header>
@@ -16,10 +17,11 @@ title: Blog Posts
     
     </article>
 {% endfor %}
+</div>
 
 <br />
 
-<div class='container'>
+<div>
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
         <button type="button" class="btn btn-default" disabled="disabled">&lt;Previous</button>

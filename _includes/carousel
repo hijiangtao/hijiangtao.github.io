@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -6,32 +6,32 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="first-slide img-responsive" src="http://ww2.sinaimg.cn/large/0066Db0Pjw1etmd7fv2vmj318g0oygyt.jpg" alt="First slide">
+      <img class="first-slide img-responsive" src="http://7xi79a.com1.z0.glb.clouddn.com/blogAlbumhomepage-banner-1.jpg" alt="First slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>DATA.BLOG</h1>
-          <p>Greetings, I’m an undergraduate student at School of Software, Beijing Institute of Technology.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          <h1>Joe</h1>
+          <p>Tao Jiang, graduate student in University of Chinese Academy of Sciences, interested in data.</p>
+          <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
         </div>
       </div>
     </div>
     <div class="item">
-      <img class="second-slide img-responsive" src="http://ww1.sinaimg.cn/large/0066Db0Pjw1ethtfeq2o9j318g0oydns.jpg" alt="Second slide">
+      <img class="second-slide img-responsive" src="http://7xi79a.com1.z0.glb.clouddn.com/blogAlbumhomepage-banner-3.jpg" alt="Second slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>DATA.BLOG</h1>
-          <p>Greetings, I’m an undergraduate student at School of Software, Beijing Institute of Technology.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          <h1>WEIBO @hijiangtao</h1>
+          <p>小时候的梦想是当一名科学家。</p>
+          <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
         </div>
       </div>
     </div>
     <div class="item">
-      <img class="third-slide img-responsive" src="http://ww2.sinaimg.cn/large/0066Db0Pjw1eszy3cadsyj318g0oyk1c.jpg" alt="Third slide">
+      <img class="third-slide img-responsive" src="http://7xi79a.com1.z0.glb.clouddn.com/blogAlbumhomepage-banner-2.jpg" alt="Third slide">
       <div class="container">
         <div class="carousel-caption">
-          <h1>DATA.BLOG</h1>
-          <p>Greetings, I’m an undergraduate student at School of Software, Beijing Institute of Technology.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          <h1>Explore</h1>
+          <p>Always be curious about the world.</p>
+          <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
         </div>
       </div>
     </div>
