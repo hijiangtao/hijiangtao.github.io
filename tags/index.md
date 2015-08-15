@@ -3,7 +3,7 @@ title: Tags / 标签
 layout: page
 ---
 
-<div id='tag_cloud'>
+<div id='tag_cloud' class='container'>
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 {% endfor %}
@@ -11,11 +11,9 @@ layout: page
 
 <ul class="nav-unstyled">
 {% for tag in site.tags %}
-  <li class="" id="{{ tag[0] }}"><h3>{{ tag[0] }}</h3></li></hr>
+  <li class="" id="{{ tag[0] }}"><h4>{{ tag[0] }}</h4></li></hr>
 {% for post in tag[1] %}
-  <li class="">
-  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-  </li>
+  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br>
 {% endfor %}
 {% endfor %}
 </ul>
