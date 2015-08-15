@@ -57,7 +57,7 @@ body {
 .carousel .item {
   width: 100%;
   background-color: #f1f1f1;
-  padding-top: 45%;
+  padding-top: 50%;
   height: 10;
 }
 .carousel-inner > .item > img {
