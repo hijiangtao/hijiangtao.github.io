@@ -22,8 +22,6 @@ excerpt:
 
 **特点：**直接拖拽即可使用。
 
-
-
 ###二、安装
 
 下载ModelGoon-4.4.1-site.zip到电脑，从eclipse中选择help->install new software.在work with->Add选择已经下载的ModelGoon-4.4.1-site.zip，一路next即可完成安装。

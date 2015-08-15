@@ -27,8 +27,6 @@ managed=true
 
 * 重新启动ubuntu即可。
 
-----
-
 ###原因
 
 Linux里面有两套管理网络连接的方案：

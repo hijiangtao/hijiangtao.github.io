@@ -5,6 +5,7 @@ title: Linux上Eclipse安装教程
 thread: 40
 categories: Tutorial
 tags: [linux]
+excerpt: 
 ---
 
 本来下午写了许多关于Spark语法学习的心得和一些对大数据理解的东西，但不知怎么心里一股烦躁的情绪总是无法褪去，于是就一行行最后还是删了，想到hadoop搭好了但是eclipse还没有安装，于是就把eclipse安装了，安装笔记记载在下面了。
