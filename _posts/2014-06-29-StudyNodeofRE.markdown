@@ -42,43 +42,43 @@ excerpt: Give you 30 minutes, have a look at how to work with python.
 **常见的元字符**
 
 <table>
-        <thead>
-            <tr>
-                <th>代码</th>
-                <th>说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span>.</span></td>
-                <td><span>匹配除换行符以外的任意字符</span></td>
-            </tr>
-            <tr>
-                <td><span>\w</span></td>
-                <td><span>匹配字母或数字或下划线或汉字</span></td>
-            </tr>
-            <tr>
-                <td><span>\s</span></td>
-                <td><span>匹配任意的空白符</span></td>
-            </tr>
-            <tr>
-                <td><span>\d</span></td>
-                <td><span>匹配数字</span></td>
-            </tr>
-            <tr>
-                <td><span>\b</span></td>
-                <td><span>匹配单词的开始或结束</span></td>
-            </tr>
-            <tr>
-                <td><span>^</span></td>
-                <td><span>匹配字符串的开始</span></td>
-            </tr>
-            <tr>
-                <td><span>$</span></td>
-                <td><span>匹配字符串的结束</span></td>
-            </tr>
-        </tbody>
-    </table>
+    <thead>
+        <tr>
+            <th>代码</th>
+            <th>说明</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span>.</span></td>
+            <td><span>匹配除换行符以外的任意字符</span></td>
+        </tr>
+        <tr>
+            <td><span>\w</span></td>
+            <td><span>匹配字母或数字或下划线或汉字</span></td>
+        </tr>
+        <tr>
+            <td><span>\s</span></td>
+            <td><span>匹配任意的空白符</span></td>
+        </tr>
+        <tr>
+            <td><span>\d</span></td>
+            <td><span>匹配数字</span></td>
+        </tr>
+        <tr>
+            <td><span>\b</span></td>
+            <td><span>匹配单词的开始或结束</span></td>
+        </tr>
+        <tr>
+            <td><span>^</span></td>
+            <td><span>匹配字符串的开始</span></td>
+        </tr>
+        <tr>
+            <td><span>$</span></td>
+            <td><span>匹配字符串的结束</span></td>
+        </tr>
+    </tbody>
+</table>
 
 ----
 
@@ -102,38 +102,38 @@ excerpt: Give you 30 minutes, have a look at how to work with python.
 下面是正则表达式中所有的限定符：
 
 <table>
-        <thead>
-            <tr>
-                <th>代码/语法</th>
-                <th>说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span>*</span></td>
-                <td><span>重复零次或更多次</span></td>
-            </tr>
-            <tr>
-                <td><span>+</span></td>
-                <td><span>重复一次或更多次</span></td>
-            </tr>
-            <tr>
-                <td><span>?</span></td>
-                <td><span>重复零次或一次</span></td>
-            </tr>
-            <tr>
-                <td><span>{n}</span></td>
-                <td><span>重复n次</span></td>
-            </tr>
-            <tr>
-                <td><span>{n,}</span></td>
-                <td><span>重复n次或更多次</span></td>
-            </tr>
-            <tr>
-                <td><span>{n,m}</span></td>
-                <td><span>重复n到m次</span></td>
-            </tr>
-        </tbody>
+    <thead>
+        <tr>
+            <th>代码/语法</th>
+            <th>说明</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span>*</span></td>
+            <td><span>重复零次或更多次</span></td>
+        </tr>
+        <tr>
+            <td><span>+</span></td>
+            <td><span>重复一次或更多次</span></td>
+        </tr>
+        <tr>
+            <td><span>?</span></td>
+            <td><span>重复零次或一次</span></td>
+        </tr>
+        <tr>
+            <td><span>{n}</span></td>
+            <td><span>重复n次</span></td>
+        </tr>
+        <tr>
+            <td><span>{n,}</span></td>
+            <td><span>重复n次或更多次</span></td>
+        </tr>
+        <tr>
+            <td><span>{n,m}</span></td>
+            <td><span>重复n到m次</span></td>
+        </tr>
+    </tbody>
 </table>
     
 ----
@@ -173,43 +173,43 @@ excerpt: Give you 30 minutes, have a look at how to work with python.
 有时需要查找不属于某个能简单定义的字符类的字符。比如想查找除了数字以外，其它任意字符都行的情况，这时需要用到反义，以下为常见的反义字符表：
 
 <table>
-        <thead>
-            <tr>
-                <th>代码/语法</th>
+    <thead>
+        <tr>
+            <th>代码/语法</th>
 
-                <th>说明</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><span>\W</span></td>
-                <td><span>匹配任意不是字母，数字，下划线，汉字的字符</span></td>
+            <th>说明</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span>\W</span></td>
+            <td><span>匹配任意不是字母，数字，下划线，汉字的字符</span></td>
 
-            </tr>
-            <tr>
-                <td><span>\S</span></td>
-                <td><span>匹配任意不是空白符的字符</span></td>
-            </tr>
-            <tr>
-                <td><span>\D</span></td>
+        </tr>
+        <tr>
+            <td><span>\S</span></td>
+            <td><span>匹配任意不是空白符的字符</span></td>
+        </tr>
+        <tr>
+            <td><span>\D</span></td>
 
-                <td><span>匹配任意非数字的字符</span></td>
-            </tr>
-            <tr>
-                <td><span>\B</span></td>
-                <td><span>匹配不是单词开头或结束的位置</span></td>
-            </tr>
-            <tr>
+            <td><span>匹配任意非数字的字符</span></td>
+        </tr>
+        <tr>
+            <td><span>\B</span></td>
+            <td><span>匹配不是单词开头或结束的位置</span></td>
+        </tr>
+        <tr>
 
-                <td><span>[^x]</span></td>
-                <td><span>匹配除了x以外的任意字符</span></td>
-            </tr>
-            <tr>
-                <td><span>[^aeiou]</span></td>
-                <td><span>匹配除了aeiou这几个字母以外的任意字符</span></td>
-            </tr>
+            <td><span>[^x]</span></td>
+            <td><span>匹配除了x以外的任意字符</span></td>
+        </tr>
+        <tr>
+            <td><span>[^aeiou]</span></td>
+            <td><span>匹配除了aeiou这几个字母以外的任意字符</span></td>
+        </tr>
 
-        </tbody>
+    </tbody>
 </table>
 
 ----
@@ -401,7 +401,7 @@ excerpt: Give you 30 minutes, have a look at how to work with python.
 
 完整代码如下所示：
 
-{% highlight javascript linenos %} 
+```
 <                         #最外层的左括号
     [^<>]*                #最外层的左括号后面的不是括号的内容
     (
@@ -417,7 +417,7 @@ excerpt: Give you 30 minutes, have a look at how to work with python.
     (?(Open)(?!))         #在遇到最外层的右括号前面，判断黑板上还有没有没擦掉的"Open"；如果还有，则匹配失败
 
 >                         #最外层的右括号
-{% endhighlight %}
+```
 
 平衡组的一个最常见的应用就是匹配HTML,下面这个例子可以匹配嵌套的<div>标签：
 

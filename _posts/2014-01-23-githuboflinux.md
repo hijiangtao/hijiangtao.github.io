@@ -5,6 +5,7 @@ title: 在linux上使用github维护个人站点小结
 thread: 3
 categories: Documents
 tags: [linux, github]
+excerpt: 
 ---
 
 好吧，刚写完第一篇博客想用LINUX的终端把文章传上github时出了好多小插曲，由于不太理解github在终端上的一些用法，于是睡觉的时刻又狠狠的往后拖了半个小时，虽然最终把今天一天的修改过的版本都莫名的删除光了，但还好本地有备份，再加上鼓捣出来了维护的正确方法，下面就记录一下自己是如何操作来如何维护一个已有的Repository。

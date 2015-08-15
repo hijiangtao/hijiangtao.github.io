@@ -5,6 +5,7 @@ title: JDK+Eclipse环境配置安装笔记
 thread: 82
 categories: Tutorial
 tags: [Java, Eclipse]
+excerpt: 
 ---
 
 由于课程要求需要使用Java环境进行开发，于是开始配置Java环境，下载JDK与Eclipse，简单配置后安装完成。

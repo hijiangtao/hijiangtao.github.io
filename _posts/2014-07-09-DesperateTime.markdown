@@ -5,6 +5,7 @@ title: 2014年7月9日
 thread: 137
 categories: Student
 tags: [BIT]
+excerpt: 
 ---
 
 ##00:30

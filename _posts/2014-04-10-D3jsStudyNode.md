@@ -5,6 +5,7 @@ title: D3.js学习笔记：模式更新实例
 thread: 111
 categories: Tutorial
 tags: [D3, 数据可视化]
+excerpt: 
 ---
 
 利用一个例子在代码中添加了很多中文注释，实现D3下的基本模式更新，用以解释他的原理。
@@ -21,7 +22,7 @@ tags: [D3, 数据可视化]
 
 测试代码：
 
-{% highlight javascript %}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,4 +119,4 @@ tags: [D3, 数据可视化]
 	</script>
 </body>
 </html>
-{% endhighlight %}
+```

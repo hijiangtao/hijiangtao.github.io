@@ -5,6 +5,7 @@ title: 2014年5月14日
 thread: 123
 categories: Student
 tags: [BIT]
+excerpt: 
 ---
 
 听着Yoga的歌，简直温柔感到不行，现在正在放的是「心有林夕」。

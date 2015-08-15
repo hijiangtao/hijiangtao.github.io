@@ -5,11 +5,10 @@ title: 2014年美国数学建模题目及翻译
 thread: 22
 categories: Documents
 tags: [数学建模]
+excerpt: 
 ---
 
 参加数学建模，刚拿到题目便开始了繁忙的翻译工作，以下为我的翻译成果，顺带附上一些参考资料与常识。
-
-----
 
 ###Problem A: The Keep-Right-Except-To-Pass Rule
 

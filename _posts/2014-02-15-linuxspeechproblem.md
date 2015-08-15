@@ -5,6 +5,7 @@ title: Ubuntu开机出现speech-dispatcher disabled解决办法
 thread: 32
 categories: Tutorial
 tags: [linux]
+excerpt: 
 ---
 
 Hadoop平台依旧没有搭好，我都感觉我已经进入一种濒临崩溃的状态了。早上和老师通了邮件，老师给了我不少鼓励和经验。下午，老师安排了一个学长来帮我排查问题，一时间的崩溃似乎又有转暖的迹象。但是最后这貌似是由ssh引起的问题一直悬而未决，hadoop安装已经令我心灰意冷。
@@ -22,10 +23,10 @@ Hadoop平台依旧没有搭好，我都感觉我已经进入一种濒临崩溃�
 虽然能开机，但每次碰到这个还是心烦，于是在进入桌面系统后打开终端，输入`sudo gedit /etc/default/speech-dispatcher `显示如下：
 
 ```
-　　# Defaults for the speech-dispatcher initscript, from speech-dispatcher
+# Defaults for the speech-dispatcher initscript, from speech-dispatcher
 　　
-　　# Set to yes to start system wide Speech Dispatcher
-　　RUN=no
+# Set to yes to start system wide Speech Dispatcher
+RUN=no
 ```
 
 RUN是no？既然控制台提示的是disabled 对应的这个RUN=no，那么将里面的RUN=no 改成RUN=yes好了。重启，问题解决。

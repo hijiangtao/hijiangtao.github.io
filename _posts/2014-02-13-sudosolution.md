@@ -5,6 +5,7 @@ title: 因修改/etc/sudoers权限导致sudo和su无法使用的解决方法
 thread: 27
 categories: Tutorial
 tags: [ubuntu]
+excerpt: 
 ---
 
 **系统环境**：Linux ubuntu-13.04-desktop-i386
@@ -14,11 +15,11 @@ tags: [ubuntu]
 在hadoop环境配置过程中由于增加了一个用户组，对sudoers进行了修改，导致之后的sudo或者su的任何命令都无法执行，均显示如下错误：
 
 ```
-    ~$ sudo
-    sudo： >>> /etc/sudoers：syntax error 在行 21 附近<<<
-    sudo： /etc/sudoers 中第 21 行附近有解析错误
-    sudo： 没有找到有效的 sudoers 资源，退出
-    sudo： 无法初始化策略插件
+~$ sudo
+sudo： >>> /etc/sudoers：syntax error 在行 21 附近<<<
+sudo： /etc/sudoers 中第 21 行附近有解析错误
+sudo： 没有找到有效的 sudoers 资源，退出
+sudo： 无法初始化策略插件
 ```
 
 如下为权限修复的解决方案：
@@ -32,10 +33,10 @@ tags: [ubuntu]
 4. 设置或者撤销`/etc/sudoers`文件的权限，也可以将该文件改回到发生错误之前的状态。
 
 ```
-    chmod 666 /dev/null
-    mount -o remount rw /
-    vi /etc/sudoers 
-    //恢复修改前本文件内容并保存
+chmod 666 /dev/null
+mount -o remount rw /
+vi /etc/sudoers 
+//恢复修改前本文件内容并保存
 ```
 
 注：如果出现在VIM中编辑后无法保存所编辑内容时，即：`E45: 'readonly' option is set (add ! to override)`，解决方法为：将“:w”换为“:wq!”
@@ -44,7 +45,7 @@ tags: [ubuntu]
 
 当然从网上搜索到的解决方法来看，你也可以用ubuntu光盘引导系统，然后mount相应的磁盘，然后修改/etc/sudoers文件，进入系统，就可以正常启动了。以下附上该解决方案代码：
 
-```javascript
+```
 # /etc/sudoers 
 # 
 # This file MUST be edited with the 'visudo' command as root. 

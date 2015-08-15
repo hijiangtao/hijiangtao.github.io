@@ -5,6 +5,7 @@ title: 浅谈用NVD3实现轻量级数据可视化
 thread: 128
 categories: Documents
 tags: [data, 数据可视化]
+excerpt: 
 ---
 
 最近花了些时间在了解与实践上，用JS库实现了一些数据的可视化效果，包括散点图、条形图、折线图之类的，对于轻量级的数据可视化呈现这简直赞呐。
@@ -41,28 +42,28 @@ NVD3给他封装的功能特点包括：
 
 首先，我们当然需要一个html文件作为呈现页面，如果不嫌弃可以像我一样新建一个index.html，然后设置成如下这样：
 
-```
-    <!DOCTYPE html>
-    <meta charset="utf-8">
-    <head>
-    	<title>Data.Blog</title>
-    	<script src="./js/d3.js" charset="utf-8"></script>
-    	<script src="./js/nv.d3.js" charset="utf-8"></script>
-    	<link rel="stylesheet" type="text/css" href="./js/nv.d3.css" />
-    	<script src="./js/basic-chart.js" charset="utf-8"></script>
-    	<style>
-    	#chart svg {
-    	  height: 400px;
-    	  width: 600px;
-    	  float: none;
-    	}
-    	</style>						
-    </head>
-    <body>
-        <div id="chart">
-        	  <svg></svg>
-        </div>
-    </body>
+```html
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<title>Data.Blog</title>
+	<script src="./js/d3.js" charset="utf-8"></script>
+	<script src="./js/nv.d3.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="./js/nv.d3.css" />
+	<script src="./js/basic-chart.js" charset="utf-8"></script>
+	<style>
+	#chart svg {
+	  height: 400px;
+	  width: 600px;
+	  float: none;
+	}
+	</style>						
+</head>
+<body>
+    <div id="chart">
+    	  <svg></svg>
+    </div>
+</body>
 ```
 
 其中，d3.js、nv.d3.js、nv.d3.css三个文件需要你先下载在本地并放在新建的js文件夹中（当然，路径可以随便改，我这只是习惯），下载地址如下：
@@ -75,13 +76,13 @@ NVD3给他封装的功能特点包括：
 
 nvd3用addGraph()封装了绘图的入口，首先我们需要定义一个变量，让它接受我们的绘图信息，由于我们画的是折线图，所以使用models里的linechart()来定义：
 
-```
+```javascript
 var chart = nv.models.lineChart();
 ```
 
 为了使图表美观一些，我们增加margin值，并且开启鼠标操作信息提示以及坐标轴与坐标信息的呈现，这一段代码完整如下：
 
-```
+```javascript
 var chart = nv.models.lineChart()
             .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
             .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
@@ -94,7 +95,7 @@ var chart = nv.models.lineChart()
 
 坐标的格式设定：axisLabel()用来显示相应坐标轴信息标签，tickFormat()则来处理坐标轴数据的格式，相关各种格式的说明在d3的github官方文档里已经有相对详细的说明，这里就不再详说。x轴与y轴的设定类似，这一段代码完整定义如下：
 
-```
+```javascript
 chart.xAxis     //Chart x-axis settings
   .axisLabel('Time (ms)')
   .tickFormat(d3.format(',r'));
@@ -106,13 +107,13 @@ chart.yAxis     //Chart y-axis settings
 
 然后定义数据来源与sinAndCos()函数：
 
-```
+```javascript
 var myData = sinAndCos();
 ```
 
 那么，现在开始我们最重要的一个环节，选择svg元素并将data载入进行绘制，这是很简单的一步，也是应该NVD3帮我们做了很多简化D3的事情，select用来选择元素，datum用来选择数据，call用来调用绘制函数（我暂时是这么理解的，不知道这一块是否有说错的地方），代码如下：
 
-```
+```javascript
 d3.select('#chart svg')    //Select the <svg> element you want to render the chart in.   
   .datum(myData)         //Populate the <svg> element with chart data...
   .call(chart);          //Finally, render the chart!
@@ -120,14 +121,14 @@ d3.select('#chart svg')    //Select the <svg> element you want to render the cha
 
 对于窗口改变时，我们的图表也应该进行相应的更新，所以我们增加如下代码：
 
-```
+```javascript
 nv.utils.windowResize(function() { chart.update() });
   return chart;
 ```
 
 以下则为正弦余弦数据生成器，当我们需要使用json或者数据库数据时，只需要在数据选择时将我们的信息替换掉这个函数，然后稍作修改即可。考虑到我们做数据可视化注重的是自然数据，而非人工生成的数据，这里的sinAndCos函数也是为了方便才定义的，所以直接贴上NVD3这段代码，不再详述。
 
-```
+```javascript
 function sinAndCos() {
   var sin = [],sin2 = [],
       cos = [];

@@ -8,9 +8,9 @@ layout: post
 excerpt: I've chosen UCAS as my Graduate School.
 ---
 
-前后持续了这么久，虽然最终教育部信息没有公布，但推免工作已经告一段落了。
+前后持续了这么久，推免工作终于告一段落了。
 
-终于，结束了。
+结束了。
 
 <!--more-->
 

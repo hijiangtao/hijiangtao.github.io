@@ -22,8 +22,12 @@ title: About
     </div>
     <div class="tab-pane fade" id="focus">
         <section>
+            <!-- <div><IFRAME src="/Resume.pdf" frameBorder=0  scrolling=no style="width:100%;height:500px;" width='100%'  height=600 scrolling=no ALLOWTRANSPARENCY="true"></IFRAME></div> -->
             <h4>Research Directions / 研究方向</h4>
-            <p>Data Mining and visualization.<br>数据挖掘与可视化</p>
+            <ul>
+                <li><p>Data Mining and visualization. / 数据挖掘与可视化</p></li>
+            </ul>
+
             <h4>Researching Experience / 研究经历</h4>
             <ul>
                 <li><p>March, 2015 - May, 2015: Exchange student in Automating Data Extraction from Chinese Text Project, Leiden University</p></li>

@@ -13,20 +13,20 @@ excerpt: Tips in studying JavaScript.
 请使用 document.write() 仅仅向文档输出写内容。
 如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖：
 
-```
-	<html>
-	<body>
-	<h1>My First Web Page</h1>
-	<p>My First Paragraph.</p>
-	<button onclick="myFunction()">点击这里</button>
-	<script>
-	function myFunction()
-	{
-	document.write("糟糕！文档消失了。");
-	}
-	</script>
-	</body>
-	</html>
+```html
+<html>
+<body>
+<h1>My First Web Page</h1>
+<p>My First Paragraph.</p>
+<button onclick="myFunction()">点击这里</button>
+<script>
+function myFunction()
+{
+document.write("糟糕！文档消失了。");
+}
+</script>
+</body>
+</html>
 ```
 
 ----
@@ -35,14 +35,14 @@ excerpt: Tips in studying JavaScript.
 
 如果重新声明 JavaScript 变量，该变量的值不会丢失；在以下两条语句执行后，变量 carname 的值依然是 "Volvo"：
 
-```
+```javascript
 var carname="Volvo";
 var carname;
 ```
 
 JavaScript 变量分局部与全局变量。如果您把值赋给尚未声明的变量，该变量将被自动作为全局变量声明。
 
-```
+```javascript
 carname="Volvo";
 ```
 
@@ -54,7 +54,7 @@ carname="Volvo";
 
 JavaScript 只有一种数字类型。数字可以带小数点，也可以不带.极大或极小的数字可以通过科学（指数）计数法来书写：
 
-```
+```javascript
 var y=123e5;      // 12300000
 var z=123e-5;     // 0.00123
 ```
@@ -67,7 +67,7 @@ var z=123e-5;     // 0.00123
 
 如需把两个或多个字符串变量连接起来，请使用 + 运算符。
 
-```
+```javascript
 txt1="What a very";
 txt2="nice day";
 txt3=txt1+txt2;
@@ -83,7 +83,7 @@ txt3=txt1+txt2;
 
 JavaScript for/in 语句循环可以遍历对象的所有属性。
 
-```
+```javascript
 var person={fname:"John",lname:"Doe",age:25};
 
 for (x in person)
@@ -100,7 +100,7 @@ for (x in person)
 
 try 语句允许我们定义在执行时进行错误测试的代码块，catch 语句允许我们定义当 try 代码块发生错误时，所执行的代码块。JavaScript 语句 try 和 catch 是成对出现的。例如：
 
-```
+```javascript
 try
 {
   adddlert("Welcome guest!");
@@ -155,7 +155,7 @@ onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分
 
 如需删除 HTML 元素，您必须首先获得该元素的父元素。但常用的解决方案：找到您希望删除的子元素，然后使用其 parentNode属性来找到父元素：
 
-```
+```javascript
 var child=document.getElementById("p1");
 child.parentNode.removeChild(child);
 ```

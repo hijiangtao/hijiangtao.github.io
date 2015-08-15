@@ -8,7 +8,7 @@ layout: post
 excerpt: 阿里巴巴离职员工视频
 ---
 
-<center><embed src="http://player.youku.com/player.php/sid/XNzg0NDY5MDY4/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"></center>
+<embed src="http://player.youku.com/player.php/sid/XNzg0NDY5MDY4/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 视频简介：. 
 

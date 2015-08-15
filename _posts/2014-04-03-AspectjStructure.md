@@ -5,11 +5,12 @@ title: AspectJ软件体系结构分析
 thread: 102
 categories: Documents
 tags: [Aspectj]
+excerpt: 
 ---
 
 ##一、前言
 
-这学期开了彭图老师的一门课程叫做《软件体系结构与设计模式》，第一次从项目汇报要求从以下几个方面进行汇报：了解 AspectJ 的组成元素、联接方式、结构模版、限制、风格以及分析软件设计合理性等。
+这学期开了一门课程叫做《软件体系结构与设计模式》，第一次从项目汇报要求从以下几个方面进行汇报：了解 AspectJ 的组成元素、联接方式、结构模版、限制、风格以及分析软件设计合理性等。
 
 在连日赶工做好PPT汇报完后，为了方便以后愿意研究Aspectj的大家，特意将我们小组的资料整理出来，以供参考。
 
@@ -34,12 +35,14 @@ AspectJ是目前最完善的AOP语言，它支持JAVA平台编译，是对Java�
 如前所述，造成代码纠结的原因在于传统编程技术中，软件系统中非业务功能实现的代码无法模块化，散布在实现业务功能的代码中造成的。这里，我们引入关注点（Concern）的概念，关注点就是软件系统中需要解决的问题。软件系统的业务功能组成了核心关注点（Core Concerns），也就是软件系统要解决的问题，而诸如日志记录，事物处理等关注点就形成了横切关注点（Crosscutting Concerns），因为，这些关注点散布在核心关注点中，相互形成了横切的关系，横切关注点也就是前面提到的方面这一概念。
 　　
 ![](/assets/2014-04-03-AspectjStructure1.png "横向与纵向方面关注点分析图")
-<center>横向与纵向方面关注点分析图</center>
+
+<em>横向与纵向方面关注点分析图</em>
 
 有鉴于此，AOP提出的解决方法是对这两种相互横切的关注点分别进行编码，使用传统的编程语言对核心关注点编程，使用面向方面的编程语言对横切关注点，也就是方面进行编程。然后使用一种机制将这两种代码自动混合起来，形成最终的代码。在这里，面向方面的编程语言可以是已有编程语言的扩展（AspectJ，AspectC++，AspectC，AspectC#，Apostle等），或是一种新的语言，设计用于编写方面的代码（Caesar，D2AL，JasCo等）。而将两种代码混合的机制称为织入（Weaving），实现这一机制的工具称为织入器（Weaver）。因此，对方面单独编码，并通过适当的织入机制使两种代码混合，构成了AOP解决代码纠结问题的基石。
 
 ![](/assets/2014-04-03-AspectjStructure2.png "AOP流程模型")
-<center>AOP流程模型</center>
+
+<em>AOP流程模型</em>
 
 ----
 
@@ -50,10 +53,12 @@ Aspectj其实是一个编译器，所以他具有一般编译器所具有的所�
 以下为我们小组分析所展示的结构前后端原理图：
 
 ![](/assets/2014-04-03-AspectjStructure3.png "Aspectj前端工作原理图")
-<center>Aspectj前端工作原理图</center>
+
+<em>Aspectj前端工作原理图</em>
 
 ![](/assets/2014-04-03-AspectjStructure4.png "Aspectj后端工作原理图")
-<center>Aspectj后端工作原理图</center>
+
+<em>Aspectj后端工作原理图</em>
 
 ----
 
@@ -62,10 +67,12 @@ Aspectj其实是一个编译器，所以他具有一般编译器所具有的所�
 当然还有经典的银行类 Bank.java用来解释我们为什么会引入AOP这种方式来处理这个问题，但这里就不多说了，网上一搜这方面资料会有一大把的。这一部分主要介绍织入的匹配与流程介绍，配合以下我们小组制出来的两个图进行分析。
 
 ![](/assets/2014-04-03-AspectjStructure5.png "Aspectj编译图")
-<center>Aspectj编译图</center>
+
+<em>Aspectj编译图</em>
 
 ![](/assets/2014-04-03-AspectjStructure6.png "字节码转换图")
-<center>字节码转换图</center>
+
+<em>字节码转换图</em>
 
 ----
 
@@ -84,7 +91,8 @@ Aspectj其实是一个编译器，所以他具有一般编译器所具有的所�
 结合我们小组的分析方法，我们制定了以下的Aspectj分层架构图，由于制图较早，所以结构分析上还存在较大的不准确。
 
 ![](/assets/2014-04-03-AspectjStructure7.png "Aspectj架构图")
-<center>Aspectj架构图</center>
+
+<em>Aspectj架构图</em>
 
 ----
 

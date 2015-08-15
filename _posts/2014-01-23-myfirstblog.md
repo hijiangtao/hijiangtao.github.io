@@ -5,6 +5,7 @@ title: 我的第一篇博客
 thread: 2
 categories: Student
 tags: [BIT]
+excerpt: 
 ---
 
 ##Data.Blog的由来

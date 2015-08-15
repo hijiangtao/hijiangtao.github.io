@@ -41,19 +41,18 @@ byVersion表明GIF文件的版本信息。其取值固定为“87a”和“89a�
 逻辑屏幕（Logical Screen）是一个虚拟屏幕（Virtual Screen），它相当于画布，所有的操作都是在它的基础上进行的，同时它也决定了图像的长度和宽度。逻辑屏幕描述块共占有七个字节，其具体结构定义如下：
 
 ```c
-typedef struct gifscrdesc 
-{
-unsigned short wWidth;        //逻辑屏幕的宽度
-unsigned short wDepth;        //逻辑屏幕的高度
-struct globalflag        //Packed Fields
-{
-	BYTE PalBits   : 3;    //全局调色板的位数
-	BYTE SortFlag  : 1; //全局调色板中的RGB颜色值是否按照使用率进行从高到底的次序排序的
-	BYTE ColorRes  : 3; //图像的色彩分辨率
-	BYTE GlobalPal : 1; //指明GIF文件中是否具有全局调色板，其值取1表示有全局调色板，为0表示没有全局调色板
-}GlobalFlag;
-BYTE byBackground;    //逻辑屏幕的背景颜色，也就相当于是画布的颜色
-BYTE byAspect;        //逻辑屏幕的像素的长宽比例
-}GIFSCRDESC;
+	typedef struct gifscrdesc 
+	{
+	unsigned short wWidth;        //逻辑屏幕的宽度
+	unsigned short wDepth;        //逻辑屏幕的高度
+	struct globalflag        	  //Packed Fields
+	{
+		BYTE PalBits   : 3;    	  //全局调色板的位数
+		BYTE SortFlag  : 1; 	  //全局调色板中的RGB颜色值是否按照使用率进行从高到底的次序排序的
+		BYTE ColorRes  : 3; 	  //图像的色彩分辨率
+		BYTE GlobalPal : 1; 	  //指明GIF文件中是否具有全局调色板，其值取1表示有全局调色板，为0表示没有全局调色板
+	}GlobalFlag;
+	BYTE byBackground;    		  //逻辑屏幕的背景颜色，也就相当于是画布的颜色
+	BYTE byAspect;        		  //逻辑屏幕的像素的长宽比例
+	}GIFSCRDESC;
 ```
-

@@ -5,6 +5,7 @@ title: D3笔记 - 处理数据
 thread: 132
 categories: Documents
 tags: [D3, 数据可视化]
+excerpt: 
 ---
 
 上一周把《Getting Started with D3》看完了，书中内容比较浅显易懂于是没有记录太多笔记。这周开始看《Data Visualization with D3.js Cookbook》，边做边发现笔记真的很有用处，当有哪里不会的时候不可能再回去一页页的翻书，这时笔记就起到了关键性的作用。看完了第三章，整理一下有关处理数据方面的知识笔记。

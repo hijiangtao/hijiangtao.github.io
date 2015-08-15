@@ -5,7 +5,7 @@ title: Windows VS2012下OpenGL配置笔记
 thread: 58
 categories: Tutorial
 tags: [OpenGL]
-
+excerpt: 
 ---
 
 什么是OpenGL？
@@ -50,7 +50,7 @@ OpenGL相比DirectX更优越的特性：
 
 OK，重新打开vs2012，选择File->New->Project，然后选择Win32 Console Application，选择一个名字，然后按OK。 在谈出的对话框左边点Application Settings，找到Empty project并勾上，选择Finish。 然后向该工程添加一个代码文件，取名为“OpenGL.cpp”。代码如下：
 
-```
+```c
 //#include "stdafx.h"
 #include <gl/glut.h>
 #include <math.h>

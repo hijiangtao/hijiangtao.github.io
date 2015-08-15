@@ -16,7 +16,7 @@ Processing是个感受很棒的数据可视化软件，经过学习，本系列�
 
 本文是第三部分。笔记刚开始我们先换一组数据，在之前的代码上运行：
 
-```
+```c
 int[] numbers = 
     {2, 5, 3, 1, 6, 5, 9, 4, 7, 3, 2, 5, 
      1, 4, 2, 5, 2, 5, 3, 1, 6, 5, 31, 4,
@@ -32,7 +32,7 @@ int[] numbers =
 1. 图表的宽度和高度都没有用满。这是因为在计算每个长方形的宽度和单位高度的时候我们用了整型。所以，值的小数部分被强制去掉了，比如3.5就变成了3, 改用float就好了。
 2. x轴的文字标识重叠在了一起。这是因为当数据变多的时候，每个长方形的宽度就变小了。而文字标识的字体大小是不变的。这个问题怎么解决呢？我们可以不用显示所有的标识，而根据Sketch的宽度和字体大小来显示部分标识。
 
-```
+```c
 float w = float(chart_width)/numbers.length;//float型宽度设定
 float h = float(chart_height)/max_number;//float型高度设定
 
@@ -58,7 +58,7 @@ for(int i=0;i<numbers.length;i++) {
 
 接着，画标识。在processing中，mouseX和mouseY存了鼠标的位置。我们先要确定鼠标在图表范围内。然后我们要找到鼠标所指向的长方形。别忘了，长方形是从chart_x开始。所以int selectedBarIndex = int((mouseX-chart_x)/w)。w是每个长方形的宽度。 链接标识和长方形的线从离长方形顶部5个像素的地方开始到标识下面5个像素。代码如下：
 
-```
+```c
 if(mouseX>chart_x && mouseX<chart_x+chart_width) {  
     stroke(100,100,100);
     int selectedBarIndex = int((mouseX-chart_x)/w);
@@ -70,7 +70,7 @@ if(mouseX>chart_x && mouseX<chart_x+chart_width) {
 
 以下代码为视物 | 致知提供的源码，经过测试可以完美运行。
 
-```
+```c
 //screen size
 int screen_width = 400;
 int screen_height = 150;

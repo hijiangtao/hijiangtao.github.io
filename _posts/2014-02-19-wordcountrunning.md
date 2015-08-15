@@ -5,6 +5,7 @@ title: Hadoop第一个样例Wordcount运行笔记
 thread: 39
 categories: Documents
 tags: [hadoop]
+excerpt: 
 ---
 
 ##一、硬件环境

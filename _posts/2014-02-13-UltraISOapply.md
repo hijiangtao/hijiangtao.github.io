@@ -5,6 +5,7 @@ title: 使用UltraISO制作U盘启动盘
 thread: 24
 categories: Tutorial
 tags: [UltraISO]
+excerpt: 
 ---
 
 昨天把数据智能的IBM服务器接手过来了，又黑又大看上去也挺值钱的，就不知道为什么学长学姐之前要给她安上Windows，然后Hadoop都是在此之下的虚拟机上运行，难道可以容忍这么慢的运行速度？于是在非哥和林衡大老爷的帮助下，我给那台IBM服务器换上了一个硬件虚拟机，这样之后安装的所有系统就都是“平等”且高速的了。

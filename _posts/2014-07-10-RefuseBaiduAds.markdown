@@ -5,6 +5,7 @@ title: 对百度搜索禁用浏览器Cookie
 thread: 138
 categories: Tutorial
 tags: [cookie]
+excerpt: 
 ---
 
 不知道是从哪里看到的这个方法，试了一下也不知道以后上网是不是就会清净些，虽然早就用其他手段把广告这种东西赶尽杀绝了。

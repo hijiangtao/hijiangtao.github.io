@@ -5,6 +5,7 @@ title: Mahout学习资料整理
 thread: 99
 categories: Documents
 tags: [Mahout]
+excerpt: 
 ---
 
 ##前言

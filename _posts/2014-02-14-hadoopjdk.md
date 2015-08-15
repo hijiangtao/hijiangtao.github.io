@@ -5,6 +5,7 @@ title: jdk安装与配置教程
 thread: 29
 categories: Tutorial
 tags: [hadoop, jdk]
+excerpt: 
 ---
 
 Hadoop全分布式部署很重要的一点就是jdk安装和JAVA的环境配置。
@@ -22,7 +23,7 @@ Hadoop全分布式部署很重要的一点就是jdk安装和JAVA的环境配置�
 然后，解压到特定位置。
 
 ```
-    sudo tar zxvf ./jdk-7-linux-i586.tar.gz  -C /usr/local/jvm/
+sudo tar zxvf ./jdk-7-linux-i586.tar.gz  -C /usr/local/jvm/
 ```
 
 我们这里解压到jvm文件夹里，以便之后的操作。（如果没有jvm文件夹可以用`mkdir`命令先创建一个jvm文件夹）
@@ -30,28 +31,28 @@ Hadoop全分布式部署很重要的一点就是jdk安装和JAVA的环境配置�
 在安装hadoop过程中一般都推荐设置一个特定的用户专门用于hadoop使用与操作，我们这里假设新建的用户组为hadoop，则设置目录所属用户命令如下：
 
 ```
-    sudo chown -R hadoop:hadoop
+sudo chown -R hadoop:hadoop
 ```
 
 之后就是设置环境变量。首先打开profile文件，
 
 ```
-    sudo vim /etc/profile
+sudo vim /etc/profile
 ```
 
 打开之后在空白处加上如下语句：
 
 ```
-    export JAVA_HOME=/usr/local/jvm/jdk1.7.0
-    export JRE_HOME=${JAVA_HOME}/jre
-    export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-    export PATH=${JAVA_HOME}/bin:$PATH
+export JAVA_HOME=/usr/local/jvm/jdk1.7.0
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
 ```
 
 退出保存，执行如下语句使得操作立即生效：
 
 ```
-    source /etc/profile
+source /etc/profile
 ```
 
 最后可以通过`java -version`来验证你之前的安装工作是否正确。

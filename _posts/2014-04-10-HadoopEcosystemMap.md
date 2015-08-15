@@ -5,6 +5,7 @@ title: Hadoop生态圈（Hadoop Ecosystem）
 thread: 110
 categories: Documents
 tags: [hadoop]
+excerpt: 
 ---
 
 Hadoop有一套自己强大的生态系统，并且仍在不断壮大，系统的了解这个生态系统里的各个组件对于数据分析与挖掘工作来说必定是件好事。以下为我从一个论坛上看到的有关hadoop生态系统的介绍，故摘录过来以便以后学习查看。

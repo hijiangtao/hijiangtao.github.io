@@ -51,7 +51,7 @@ WordPress中文官方站点告诉我们：WordPress是一个注重美学、易�
 
 后台管理程序如上所示，从现在起，尽情享受wordpress建站给你带来的前所未有的便捷吧！
 
-同时写在最后，如果你和我一样对建站、LAMP/WAMP拥有浓厚的兴趣，欢迎和我一起研究讨论ghost！
+同时，如果你和我一样对建站、LAMP/WAMP拥有浓厚的兴趣，欢迎和我一起研究讨论ghost！
 
 **Ghost: Just a blogging platform.**
 

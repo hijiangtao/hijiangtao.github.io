@@ -5,6 +5,7 @@ title: JavaScript脚本代码摆放位置
 thread: 107
 categories: Documents
 tags: [JavaScript]
+excerpt: 
 ---
 
 1. HEAD中的脚本，是可以保证脚本在任何调用之前被加载。

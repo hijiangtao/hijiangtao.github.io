@@ -5,6 +5,7 @@ title: ubuntu系统垃圾清理小结
 thread: 18
 categories: Tutorial
 tags: [linux]
+excerpt: 
 ---
 
 **前言：**

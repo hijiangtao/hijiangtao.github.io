@@ -5,7 +5,7 @@ date: 2014-10-09 08:00:00
 categories: Tutorial
 tags: [Github]
 layout: post
-excerpt: 仓库（Repository）：一个仓库包括了所有的版本信息、所有的分支和标记信息……
+excerpt: 一个仓库包括了所有的版本信息、所有的分支和标记信息……
 ---
 
 ##一、术语介绍

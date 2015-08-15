@@ -5,6 +5,7 @@ title: Hadoop项目及其结构
 thread: 51
 categories: Documents
 tags: [hadoop]
+excerpt: 
 ---
 
 这几天临近开学，事情还是挺多，想想要开始真正的处理数据了所以要抓紧熟悉hadoop的相关操作，于是找了陆嘉恒的《Hadoop实战》开始看，读读停停的过程中看到有意思的片段就摘录下来了。

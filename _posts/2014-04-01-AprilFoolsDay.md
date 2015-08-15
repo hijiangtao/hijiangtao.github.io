@@ -5,6 +5,7 @@ title: 八个视频：充满未来科技的2014年愚人节
 thread: 100
 categories: Student
 tags: [科技]
+excerpt: 
 ---
 
 ##前言

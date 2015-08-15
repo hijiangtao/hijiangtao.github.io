@@ -5,6 +5,7 @@ title: VMware vsphere client安装笔记
 thread: 37
 categories: Tutorial
 tags: [vmware]
+excerpt: 
 ---
 
 ##一、硬件环境

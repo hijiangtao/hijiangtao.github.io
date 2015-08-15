@@ -5,6 +5,7 @@ title: 程序员的鄙视链
 thread: 133
 categories: Read
 tags: [程序员]
+excerpt: 
 ---
 
 在知乎上看到一个问题「程序员的鄙视链顶端是什么？」，有个回答比较精彩：

@@ -5,6 +5,7 @@ title: 基于Hadoop MapReduce模型的数据分析平台研究设计笔记
 thread: 19
 categories: Documents
 tags: [data, hadoop, mapreduce]
+excerpt: 
 ---
 
 ##前言

@@ -53,7 +53,7 @@ excerpt: Linux Commands.
 
 * Jekyll的安装与使用(记住安装Jekyll前要先安装`Ruby1.9.1`和`Ruby1.9.1-dev`)
 
-    ```javascript
+    ```
     ~$gem install jekyll     //使用gem 进行安装
     ~$jekyll new myblog     //新建
     ~$cd myblog              //切换目录
@@ -71,26 +71,68 @@ excerpt: Linux Commands.
 
 * 确认Github用户名与邮箱：
 
-    ```javascript
+    ```
     git config --global user.name "Your Name Here"
     git config --global user.email "Your_email@example.com"
     ```
 
 * 操作：将代码托管到Github(其中，操作中若路径是.表示上传全部目录下的文件，可以是某个文件)
 
-    ```javascript
+    ```
     git init
     git add .
     git commit -m ""
     git push origin master
     ```
-    
+
+* _config.yml配置默认值
+
+	```
+	safe:        false
+	auto:        false
+	server:      false
+	server_port: 4000
+	baseurl:    /
+
+	source:      .
+	destination: ./_site
+	plugins:     ./_plugins
+
+	future:      true
+	lsi:         false
+	pygments:    false
+	markdown:    maruku
+	permalink:   date
+
+	maruku:
+	  use_tex:    false
+	  use_divs:   false
+	  png_engine: blahtex
+	  png_dir:    images/latex
+	  png_url:    /images/latex
+
+	rdiscount:
+	  extensions: []
+
+	kramdown:
+	  auto_ids: true,
+	  footnote_nr: 1
+	  entity_output: as_char
+	  toc_levels: 1..6
+	  use_coderay: false
+	  
+	  coderay:
+	    coderay_wrap: div
+	    coderay_line_numbers: inline
+	    coderay_line_numbers_start: 1
+	    coderay_tab_width: 4
+	    coderay_bold_every: 10
+	    coderay_css: style
+	```
+
 * _config.yml文件设置汇总
 
-<table cellspacing="0" cols="4" border="0">
-<colgroup span="4" width="146"></colgroup>
-    
-
+<div class=''><table cellspacing="0" cols="4" width='100%'>
 <tbody>
 
 <tr>
@@ -193,49 +235,4 @@ excerpt: Linux Commands.
 
 </tbody>
 
-</table>
-
-* _config.yml配置默认值
-
-	```javascript
-	safe:        false
-	auto:        false
-	server:      false
-	server_port: 4000
-	baseurl:    /
-
-	source:      .
-	destination: ./_site
-	plugins:     ./_plugins
-
-	future:      true
-	lsi:         false
-	pygments:    false
-	markdown:    maruku
-	permalink:   date
-
-	maruku:
-	  use_tex:    false
-	  use_divs:   false
-	  png_engine: blahtex
-	  png_dir:    images/latex
-	  png_url:    /images/latex
-
-	rdiscount:
-	  extensions: []
-
-	kramdown:
-	  auto_ids: true,
-	  footnote_nr: 1
-	  entity_output: as_char
-	  toc_levels: 1..6
-	  use_coderay: false
-	  
-	  coderay:
-	    coderay_wrap: div
-	    coderay_line_numbers: inline
-	    coderay_line_numbers_start: 1
-	    coderay_tab_width: 4
-	    coderay_bold_every: 10
-	    coderay_css: style
-	```
+</table></div>

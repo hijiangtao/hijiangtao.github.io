@@ -5,6 +5,7 @@ title: Mahout安装与配置笔记
 thread: 101
 categories: Tutorial
 tags: [Mahout]
+excerpt: 
 ---
 
 ##一、硬件环境

@@ -5,6 +5,7 @@ title: “软件包*没有可供安装的候选者”解决方案
 thread: 34
 categories: Tutorial
 tags: [linux]
+excerpt: 
 ---
 
 当在ubuntu命令行中敲入`sudo apt-get install vim`后显示信息如下：
@@ -30,7 +31,7 @@ tags: [linux]
 试过之后还是有问题，我觉得应该是我的软件源有问题，于是：
 
 ```
-    sudo apt-get update
+sudo apt-get update
 ```
 
 然后就看到一大串的更新信息出现，之后再安装vim就没问题了。

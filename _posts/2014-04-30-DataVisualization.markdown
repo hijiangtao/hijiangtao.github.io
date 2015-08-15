@@ -5,6 +5,7 @@ title: 大数据利器：浅谈数据可视化
 thread: 116
 categories: Documents
 tags: [data, 数据可视化]
+excerpt: 
 ---
 
 **前言**

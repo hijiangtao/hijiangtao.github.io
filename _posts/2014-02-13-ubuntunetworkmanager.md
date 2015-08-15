@@ -5,6 +5,7 @@ title: Ubuntu系统网络管理器显示“设备未托管”解决方法
 thread: 26
 categories: Tutorial
 tags: [ubuntu]
+excerpt: 
 ---
 
 **系统环境**：Linux ubuntu-13.04-desktop-i386
@@ -20,8 +21,8 @@ tags: [ubuntu]
 ```
 
 ```
-    [ifupdown]
-    managed=true
+[ifupdown]
+managed=true
 ```
 
 * 重新启动ubuntu即可。

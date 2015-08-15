@@ -5,6 +5,7 @@ title: Linux环境下R语言安装笔记
 thread: 89
 categories: Tutorial
 tags: [R, Linux]
+excerpt: 
 ---
 
 ##一、硬件环境

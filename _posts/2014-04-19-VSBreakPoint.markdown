@@ -5,6 +5,7 @@ title: HEAP[xxx.exe]:Invalid Address specified to RtlValidateHeap 报错解决�
 thread: 113
 categories: Documents
 tags: [debug]
+excerpt: 
 ---
 
 写了一个OpenGL作业：两个类和一个测试程序，看上去都挺和谐的，运行时却报错：
@@ -51,7 +52,7 @@ tags: [debug]
 
 >1. 将非托管结构和函数放在#pragma unmanaged 内，像这样
 
-{% highlight cpp %}
+```
 #pragma unmanaged
 struct cUserNestedStruct
 {
@@ -59,11 +60,11 @@ struct cUserNestedStruct
 } ;
 
 extern "C" int DllFunction(UserDefinedStruct**);
-{% endhighlight %}
+```
 
 >2. 然后，在托管代码中就可以直接调用了。
 
-{% highlight cpp %}
+```
 #pragma
 managed
 int main()
@@ -71,7 +72,7 @@ int main()
 	UserDefinedStruct*   mystruct = new UserDefinedStruct();
 	int num = DLLFunction(&mystruct);
 }
-{% endhighlight %}
+```
 
 >上述是调用Dll，进行互操作的情况。
 

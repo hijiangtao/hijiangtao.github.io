@@ -5,7 +5,7 @@ title: 新手该如何使用git命令同步自己本地代码到github
 thread: 4
 categories: Documents
 tags: [github]
-excerpe: Github.
+excerpt: Github.
 ---
 
 昨天的问题本以为已经解决，今天刷着微博正准备看书时，发现老毛病又翻了，当输完`git push -u origin master`后，显示出来的又是如下语句，于是弱弱的我又打开google，准备解决这个问题。

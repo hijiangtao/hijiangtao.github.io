@@ -5,6 +5,7 @@ title: 其实是睡不着的碎碎念
 thread: 139
 categories: Student
 tags: [plan]
+excerpt: 
 ---
 
 这不是什么特殊的日子，看看手表凌晨一点或许很多人已经进入睡梦，耳边单曲循环的是朴树的「平凡之路」。

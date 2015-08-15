@@ -5,6 +5,7 @@ title: Ubuntu下配置OpenGL教程
 thread: 56
 categories: Tutorial
 tags: [OpenGL]
+excerpt: 
 ---
 
 想想当时配Hadoop的痛苦经历，现在一要配置新的环境就会有一种莫名的紧张感。但这次感觉挺好的，前后没花多久时间就搞定了。今天是开学第一天，新学期开了一门课叫《计算机图形学及可视化计算》，需要配置OpenGL环境，于是网上搜搜资料，配置好了，安装笔记记录在下面。

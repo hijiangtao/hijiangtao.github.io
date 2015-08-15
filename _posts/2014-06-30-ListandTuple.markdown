@@ -5,6 +5,7 @@ title: Python学习笔记：List和Tuple
 thread: 136
 categories: Tutorial
 tags: [python]
+excerpt: 
 ---
 
 ##List

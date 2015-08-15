@@ -5,10 +5,11 @@ title: Processing快速入门学习笔记
 thread: 55
 categories: Tutorial
 tags: [Processing]
+excerpt: 
 ---
 
 ![Processing Logo](/assets/2014-03-01-processing-logo.png "Processing Logo")
-<center>Processing Logo</center>
+<em>Processing Logo</em>
 
 前几天听朋友说了Processing这个非常棒的可视化工具，不仅效果显著而且简单易懂，想想数据分析最后一步就是数据可视化，与其之后再来看不如现在先了解一点。于是今天花了一点时间来学学这个，虽然还不会编写，但玩玩已有的效果已经不成问题了。
 
@@ -28,7 +29,6 @@ tags: [Processing]
 
 **Processing官方网站**：<http://Processing.org/>
 
-
 ----------
 
 ##二、下载安装Processing
@@ -43,7 +43,6 @@ Processing软件下载地址：[Processing](http://Processing.org/download/)
 
 还有什么？没了！直接打开**Processing.exe**就可以运行了。
 
-
 ----------
 
 ##三、语法综述
@@ -56,7 +55,7 @@ Processing软件下载地址：[Processing](http://Processing.org/download/)
 
 * 准备工作
 
-{% highlight java linenos %}
+```
 void setup(){
 //准备动作，在程序一开始执行，只执行一次
 }
@@ -64,7 +63,7 @@ void setup(){
 void draw(){
 //开始作画，紧接着setup()执行，会不断执行直到程序终止
 }
-{% endhighlight %}
+```
 
 * 如何停止作画
 
@@ -72,7 +71,7 @@ void draw(){
 
 * 其他
 
-{% highlight java linenos %}
+```
 void mousePressed(){
 //滑动鼠标控制的事件
 }
@@ -80,7 +79,7 @@ void mousePressed(){
 void keyPressed(){
 //键盘控制的事件
 }
-{% endhighlight %}
+```
 
 * 变量
 
@@ -97,7 +96,6 @@ Processing支持int、float、string、boolean四种类型的变量声明，除�
 
 Processing支持的大部分语法规则和C几乎是一样的，包括注释（使用//）和循环（while,for）。
 
-
 ----------
 
 ##四、一些实例
@@ -107,12 +105,14 @@ Processing支持的大部分语法规则和C几乎是一样的，包括注释（
 我们知道如果要画一个三维的图形，肯定要确定它的三维位置。在数学上，X轴是向右递增的，Y轴是向上递增的，Z轴是向外递增的；
 
 ![数学上坐标的规定](/assets/2014-03-01-processing-xyz-math.png "数学上坐标的规定")
-<center>数学上坐标的规定</center>
+
+<em>数学上坐标的规定</em>
 
 在processing程序中，X轴是向右递增的，Y轴是向下递增的，Z轴是向外递增的。
 
 ![Processing上坐标的规定](/assets/2014-03-01-processing-xyz-pro.png "Processing上坐标的规定")
-<center>Processing上坐标的规定</center>
+
+<em>Processing上坐标的规定</em>
 
 在Processing中绘画基本的几何图形非常简单，只需要调用现有的方法即可实现。指令参考：[Processing Reference](http://www.Processing.org/reference/)
 
@@ -122,7 +122,7 @@ Processing支持的大部分语法规则和C几乎是一样的，包括注释（
 
 * 样例：四个圆
 
-{% highlight java linenos %}
+```
 void setup() {
 size(200, 200);
 noStroke();
@@ -139,11 +139,11 @@ void circles(int x, int y) {
 ellipse(x, y, 50, 50);
 ellipse(x+20, y+20, 60, 60);
 }
-{% endhighlight %}
+```
 
 * 样例：用鼠标实现移动对称的两个方块
 
-{% highlight java linenos %}
+```
 void setup() {
 size(200, 200);
 rectMode(CENTER);
@@ -159,11 +159,11 @@ background(255);
 rect(width-mouseX, height-mouseY, 50, 50);
 rect(mouseX, mouseY, 50, 50);
 }
-{% endhighlight %}
+```
 
 * 样例：复杂操作
 
-{% highlight java linenos %}
+```
 int k;
 
 void setup(){
@@ -190,7 +190,7 @@ void draw(){
         k = k - 10;
     }
 }
-{% endhighlight %}
+```
 
 ----
 

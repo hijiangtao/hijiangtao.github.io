@@ -5,6 +5,7 @@ title: 《删除》读书笔记
 thread: 21
 categories: Read
 tags: [data]
+excerpt: 
 ---
 
 ##前言

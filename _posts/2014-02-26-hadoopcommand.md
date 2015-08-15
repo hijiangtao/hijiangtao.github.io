@@ -5,6 +5,7 @@ title: Hadoop常用命令
 thread: 52
 categories: Tutorial
 tags: [hadoop]
+excerpt: 每次操作临时去查命令感觉挺烦的，于是就把常用命令搜齐一次性整理好，以下为Hadoop使用过程中经常会用到的命令汇总。
 ---
 
 每次操作临时去查命令感觉挺烦的，于是就把常用命令搜齐一次性整理好，以下为Hadoop使用过程中经常会用到的命令汇总。

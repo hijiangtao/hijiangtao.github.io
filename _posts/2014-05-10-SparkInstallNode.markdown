@@ -5,6 +5,7 @@ title: Spark的单机部署与测试笔记
 thread: 122
 categories: Tutorial
 tags: [spark, data]
+excerpt: 
 ---
 
 **前言**：Spark作为最有可能代替mapreduce的分布式计算框架，正受到广泛的关注。相比Hadoop来说，Spark的中间计算结果存于内存无疑给计算过程节省了很多时间，于是想试试看其与Hadoop有什么不一样的地方，就有了这篇Spark的单机部署与测试笔记。

@@ -5,6 +5,7 @@ title: 八种新意典型的大数据应用案例
 thread: 64
 categories: Read
 tags: [data]
+excerpt: 
 ---
 
 在网上看到一篇报道，感觉挺有新意和价值，以后在介绍或者演讲可能用得到，于是就摘了过来。

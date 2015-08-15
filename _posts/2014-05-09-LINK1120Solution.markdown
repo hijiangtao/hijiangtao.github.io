@@ -5,6 +5,7 @@ title: 「fatal error LNK1120:1个无法解析的外部命令」报错解决方�
 thread: 121
 categories: Tutorial
 tags: [debug]
+excerpt: 
 ---
 
 OpenGL作业进行中，突然发现一直提示默认返回类型出错，发现是C++的前向声明问题。好吧，解决完这个问题发现有有些看不懂的字符解析问题出现，提示如下所示：

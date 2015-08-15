@@ -17,7 +17,7 @@ excerpet: 2013
 
 为今年浪费的时光质问自己，年初的梦想无法得以全部实现原因主观在己；
 
-“A BITer,focus on Technology,Entertainment and Design.”， 为一个处于胚胎期即将成型的自己祝福。
+“A BITer, focus on Technology, Entertainment and Design.”， 为一个处于胚胎期即将成型的自己祝福。
 
 更无法忘怀的是这一年，认识了很多好盆友！
 
