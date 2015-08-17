@@ -12,7 +12,7 @@
             <a href="/Resume.pdf">
                 <img src="{{site.staticurl}}/images/icons/resume.png" width="24" height="24">
             </a>
-            <a href="https://weibo.com/jiangtaotao">
+            <a href="https://weibo.com/hijiangtao">
                 <img src="{{site.staticurl}}/images/icons/weibo.png" width="24" height="24">
             </a>
             <a href="https://www.facebook.com/hijiangtao">
