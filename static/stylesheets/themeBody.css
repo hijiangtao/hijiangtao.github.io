@@ -29,7 +29,20 @@ body {
 }
 
 .about_ul {
-   text-align:left;
+  text-align:left;
+}
+
+.project-nailimg {
+  width: 100%;
+  height: auto;
+}
+
+.titleLink:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* CUSTOMIZE THE NAVBAR

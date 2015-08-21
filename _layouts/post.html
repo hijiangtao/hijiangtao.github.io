@@ -7,24 +7,39 @@ layout: default
         <div class="page-header">
             <h1>{{ page.title }}</h1>
         </div>
-        <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span> 
-        <span class="categories"><span class="glyphicon glyphicon-tag"></span> 
-    	Categories in {% for cat in page.categories %}
-    	<a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-    	{% endfor %} tagged with 
-    	{% for tag in page.tags %}
-    	<a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-    	{% endfor %}	
-    	</span> 
-        <span class="author"> <span class="glyphicon glyphicon-user"></span> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif %}</span>
-	<link rel="stylesheet" href="/static/stylesheets/pygments.css">
+        <div>
+            <span class="date"><span class="glyphicon glyphicon-calendar"></span> <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span> 
+            <span class="categories"><span class="glyphicon glyphicon-tag"></span> 
+            Categories in {% for cat in page.categories %}
+            <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+            {% endfor %} tagged with 
+            {% for tag in page.tags %}
+            <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+            {% endfor %}    
+            </span> 
+            <span class="author"> <span class="glyphicon glyphicon-user"></span> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif %}</span>
+        </div>
+	    <link rel="stylesheet" href="/static/stylesheets/pygments.css">
+        
     </header>
     <br />
     <div class="entry">{{ content }}</div>
-    
-    <div class="bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_t163" data-cmd="t163" title="分享到网易微博"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a></div>
-    <script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"2357527793"},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"image":{"viewList":["tsina","weixin","fbook","linkedin","twi","douban","mail","sqq","t163","copy","print"],"viewText":"Share to: ","viewSize":"24"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-    <p style="color:#000000;">除特别标明外，本博客所有内容均为Data.Blog原创。<br />
-    为促进技术的发展与交流，我非常愿意将自己掌握的知识与技术和你分享，但请尊重原创与版权，转载请注明本文<a href="{{ post.url }}">源地址</a>与作者<a href="http://hijiangtao.github.io/">{{ site.author }}</a>，感谢。</p>
-    {% include comments.md %}
 </article>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <a href='http://creativecommons.org/licenses/by-nc-sa/2.5/'><img src="{{site.staticurl}}/images/icons/cc_byncsa.svg" class='img-responsive project-nailimg img-thumbnail ' alt='CC BY-NC-SA'></a>
+    </div>
+    <div class='col-md-10'>
+        <p>除特别标明外，本博客所有内容均为Data.Blog原创。<br/>本博客遵循署名-非商业性使用-相同方式共享 2.5 通用协议，转载请注明本文 <a href="{{ post.url }}">源地址</a> 与作者 <a href="{{ site.url }}">{{ site.author }}</a>，感谢。</p>
+    </div>
+
+    <div class='col-md-10'>
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook">Facebook</a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin">linkedin</a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter">Twitter</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享">邮件分享</a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址">复制网址</a><a href="#" class="bds_print" data-cmd="print" title="分享到打印">打印</a></div>
+
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </div>
+</div>
+
+{% include comments.md %}
+
