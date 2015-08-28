@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" href="/static/stylesheets/pygments.css">
+
 <article>
     <header>
         <div class="page-header">
@@ -18,9 +21,7 @@ layout: default
             {% endfor %}    
             </span> 
             <span class="author"> <span class="glyphicon glyphicon-user"></span> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif %}</span>
-        </div>
-	    <link rel="stylesheet" href="/static/stylesheets/pygments.css">
-        
+        </div> 
     </header>
     <br />
     <div class="entry">{{ content }}</div>

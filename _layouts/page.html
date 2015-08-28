@@ -7,10 +7,6 @@ layout: default
         <h1>{{ page.title }}{%if page.excerpt%}<br /><small>{{page.excerpt}}</small>{%endif%}</h1>
     </div>
     
-	<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	
 {% if page.comments %}
 {% include comments.md %}
 {% endif %}
