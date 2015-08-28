@@ -35,12 +35,14 @@ layout: default
         <p>除特别标明外，本博客所有内容均为Data.Blog原创。<br/>本博客遵循署名-非商业性使用-相同方式共享 2.5 通用协议，转载请注明本文 <a href="{{ post.url }}">源地址</a> 与作者 <a href="{{ site.url }}">{{ site.author }}</a>，感谢。</p>
     </div>
 
-    <div class='col-md-10'>
+    <div class='col-md-12'>
+        {% include comments.md %}
+    </div>
+
+    <div class='col-md-12'>
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook">Facebook</a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin">linkedin</a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter">Twitter</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_mail" data-cmd="mail" title="分享到邮件分享">邮件分享</a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址">复制网址</a><a href="#" class="bds_print" data-cmd="print" title="分享到打印">打印</a></div>
 
         <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
     </div>
 </div>
-
-{% include comments.md %}
 

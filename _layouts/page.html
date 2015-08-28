@@ -7,9 +7,9 @@ layout: default
         <h1>{{ page.title }}{%if page.excerpt%}<br /><small>{{page.excerpt}}</small>{%endif%}</h1>
     </div>
     
-{% if page.comments %}
-{% include comments.md %}
-{% endif %}
+	{% if page.comments %}
+	{% include comments.md %}
+	{% endif %}
 
     <div class="entry">{{ content }}</div>
 </div>
