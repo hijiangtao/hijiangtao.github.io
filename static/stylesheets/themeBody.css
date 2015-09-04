@@ -104,7 +104,7 @@ a:hover {
 ------------------------- */
 
 .featurette-divider {
-  margin: 2em 0 5em 0; /* Space out the Bootstrap <hr> more */
+  margin: 2em 0 2em 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
