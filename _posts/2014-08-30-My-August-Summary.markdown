@@ -1,7 +1,7 @@
 ---
 title: 轻描淡写
 thread: 144
-date: 2015-08-30 20:00
+date: 2014-08-30 20:00
 categories: Student
 tags: [BIT]
 layout: post
