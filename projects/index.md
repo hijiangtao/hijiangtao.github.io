@@ -7,7 +7,7 @@ title: Projects
     <section>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <img src="{{site.url}}assets/2015-09-08-reusable-vis-component-2.png" class='img-responsive img-thumbnail project-nailimg'onclick="location='{{site.url}}ss-vis-component'">
+                <img src="{{site.url}}assets/2015-09-08-reusable-vis-component-2.png" class='img-responsive img-thumbnail project-nailimg'onclick="location='{{site.url}}2015/09/08/reusable-vis-component/'">
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <h2><a class='titleLink' href="{{site.url}}ss-vis-component">VIS Monitor Components</a></h2>
