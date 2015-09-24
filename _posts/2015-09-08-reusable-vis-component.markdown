@@ -1,4 +1,4 @@
-﻿---
+---
 title: A reusable visualization component
 layout: post
 thread: 162
