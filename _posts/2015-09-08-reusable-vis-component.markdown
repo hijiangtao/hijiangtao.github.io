@@ -11,11 +11,11 @@ excerpt: This is a simple reusable library for drawing vis charts and tables lik
 
 This component was developed from the examples that I had my internship in DeepGlint, which aims to visualize the system's monitor states in realtime. When I worked to complete the DEVELOPER platform, I thought if I can integrate it into a reusable library for further aims.
 
-The full name of it is 'An Integrated Version of Security Monitor Vis System', each chart shows in demo page is an independent component for drawing beautiful chart. Once you ge the dataset, you can drive the chart without other settings. All the charts include `function generate()`, `function redraw()` and getting data part(which is setInterval part in my demo page).
+The full name of it is 'An Integrated Version of Security Monitor Vis System', each chart showed in the demo page is an independent component for drawing beautiful chart in HTML DOM. Once you get the dataset, you can drive the chart without other extra settings. All the charts include `function generate()`, `function redraw()` and getting data part(which is setInterval part in my demo page).
 
 All the visualization results are developed in [D3][1], and the css is modified based on bootstrap.
 
-Some 3D trying is also used in the visualizations, such living map. These trying have two approaches, one is [three.js][2], and another is CSS 3D Transition.
+Some 3D attempts are also used in the component, such living map. These attempts are realized in two ways, one approach is [three.js][2], and another is CSS 3D Transition.
 
 The main page of component:
 
@@ -39,7 +39,7 @@ CSS 3D People Monitor Test: Use pure CSS 3D Stylesheets and JavaScript to simula
 
 [http://hijiangtao.github.io/ss-vis-component/css3d-test-people.html][8]
 
-Other test vis pic:
+Other test vis pics:
 
 ![Cubes][9]
 
