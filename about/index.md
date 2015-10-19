@@ -43,7 +43,7 @@ title: About
             <h4>Resume / 个人简历</h4>
             <ul class='pager about_ul'>
                 <li><a href="/Resume.pdf">English Version (Update to February, 2015)</a> </li>
-                <li><a href="/Resume_cn.pdf">中文版本 (更新至2015年6月)</a> </li>
+                <li><a href="/Resume_cn.pdf">中文版本 (更新至2015年10月)</a> </li>
             </ul>
         </section>
     </div>
