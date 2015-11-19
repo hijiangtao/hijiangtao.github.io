@@ -21,8 +21,7 @@
 
         <span class="pull-right">
             <span class="text-muted">
-                <P>&#169; Data.Blog 2013-{{ site.time | date: '%Y' }} &middot; My <a href="/Resume_cn.pdf">CV</a> &middot; <a href="{{site.baseurl}}/about/">ABOUT</a><br /><a href="/feed/">RSS</a> &middot; Powered by Jekyll, designed by <a href='http://weibo.com/hijiangtao'>hijiangtao</a>.</p>
+                <P>&#169; Data.Blog 2013-{{ site.time | date: '%Y' }} &middot; <script src="http://s22.cnzz.com/z_stat.php?id=1000257487&web_id=1000257487" language="JavaScript"></script> &middot; My <a href="/Resume_cn.pdf">CV</a> &middot; <a href="{{site.baseurl}}/about/">ABOUT</a><br /><a href="/feed/">RSS</a> &middot; Powered by Jekyll, designed by <a href='http://weibo.com/hijiangtao'>hijiangtao</a>.</p>
             </span>
         </span>
-        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256112344'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256112344%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
 </footer>
