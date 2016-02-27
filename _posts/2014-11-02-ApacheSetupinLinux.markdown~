@@ -98,7 +98,7 @@ yum install -y gcc gcc-c++
 执行如下代码完成：
 
 ```
-./configure --prefix=/usr/local/apache2 --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util/ --with-pcre=/usr/local/pcre
+./configure --prefix=/usr/local/apache2 --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util/
 make
 make install
 /usr/local/apache2/bin/apachectl start
