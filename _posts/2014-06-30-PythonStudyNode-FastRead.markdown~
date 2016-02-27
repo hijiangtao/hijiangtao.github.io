@@ -5,7 +5,7 @@ title: Python学习笔记：快速入门
 thread: 135
 categories: Tutorial
 tags: [python]
-excerpt: 
+excerpt: PY
 ---
 
 **前言**：之前一直用Python写过一些程序，但总体来说不太系统总是零零星星的拼凑，正好有想法在微博挖掘这一块做一个系统的小玩意，除了用到D3等呈现模块，对于前期的数据爬取Python也是必不可少的轻量级工具，所以便找了一本书从头开始系统整理自己的知识库，也便有了这个学习笔记。
