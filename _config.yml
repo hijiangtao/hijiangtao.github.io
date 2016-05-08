@@ -46,7 +46,7 @@ paginate: 10
 paginate_path: "blog/page:num"
 
 # Pygments
-pygments: true
+highlighter: pygments
 
 #### Under the Hood Stuff #####
 
