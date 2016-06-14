@@ -31,6 +31,7 @@
     {% endif %}
 
     <script src="{{site.staticurl}}/javascript/instantclick.min.js" data-no-instant></script>
+    <script src="{{site.staticurl}}/javascript/jquery.min.js"></script>
     <script data-no-instant>InstantClick.init();</script>
   </head>
   <body>
@@ -64,6 +65,7 @@
     </div>
 
     {% if page.title == 'Home' %}
+        <!-- <script type="text/javascript" src="{{site.staticurl}}/javascript/slide.js"></script> -->
         {% include carousel %}
         
     {% endif %}
