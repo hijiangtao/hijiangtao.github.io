@@ -64,7 +64,7 @@ author:
   name             : "hijiangtao"
   avatar           : "bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Beijing"
+  location         : "Beijing, China"
   email            : "hijiangtao@gmail.com"
   uri              :
   bitbucket        :
@@ -73,12 +73,12 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : hijiangtao
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : hijiangtao
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -86,7 +86,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
+  weibo            : hijiangtao
   xing             :
   youtube          :
 
@@ -153,11 +153,11 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-# gems:
-#   - jekyll-paginate
-#   - jekyll-sitemap
+gems:
+   - jekyll-paginate
+   - jekyll-sitemap
 #   - jekyll-gist
-#   - jekyll-feed
+   - jekyll-feed
 #   - jemoji
 
 # mimic GitHub Pages with --safe
