@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHAONIAN.EU</title>
+</head>
+<style type="text/css">
+	html {
+	  align-items: center;
+	  display: flex;
+	  justify-content: center;
+	  min-height: 100%;
+	}
+
+	body {
+	  background-color: black;
+	}
+
+	#shaonian {
+		position: absolute;
+	    color: white;
+	    bottom: 25px;
+	    text-align: center;
+	    left: 20vw;
+	    right: 20vw;
+	}
+	#describe {
+		position: absolute;
+	    color: white;
+	    bottom: 8px;
+	    text-align: center;
+	    left: 20vw;
+	    right: 20vw;
+	}
+	#shaonian>a {
+		color: white;
+		text-decoration: none;
+	}
+</style>
+<body>
+	<h1 id="shaonian">Welcome to <a href="http://hijiangtao.github.io/">hijiangtao.github.io</a></h1>
+	<p id="describe">The blog is under reconstruction.</P>
+	<canvas id="division-loader" width="46" height="46"></canvas>
+	<script type="text/javascript">
+		var start = null;
+		var duration = 1000;
+		var boundaryIncrementer = duration / 6;
+
+		function drawDivisionLoader(timestamp) {
+
+			// Timing Setup
+			if (!start) {
+				start = timestamp;
+			}
+
+			// Canvas setup
+			var canvas = document.getElementById('division-loader');
+			var ctx = canvas.getContext('2d');
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			// Draw inner orange circle
+			ctx.lineWidth = 1.5;
+			ctx.strokeStyle = '#d89747';
+			ctx.beginPath();
+			ctx.arc(22, 22, 13, 0, 2 * Math.PI);
+			ctx.stroke();
+			ctx.closePath();
+
+			// Draw outer circle
+			ctx.lineWidth = 1;
+			ctx.strokeStyle = '#363537';
+			ctx.beginPath();
+			ctx.arc(22, 22, 20.5, 0, 2 * Math.PI);
+			ctx.stroke();
+
+			// Draw animating arcs
+			ctx.lineWidth = 2.5;
+
+			// Find the remainder
+			var remainder = (timestamp - start) % 1000;
+
+			// Find out where the remainder lies within the boundaries
+			if (remainder >= 0 && remainder <= (boundaryIncrementer) ) {
+				// Arc 1
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.strokeStyle = '#363537';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			if (remainder > (boundaryIncrementer) && remainder <= (boundaryIncrementer * 2) ) {
+				// Arc 1
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.strokeStyle = '#363537';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			if (remainder > (boundaryIncrementer * 2) && remainder <= (boundaryIncrementer * 3) ) {
+				// Arc 1
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.strokeStyle = '#363537';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			if (remainder > (boundaryIncrementer * 3) && remainder <= (boundaryIncrementer * 4) ) {
+				// Arc 1
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.strokeStyle = '#363537';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			if (remainder > (boundaryIncrementer * 4) && remainder <= (boundaryIncrementer * 5) ) {
+				// Arc 1
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.strokeStyle = '#363537';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			if (remainder > (boundaryIncrementer * 5) && remainder < (boundaryIncrementer * 6) ) {
+				// Arc 1
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (332 * Math.PI)/180, (27 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 2
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (32 * Math.PI)/180, (87 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 3
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (92 * Math.PI)/180, (147 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 4
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (152 * Math.PI)/180, (207 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 5
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (212 * Math.PI)/180, (267 * Math.PI)/180);
+				ctx.stroke();
+
+				// Arc 6
+				ctx.strokeStyle = '#d89747';
+				ctx.beginPath();
+				ctx.arc(22, 22, 17, (272 * Math.PI)/180, (327 * Math.PI)/180);
+				ctx.stroke();
+			}
+
+			window.requestAnimationFrame(drawDivisionLoader);
+			
+		}
+
+		window.requestAnimationFrame(drawDivisionLoader);
+	</script>
+
+</body>
+</html>
