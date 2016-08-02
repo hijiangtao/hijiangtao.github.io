@@ -1,81 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{site.name}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{site.description}}"/>
-    <meta name="author" content="{{site.author}}"/>
-    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <link href='http://fonts.useso.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed/index.html" />
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+---
+layout: compress
+---
 
-    <!-- Le styles -->
-    <link href="{{site.staticurl}}/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="{{site.staticurl}}/stylesheets/themeBody.css" rel="stylesheet">
+{% include base_path %}
 
-    <link href="{{site.staticurl}}/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="{{site.staticurl}}/images/logos/favicon.shortcuticon.ico" />
-    <link rel="icon" href="/assets/favicon.ico" type="image/ico"/>
-    <link rel="apple-touch-icon" href="/assets/favicon.ico" type="image/ico"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon.ico" type="image/ico"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon.ico" type="image/ico"/>
-    
-    {% if site.xmas == 1 %}
-    <!-- Christmas snowstorm -->
-    <script src="{{site.staticurl}}/javascript/snowstorm.js"></script>
-    {% endif %}
-
-    <script src="{{site.staticurl}}/javascript/instantclick.min.js" data-no-instant></script>
-    <script src="{{site.staticurl}}/javascript/jquery.min.js"></script>
-    <script data-no-instant>InstantClick.init();</script>
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
+
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="{{site.url}}">{{site.name}}</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="{{site.url}}">Home</a></li>
-                    <li{% if page.url == '/blog/index.html' %} class="active"{% endif %}><a href="{{site.baseurl}}/blog/">Blog</a></li>
-                    <li{% if page.url == '/categories/index.html' %} class="active"{% endif %}><a href="{{site.baseurl}}/categories/">Categories</a></li>
-                    <li{% if page.url == '/projects/index.html' %} class="active"{% endif %}><a href="{{site.baseurl}}/projects/">Projects</a></li>
-                    <li{% if page.url == '/guestbook/index.html' %} class="active"{% endif %}><a href="{{site.baseurl}}/guestbook/">Guestbook</a></li>
-                    <li{% if page.url == '/about/index.html' %} class="active"{% endif %}><a href="{{site.baseurl}}/about/">About</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </div>
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
 
-    {% if page.title == 'Home' %}
-        <!-- <script type="text/javascript" src="{{site.staticurl}}/javascript/slide.js"></script> -->
-        {% include carousel %}
-        
-    {% endif %}
+    {% include scripts.html %}
 
-    <div class="container wrap">
-      {{ content }}
-
-      {% include footer %}
-    </div>
-    
-    {% include javascript %}
   </body>
 </html>
