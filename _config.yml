@@ -10,10 +10,10 @@ locale                   : "en"
 title                    : "Joe's Blog"
 title_separator          : "-"
 name                     : "hijiangtao"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "All I'm saying is inside, I had the element of surprise."
+url                      : # "http://hijiangtao.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "hijiangtao/hijiangtao.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -30,6 +30,27 @@ comments:
     colorscheme          : # "light" (default), "dark"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      # read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # SEO Related
 google_site_verification :
@@ -76,7 +97,7 @@ author:
   github           : hijiangtao
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : 
   lastfm           :
   linkedin         : hijiangtao
   pinterest        :
@@ -84,7 +105,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : hijiangtao
   vine             :
   weibo            : hijiangtao
   xing             :
@@ -146,7 +167,7 @@ kramdown:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
