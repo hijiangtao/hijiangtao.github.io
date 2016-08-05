@@ -10,6 +10,6 @@
   {% when "google-plus" %}
     <section class="g-comments" data-href="{{ base_path }}{{ page.url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
   {% when "custom" %}
-    <section id="comments"></section>
+    <section class="ds-thread" data-thread-key="{{ page.thread }}" data-url="http://hijiangtao.github.io{{page.url}}" data-title="{{ page.title }}" ></section>
   {% endcase %}
 </div>

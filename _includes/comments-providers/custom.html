@@ -1,3 +1,24 @@
 <!-- start custom comments snippet -->
 
+{% if site.comments.duoshuo %}
+	{% include base_path %}
+	{% if page.thread %}
+	<!--define the duoshuo plugin-->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"{{ site.comments.duoshuo }}"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+     	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	{% else %}
+	<div class="ds-thread"></div>
+	{% endif %}
+	
+{% endif %}
+
 <!-- end custom comments snippet -->
