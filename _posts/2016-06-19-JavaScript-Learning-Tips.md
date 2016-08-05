@@ -1,4 +1,4 @@
-﻿---
+---
 title: JavaScript 使用中的一些小提示
 layout: post
 thread: 166
