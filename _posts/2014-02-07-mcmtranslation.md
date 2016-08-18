@@ -10,7 +10,7 @@ excerpt:
 
 参加数学建模，刚拿到题目便开始了繁忙的翻译工作，以下为我的翻译成果，顺带附上一些参考资料与常识。
 
-###Problem A: The Keep-Right-Except-To-Pass Rule
+### Problem A: The Keep-Right-Except-To-Pass Rule
 
 In countries where driving automobiles on the right is the rule (that is, USA, China and most other countries except for Great Britain, Australia, and some former British colonies), multi-lane freeways often employ a rule that requires drivers to drive in the right-most lane unless they are passing another vehicle, in which case they move one lane to the left, pass, and return to their former travel lane.
 
@@ -30,7 +30,7 @@ Lastly, the rule as stated above relies upon human judgment for compliance. If v
 
 最后，如上所述的规则依赖于人的判断为标准。如果相同的道路运输完全处于一个智能系统的控制下（无论是部分路网或嵌入使用道路的车辆的设计），在何种程度上这会改变你刚才分析的结果？
 
-###Problem B: College Coaching Legends
+### Problem B: College Coaching Legends
 
 Sports Illustrated, a magazine for sports enthusiasts, is looking for the “best all time college coach” male or female for the previous century. Build a mathematical model to choose the best college coach or coaches (past or present) from among either male or female coaches in such sports as college hockey or field hockey, football, baseball or softball, basketball, or soccer. Does it make a difference which time line horizon that you use in your analysis, i.e., does coaching in 1913 differ from coaching in 2013? Clearly articulate your metrics for assessment. Discuss how your model can be applied in general across both genders and all possible sports. Present your model’s top 5 coaches in each of 3 different sports.
 

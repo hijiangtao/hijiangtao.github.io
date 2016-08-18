@@ -8,7 +8,7 @@ tags: [hadoop]
 excerpt: 
 ---
 
-##一、硬件环境
+## 一、硬件环境
     
     
 **Hadoop搭建系统环境**：三台完全一样的Linux ubuntu-13.04-desktop-i386系统，其中一个做Namenode和Datanode，另外两个做Datanode。
@@ -17,15 +17,15 @@ excerpt:
 
 ----------
    
-##二、运行步骤
+## 二、运行步骤
       
-###2.1 进入bin目录
+### 2.1 进入bin目录
 
 ```
 cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ```
 
-###2.2 新建输入文件内容
+### 2.2 新建输入文件内容
 
 在当前目录新建一个文件夹叫input，在文件夹里新建三个文件f1.txt,f2.txt,f3.txt，并分别写入一些内容。
 
@@ -36,7 +36,7 @@ sudo sh -c 'echo "hello java" > input/f2.txt'
 sudo sh -c 'echo "hello world" > input/f3.txt'
 ```
 
-###2.3 在运行的hadoop中创建文件夹
+### 2.3 在运行的hadoop中创建文件夹
 
 注意在操作之前，一定要保证这个时候hadoop已经正常运行，datanode、jodtracker、namenode等必要信息均显示正常。
 
@@ -55,7 +55,7 @@ hadoop dfs -ls /home/hadoop
 
 如果我们能看到类似`drwr-xr-x ....../home/hadoop/input`字样那表明我们这一步已经成功了。
 
-###2.4 把文件复制到hadoop中
+### 2.4 把文件复制到hadoop中
 
 ```
 hadoop dfs -put input/* /home/hadoop/input
@@ -71,7 +71,7 @@ hadoop dfs -cat /home/hadoop/input/f1.txt
 
 注：我们可以通过`10.1.151.168：50070/dfshealth.jsp`来从浏览器中查看整个hdfs文件系统的目录，打开namenode的链接，点击其中的`Browse the filesystem`超级链接，就可以看到相应的目录结构了。
 
-###2.5 运行example例子
+### 2.5 运行example例子
 
 我们要运行的例子在hadoop的安装目录下，名称叫做hadoop-examples-1.2.1.jar。到了这一步，无疑是出错率最高的时候，运行命令如下：
 
@@ -113,7 +113,7 @@ Exception inthread "main" org.apache.hadoop.mapred.FileAlreadyExistsException:Ou
         at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
 ```
 
-###2.6 查看运行结果
+### 2.6 查看运行结果
 
 我们可以查看output文件夹的内容来检查程序是否成功创建文件夹，通过查看output文件里面的part-r-00000文件的内容来检查程序执行结果：
 
@@ -133,7 +133,7 @@ Exception inthread "main" org.apache.hadoop.mapred.FileAlreadyExistsException:Ou
 
 我们可以看到hadoop出现一次，hello出现3次，java出现一次，world出现一次，这跟预期是一样的，说明执行成功。
 
-###2.7 关闭hadoop进程
+### 2.7 关闭hadoop进程
 
 如果我们要关闭hadoop集群，则只需要运行stop-all.sh：
 
@@ -146,7 +146,7 @@ cd /data/software/hadoop/hadoop-1.2.1/bin
 
 ----
 
-##错误笔记
+## 错误笔记
 
 **1. 启动时发现莫名其妙的datanode没有启动。**
 
@@ -225,6 +225,6 @@ echo "第三条信息" | sudo tee -a test.asc
 
 ----
 
-##声明
+## 声明
 
 本文已经成功投稿至36大数据网站，于2014-02-26发表。[链接地址](http://www.36dsj.com/archives/6118)

@@ -8,7 +8,7 @@ tags: [data]
 excerpt: Big Data Analytics Platform. 
 ---
 
-##一、数据分析平台层次解析
+## 一、数据分析平台层次解析
 
 ![](/assets/2014-01-17-bigdata-platform.jpg "大数据分析处理架构图")
 <center style="font-size:10px">大数据分析处理架构图</center>
@@ -25,7 +25,7 @@ excerpt: Big Data Analytics Platform.
 
 ----------
 
-##二、规划的数据平台产品AE(Accelerate Engine)
+## 二、规划的数据平台产品AE(Accelerate Engine)
 
 支持下一代企业计算关键技术的大数据处理平台：包括计算引擎、开发工具、管理工具及数据服务。计算引擎是AE的核心部分，提供支持从多数据源的异构数据进行实时数据集成、提供分布式环境下的消息总线、通过Service Gateway能够与第三方系统进行服务整合访问；设计了一个分布式计算框架，可以处理结构化和非结构化数据，并提供内存计算、规划计算、数据挖掘、流计算等各种企业计算服务。Data Studio包括了数据建模、开发、测试等集成开发环境。管理工具包括了实施、客户化及系统管理类工具。AE平台还可以通过UAP开发者社区提供丰富的数据服务。
 

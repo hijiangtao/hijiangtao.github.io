@@ -8,7 +8,7 @@ tags: [hadoop]
 excerpt: 
 ---
 
-##一、硬件环境
+## 一、硬件环境
     
 **Hadoop搭建系统环境**：三台完全一样的Linux ubuntu-13.04-desktop-i386系统，其中一个做Namenode和Datanode，另外两个做Datanode。（三个ubuntu系统均搭建在硬件虚拟机上）
 
@@ -24,14 +24,14 @@ excerpt:
 
 ----------
    
-##二、改装步骤
+## 二、改装步骤
    
    
-###2.1 创建两个Datanode节点系统
+### 2.1 创建两个Datanode节点系统
 
 先用VMware vsphere client将一个ubuntu系统复制两份，系统分别命名为node1和node2。VMware vsphere client使用可以查看[VMware vsphere client安装笔记](http://hijiangtao.github.io/2014/02/18/vmwaresetup)。
 
-###2.2 修改Datanode系统中IP与主机名
+### 2.2 修改Datanode系统中IP与主机名
 
 在打开每个系统的hostname文件，分别将名字改为node1和node2。
 
@@ -47,7 +47,7 @@ sudo vim /etc/hostname
 10.1.151.188   node2
 ```
 
-###2.3 修改hadoop配置文件
+### 2.3 修改hadoop配置文件
 
 * **core-site.xml**
 
@@ -94,7 +94,7 @@ localhost修改如下：
 </property>
 ```
 
-###2.4 namenode配置
+### 2.4 namenode配置
 
 进入conf目录修改masters文件，填写集群master名如：
 
@@ -112,15 +112,15 @@ node2
 
 ----
 
-##三、测试运行
+## 三、测试运行
 
-###3.1 格式化namenode
+### 3.1 格式化namenode
 
 ```
 ./hadoop namenode –format
 ```
 
-###3.2 启动hadoop进程
+### 3.2 启动hadoop进程
 
 ```
 ./start-all.sh
@@ -130,6 +130,6 @@ node2
 
 ----
 
-##错误笔记
+## 错误笔记
 
 1. 启动时发现莫名其妙的datanode没有启动，从logs日志中看到`Incompatible namespaceIDs in /home/hadoop/tmp/hadoop_tmp`，想起来这个文件夹是自己新建的，是不是伪分布式时在里面产生了垃圾？于是sudo rm -rf然后sudo mkdir重来了一次，想想不安全我再把其他的之前新建的文件夹全部重新按照这个方法操作了一次；最后-format然后./start-all.sh，搞定啦。Datanode、JobTracker、SecondaryNameNode、Jps、TaskTracker、NameNode全部启动。

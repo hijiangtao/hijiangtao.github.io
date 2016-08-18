@@ -8,7 +8,7 @@ tags: [hadoop]
 excerpt: 
 ---
 
-##一、硬件环境
+## 一、硬件环境
     
 **Hadoop搭建系统环境**：一台Linux ubuntu-13.04-desktop-i386系统，既做Namenode，又做Datanode。（ubuntu系统搭建在硬件虚拟机上）
 
@@ -24,27 +24,27 @@ excerpt:
 
 ----------
 
-##二、软件环境准备
+## 二、软件环境准备
     
     
-###2.1 Hadoop
+### 2.1 Hadoop
 
 Hadoop Release 1.2.1(stable)版本，下载链接：<http://mirror.nexcess.net/apache/hadoop/common/hadoop-1.2.1/>，选择hadoop-1.2.1-bin.tar.gz文件下载。
 
-###2.2 Java
+### 2.2 Java
 
 Java使用的jdk1.7版本，当然可以使用1.6的，下载链接：<http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html>，选择Linux x86的 jdk-7u40-linux-i586.tar.gz版本下载（因为我的Linux机器是32位的）。如果Linux机器是64的就必须选择64位的下载，不同的机器必须要配置不同的jdk版本。
 
-###2.3 Eclipse
+### 2.3 Eclipse
 
 Eclipse选择Linux 32位下载：<https://www.eclipse.org/downloads/>
 
 ----
 
-##三、安装步骤
+## 三、安装步骤
     
     
-###3.1 添加一个专门为hadoop使用的用户
+### 3.1 添加一个专门为hadoop使用的用户
 
 * 命令行输入：
 
@@ -63,7 +63,7 @@ sudo vim /etc/sudoers
 
 * 切换到hadoop用户：`su hadoop`
 
-###3.2 创建目录并解压安装包
+### 3.2 创建目录并解压安装包
 
 * 建立目录
 
@@ -81,7 +81,7 @@ sudo tar -xzvf '/home/master/下载/jdk-7u40-linux-i586.tar.gz' -C /home/hadoop/
 sudo tar -xzvf '/home/master/下载/hadoop-1.2.1-bin.tar.gz' -C /home/hadoop/software/hadoop/
 ```
 
-###3.3 配置Hadoop
+### 3.3 配置Hadoop
 
 * 配置Java环境
 
@@ -178,10 +178,10 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 
 ----
 
-##四、启动hadoop
+## 四、启动hadoop
     
     
-###4.1 测试hadoop配置是否成功
+### 4.1 测试hadoop配置是否成功
    
 通过以下命令，当我们看到hadoop的版本时则表明配置无误。
    
@@ -189,14 +189,14 @@ export  JAVA_HOME=/home/hadoop/software/java/jdk1.7.0_40
 hadoop version
 ``` 
    
-###4.2 格式化namenode
+### 4.2 格式化namenode
    
 ```
 cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 ./hadoop namenode –format
 ``` 
    
-###4.3 启动hadoop进程
+### 4.3 启动hadoop进程
    
 ```
 cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
@@ -207,7 +207,7 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 
 如果有一个进程没有启动成功，就表示整个集群没有正常工作，进入`/home/hadoop/software/hadoop/hadoop-1.2.1/libexec/../logs/`目录下可以查看失败日记。
    
-###4.4 从浏览器查看hadoop信息
+### 4.4 从浏览器查看hadoop信息
    
 **查看jobtracker信息**:
 
@@ -223,7 +223,7 @@ cd /home/hadoop/software/hadoop/hadoop-1.2.1/bin
 
 ----
 
-##错误笔记
+## 错误笔记
     
     
 * **password:localhost:permission denied,please try again**
@@ -272,7 +272,7 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 
 ----
 
-##后记
+## 后记
     
     
 Hadoop1.2.1单机版搞定，老泪纵横啊！要是早一天我就可以向老师汇报我的胜利果实了！明天加油搞定全分布式集群配置！
@@ -281,6 +281,6 @@ Hadoop1.2.1单机版搞定，老泪纵横啊！要是早一天我就可以向老
 
 ----
 
-##声明
+## 声明
 
 本文已经成功投稿至36大数据网站，于2014-02-19发表。[链接地址](http://www.36dsj.com/archives/6088)
