@@ -12,13 +12,13 @@ excerpt:
 
 ----
 
-##一、Jekyll简介
+## 一、Jekyll简介
 
 Jekyll 是一个简洁的、特别针对博客平台的 静态网站 生成器。它使用一个模板目录作为网站布局的基础框架，并在其上运行 Textile 、 Markdown 或 Liquid 标记语言的转换器，最终生成一个完整的静态Web站点。
 
 ----
 
-##二、配置Ruby环境
+## 二、配置Ruby环境
 
 * **安装Ruby**
 
@@ -68,7 +68,7 @@ ruby dk.rb install
 
 ----
 
-##三、安装Jekyll（需联网）
+## 三、安装Jekyll（需联网）
 
 如果选择默认安装那么在最后调试的时候可能会由于你网站中的代码高亮等成分的存在而造成运行终止，所以安装Jekyll一定要注意版本号，这里推荐1.4.2，安装命令如下（不带命令版本的代码把--version及之后的代码删去即可）：
 
@@ -178,6 +178,6 @@ Configuration file: C:/Users/admin/Documents/GitHub/hijiangtao.github.io/_config
 
 ----
 
-##2015.8乱入
+## 2015.8乱入
 
 有精力折腾这个不如换MacBook或者Linux吧，有些事情在Windows上做就是深坑啊。。

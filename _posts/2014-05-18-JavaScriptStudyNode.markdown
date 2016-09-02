@@ -8,7 +8,7 @@ tags: [JavaScript]
 excerpt: Tips in studying JavaScript.
 ---
 
-###1、有关文档输出
+### 1、有关文档输出
 
 请使用 document.write() 仅仅向文档输出写内容。
 如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖：
@@ -31,7 +31,7 @@ document.write("糟糕！文档消失了。");
 
 ----
 
-###2、有关变量声明
+### 2、有关变量声明
 
 如果重新声明 JavaScript 变量，该变量的值不会丢失；在以下两条语句执行后，变量 carname 的值依然是 "Volvo"：
 
@@ -50,7 +50,7 @@ carname="Volvo";
 
 ----
 
-###3、有关数字书写
+### 3、有关数字书写
 
 JavaScript 只有一种数字类型。数字可以带小数点，也可以不带.极大或极小的数字可以通过科学（指数）计数法来书写：
 
@@ -61,7 +61,7 @@ var z=123e-5;     // 0.00123
 
 ----
 
-###4、有关运算符
+### 4、有关运算符
 
 **用于字符串的 + 运算符**
 
@@ -79,7 +79,7 @@ txt3=txt1+txt2;
 
 ----
 
-###5、有关For循环
+### 5、有关For循环
 
 JavaScript for/in 语句循环可以遍历对象的所有属性。
 
@@ -94,7 +94,7 @@ for (x in person)
 
 ----
 
-###6、有关错误
+### 6、有关错误
 
 **测试与捕捉**
 
@@ -122,13 +122,13 @@ throw 语句允许我们创建自定义错误。异常可以是 JavaScript 字�
 
 ----
 
-###7、JavaScript DOM
+### 7、JavaScript DOM
 
 有关完整的 HTML DOM Style 对象属性，可以查看 [HTML DOM Style 对象参考手册](http://www.w3school.com.cn/jsref/dom_obj_style.asp)。
 
 ----
 
-###8、HTML鼠标事件
+### 8、HTML鼠标事件
 
 **onload 和 onunload 事件**
 
@@ -151,7 +151,7 @@ onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分
 
 ----
 
-###9、删除已有HTML元素
+### 9、删除已有HTML元素
 
 如需删除 HTML 元素，您必须首先获得该元素的父元素。但常用的解决方案：找到您希望删除的子元素，然后使用其 parentNode属性来找到父元素：
 
@@ -162,7 +162,7 @@ child.parentNode.removeChild(child);
 
 ----
 
-###10、数字属性与方法
+### 10、数字属性与方法
 
 **属性：**
 
@@ -184,24 +184,24 @@ child.parentNode.removeChild(child);
 
 ----
 
-###11、有关Boolean 对象
+### 11、有关Boolean 对象
 
 如果逻辑对象无初始值或者其值为 0、-0、null、""、false、undefined 或者 NaN，那么对象的值为 false。否则，其值为 true（即使当自变量为字符串 "false" 时）。
 
 ----
 
-###12、有关Math 对象
+### 12、有关Math 对象
 
 [JavaScript Math 对象的参考手册](http://www.w3school.com.cn/jsref/jsref_obj_math.asp)
 
 ----
 
-###13、有关String 对象
+### 13、有关String 对象
 
 [JavaScript String 对象参考手册](http://www.w3school.com.cn/jsref/jsref_obj_string.asp)
 
 ----
 
-###14、有关JS正则表达式
+### 14、有关JS正则表达式
 
 [RegExp 对象参考手册](http://www.w3school.com.cn/jsref/jsref_obj_regexp.asp)

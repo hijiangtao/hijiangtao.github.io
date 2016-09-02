@@ -8,15 +8,13 @@ tags: [linux]
 excerpt: 
 ---
 
-**前言：**
-
-由于更换电脑的缘故，重行安装了linux系统，但安装ubuntu不足一星期，系统就提醒我系统空间已经不足600MB，确实被震惊了，我给ubuntu分配了20GB大小空间啊，之前一直用的15GB都一直够用，于是开始谷歌各种系统瘦身方法，成功清理了1GB左右的垃圾，摘取了自己尝试过的一些方法记在下面。
+**前言：**由于更换电脑的缘故，重行安装了linux系统，但安装ubuntu不足一星期，系统就提醒我系统空间已经不足600MB，确实被震惊了，我给ubuntu分配了20GB大小空间啊，之前一直用的15GB都一直够用，于是开始谷歌各种系统瘦身方法，成功清理了1GB左右的垃圾，摘取了自己尝试过的一些方法记在下面。
 
 ----
 
 回顾这几天，我几乎没干什么大事，唯一记忆深刻的是ubuntu自动更新提示我有新的版本，于是我点了确定……记得当时哪个安装包挺大的，于是我就朝着这条路去寻找线索。
 
-###1.删除多余的内核。
+### 1.删除多余的内核。
 
 * 查看系统存在的内核：输入以下命令。
 
@@ -51,7 +49,7 @@ ii  linux-image-generic                       3.8.0.35.53                       
 
 好吧，内核删除，释放空间了，应该能释放130－140M空间。
 
-###2.清理下载的缓存包。
+### 2.清理下载的缓存包。
 
 通过apt安装软件时下载的包都缓存在 /var/cache/apt/archives/ 目录中，如要清理掉这些缓存包，可以执行：
 
@@ -59,18 +57,18 @@ ii  linux-image-generic                       3.8.0.35.53                       
 * sudo apt-get clean（未卸载软件的安装包）
 * sudo apt-get autoremove （清理系统不再需要的孤立的软件包）
 
-###3.卸载：Tracker
+### 3.卸载：Tracker
 
 Tracker不仅会产生大量的cache文件而且还会影响开机速度。所以执行`sudo apt-get remove tracker`即可。
 
-###4.删除浏览器缓存文件。
+### 4.删除浏览器缓存文件。
 
 opera firefox的缓存文件目录分别是：
 
 * `~/.opera/cache4`
 * `~/.mozilla/firefox/*.default/Cache`
 
-###5.缩略图删除
+### 5.缩略图删除
 
 如果启用了文件缩略图模式的话，`~/.thumbnails`里面会累积不少缩略图，可以删除。
 
@@ -92,7 +90,7 @@ opera firefox的缓存文件目录分别是：
 
 以下还有一些技术博客提供的别的清理方法，我还没试过。
 
-###1.清理无用的语言文件。
+### 1.清理无用的语言文件。
 
 ```
 sudo apt-get install localepurge
@@ -106,15 +104,15 @@ sudo apt-get install localepurge
 sudo dpkg-reconfigure localepurge
 ```
 
-###2.清理无用的翻译内容。
+### 2.清理无用的翻译内容。
 
 安装trans-purge这组小工具来清理 *.desktop、mime-database、gconf schema 中的无用翻译内容。
 
-###3.清理孤立软件包。
+### 3.清理孤立软件包。
 
 `sudo apt-get install gtkorphan`，运行gtkorphan，第一个选项中的都可以删除。
 
-###4.删除孤立的库文件。
+### 4.删除孤立的库文件。
 
 ```
 sudo apt-get install deborphan
