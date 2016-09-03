@@ -254,21 +254,12 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 
 ----
 
-最后，附上几篇我之前装Hadoop2.2.0时记下的笔记，希望对到来的你有所帮助：
+最后，附上2篇我之前装Hadoop2.2.0时记下的笔记，希望对到来的你有所帮助：
 
-1. [“软件包*没有可供安装的候选者”解决方案](http://hijiangtao.github.io/2014/02/16/apt-getproblem)
+1. [jdk安装与配置教程](http://hijiangtao.github.io/2014/02/14/hadoopjdk)
 
-2. [Ubuntu开机出现speech-dispatcher disabled解决办法](http://hijiangtao.github.io/2014/02/15/linuxspeechproblem)
+2. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/2014/02/14/hadoopconfmodify)
 
-3. [搭建Hadoop环境配置所需软件汇总](http://hijiangtao.github.io/2014/02/14/hadoopsetupsoftware)
-
-4. [jdk安装与配置教程](http://hijiangtao.github.io/2014/02/14/hadoopjdk)
-
-5. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/2014/02/14/hadoopconfmodify)
-
-6. [Ubuntu系统网络管理器显示“设备未托管”解决方法](http://hijiangtao.github.io/2014/02/13/ubuntunetworkmanager)
-
-7. [因修改/etc/sudoers权限导致sudo和su无法使用的解决方法](http://hijiangtao.github.io/2014/02/13/sudosolution)
 
 ----
 
@@ -277,7 +268,7 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
     
 Hadoop1.2.1单机版搞定，老泪纵横啊！要是早一天我就可以向老师汇报我的胜利果实了！明天加油搞定全分布式集群配置！
 
-感谢这段时间被我不断骚扰的非哥的帮助，感谢这段时间被我不断骚扰的中南学长和伍翀学长。感谢Google，谢谢老师、实验室的支持。
+感谢这段时间被我不断骚扰的中南学长和伍翀学长。
 
 ----
 

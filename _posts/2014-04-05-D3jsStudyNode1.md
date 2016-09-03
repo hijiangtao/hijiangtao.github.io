@@ -12,7 +12,7 @@ excerpt: Tutorials of Learning D3.
 
 ----
 
-##一、元素选择
+## 一、元素选择
 
 平常的程序如下所示：
 
@@ -43,7 +43,7 @@ div.html("Hello, world!");
 
 ----
 
-##二、变换方法
+## 二、变换方法
 
 selection.attr返回当前的选择内容，selection.append返回一个新内容。以下为一些示例：
 
@@ -66,7 +66,7 @@ d3.selectAll("section")
 
 ----
 
-##三、手动码表
+## 三、手动码表
 
 ```html
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ d3.selectAll("section")
 
 ----
 
-##四、自动码表
+## 四、自动码表
 
 假设我们已经定义了chart的样式，则代码如下：
 

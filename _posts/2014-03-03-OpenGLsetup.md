@@ -16,7 +16,7 @@ excerpt:
 
 ----
 
-##一、建立基本环境
+## 一、建立基本环境
 
 安装OpenGL Library
 
@@ -57,7 +57,7 @@ sudo apt-get install freeglut3-dev
 
 ----
 
-##二、编译样例
+## 二、编译样例
 
 ```
 #include <GL/glut.h>

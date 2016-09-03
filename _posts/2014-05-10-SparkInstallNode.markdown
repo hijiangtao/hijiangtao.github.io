@@ -12,7 +12,7 @@ excerpt:
 
 ----
 
-##一、硬件环境
+## 一、硬件环境
 
 * 操作系统： ubuntu-13.04-desktop-i386
 * JAVA： jdk1.7
@@ -20,7 +20,7 @@ excerpt:
 
 ----
 
-##二、资源准备
+## 二、资源准备
 
 什么是Spark?以下为Spark官网的一句话简介：
 
@@ -41,7 +41,7 @@ Spark支持local模式和cluster模式，local不需要安装mesos；如果需�
 
 ----
 
-##三、安装部署
+## 三、安装部署
 
 先把Scala和git装好，因为之后的sbt/sbt执行的是使用spark自带的sbt编译/打包。
 
@@ -62,11 +62,11 @@ $sbt/sbt assembly
 
 ----
 
-##四、检验测试
+## 四、检验测试
 
 Spark有两种运行模式。
 
-###4.1 Spark-shell
+### 4.1 Spark-shell
 
 此模式用于interactive programming，具体使用方法如下(先进入bin文件夹)。
 
@@ -112,7 +112,7 @@ scala> daysRDD.count()
 
 >res0: Long = 7
 
-###4.2 Run脚本
+### 4.2 Run脚本
 
 用于运行已经生成的jar包中的代码，如Spark自带的example中的SparkPi.
 
@@ -128,7 +128,7 @@ local代表本地，[3]表示3个线程跑。
 
 ----
 
-##五、学习建议
+## 五、学习建议
 
 在配置过程中看到他人给的一些建议，于是搜集起来供以后学习参考。
 
@@ -148,6 +148,6 @@ local代表本地，[3]表示3个线程跑。
 
 ----
 
-##声明
+## 声明
 
 本文已经成功投稿至36大数据网站，于2014-05-13发表。[链接地址](http://www.36dsj.com/archives/8001)

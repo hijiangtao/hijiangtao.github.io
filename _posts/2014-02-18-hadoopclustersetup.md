@@ -126,7 +126,7 @@ node2
 ./start-all.sh
 ```
 
-检验方法和伪分布式相同，此处不再赘述。相关操作可以查看[Hadoop1.2.1伪分布模式安装教程](http://hijiangtao.github.io/2014/02/17/hadoopsetup/)。
+检验方法和伪分布式相同，此处不再赘述。相关操作可以查看[Hadoop1.2.1伪分布模式安装教程](/2014/02/17/hadoopsetup)。
 
 ----
 
