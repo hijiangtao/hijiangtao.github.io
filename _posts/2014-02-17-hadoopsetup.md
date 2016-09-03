@@ -254,15 +254,6 @@ sudo  chown -R hadoop:hadoop /home/hadoop/appdata/
 
 ----
 
-最后，附上2篇我之前装Hadoop2.2.0时记下的笔记，希望对到来的你有所帮助：
-
-1. [jdk安装与配置教程](http://hijiangtao.github.io/2014/02/14/hadoopjdk)
-
-2. [Hadoop2.2.0安装配置文件修改教程](http://hijiangtao.github.io/2014/02/14/hadoopconfmodify)
-
-
-----
-
 ## 后记
     
     
