@@ -40,18 +40,18 @@ excerpt: 汇总最近看过的时空数据可视化原理与分享案例。
 
  - [Facebook Friendship](http://www.facebook.com/notes/facebook-engineering/visualizing-friendships/469716398919  ), 通过从黑色到蓝色到白色之间的不同颜色来表示两地之间的好友关系，所有数据基于城市进行了聚合。
 
-![Facebook](/assets/2016/2016-04-01-facebook-map.png)
+![Facebook](/assets/in-post/2016-04-01-facebook-map.png)
 
 
 除此外，在大量线条重叠和交叉阻碍信息检索的效率时，可以通过连线绑定技术改变连线布局从而降低视觉复杂度，这样的图可以看成流程图和地图的结合，称为流型图（flow map）。
 
-![global excess](/assets/2016/2016-04-01-global-excess.png)
+![global excess](/assets/in-post/2016-04-01-global-excess.png)
 
  - [法国葡萄酒出口图](http://en.wikipedia.org/wiki/Flow_map  )
  
 基于此，Phan等人提出了自动绘制和优化流型图的算法[flow_map_layout](http://vis.stanford.edu/files/2005-FlowMapLayout-InfoVis.pdf  )。其中主要两个步骤是计算连线绑定好优化连线布局。
 
-![Japan](/assets/2016/2016-04-01-japan.png)
+![Japan](/assets/in-post/2016-04-01-japan.png)
 
 ## 区域数据可视化
 
@@ -73,17 +73,17 @@ excerpt: 汇总最近看过的时空数据可视化原理与分享案例。
  - [地理时空数据]：[Data Visualization: Journalism's Voyage West](http://web.stanford.edu/group/ruralwest/cgi-bin/drupal/visualizations/us_newspapers  ), This visualization plots over 140,000 newspapers published over three centuries in the United States. The data comes from the Library of Congress' "Chronicling America" project, which maintains a regularly updated directory of newspapers. 
  - [复杂地理数据可视分析]：[Statistics Explorer](http://stats.oecd.org/OECDregionalstatistics/)
 
- ![heatmap](/assets/2016/2016-04-01-heatmap-bridges.png)
+ ![heatmap](/assets/in-post/2016-04-01-heatmap-bridges.png)
 
- ![most-popular-bike-routes](/assets/2016/2016-04-01-most-popular-bike-routes.png)
+ ![most-popular-bike-routes](/assets/in-post/2016-04-01-most-popular-bike-routes.png)
 
- ![onebayarea](/assets/2016/2016-04-01-onebayarea.png)
+ ![onebayarea](/assets/in-post/2016-04-01-onebayarea.png)
 
- ![OECD](/assets/2016/2016-04-01-oecd.png)
+ ![OECD](/assets/in-post/2016-04-01-oecd.png)
 
- ![Singapore](/assets/2016/2016-04-01-singapore-1.png)
+ ![Singapore](/assets/in-post/2016-04-01-singapore-1.png)
 
- ![Singapore](/assets/2016/2016-04-01-singapore-2.png)
+ ![Singapore](/assets/in-post/2016-04-01-singapore-2.png)
 
 ## 其他可视化展现形式
 
@@ -92,14 +92,14 @@ excerpt: 汇总最近看过的时空数据可视化原理与分享案例。
  - [Visualizing a genetic algorithm ](http://karstenahnert.com/gp/)
  - [Global Landscapes Initiative - Excess Nitrogen](http://sunsp.net/demo/GeogTreeMaps/)
 
- ![Visualizing a genetic algorithm](/assets/2016/2016-04-01-algorithm.png)
+ ![Visualizing a genetic algorithm](/assets/in-post/2016-04-01-algorithm.png)
 
 ## 城市研究资源
 
  - [BCL](http://www.beijingcitylab.com/)
  - [Beihang Interest Group on SmartCity (BIGSCity)](http://www.smartcity-buaa.org/)
 
- ![BIGSCity](/assets/2016/2016-04-01-smartcity-beijing-subway-inter-line-passenger-flow.png)
+ ![BIGSCity](/assets/in-post/2016-04-01-smartcity-beijing-subway-inter-line-passenger-flow.png)
 
 *本文未做明确引述来源的文字部分来源于《[数据可视化](https://book.douban.com/subject/25760272/)》一书。本文配图均源自上下文链接网站的屏幕截图、相关网址中Youtube链接截图以及文章配图。*
 

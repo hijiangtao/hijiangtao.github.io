@@ -9,7 +9,7 @@ tags: [BIT]
 excerpt: 终于，该和旧时光说再见了。
 ---
 
-![](/assets/2015-01-03-Goodbye-My-Old-Times.png)
+![](/assets/in-post/2015-01-03-Goodbye-My-Old-Times.png)
 
 新年第一篇博客，时光过得真快，就十年了。
 

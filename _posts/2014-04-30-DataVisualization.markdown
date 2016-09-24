@@ -29,15 +29,15 @@ excerpt:
 
 * Standard 2D/3D displays
 
-![](/assets/2014-04-30-DataVisualization-01.png)
+![](/assets/in-post/2014-04-30-DataVisualization-01.png)
 
 * Geometrically transformed displays
 
-![](/assets/2014-04-30-DataVisualization-02.png)
+![](/assets/in-post/2014-04-30-DataVisualization-02.png)
 
 * Icon-based displays
 
-![](/assets/2014-04-30-DataVisualization-03.png)
+![](/assets/in-post/2014-04-30-DataVisualization-03.png)
 
 * Dense pixel displays
 * Stacked displays
@@ -52,7 +52,7 @@ excerpt:
 
 Page: <http://datawrapper.de/>
 
-![](/assets/2014-04-30-DataVisualization-04.png)
+![](/assets/in-post/2014-04-30-DataVisualization-04.png)
 
 2.Flot: 一个基于jQuery 的绘图库，使用HTML 的canvas 元素，也支持旧版本浏览器（甚至IE6）。它支持有限的视觉形式（折线、散点、条形、面积），但使用很简单。
 
@@ -64,19 +64,19 @@ Page: <http://www.flotcharts.org/>
 
 Page: <http://g.raphaeljs.com/>
  
-![](/assets/2014-04-30-DataVisualization-05.png)
+![](/assets/in-post/2014-04-30-DataVisualization-05.png)
 
 5.Highcharts JS: JavaScript 图表库，包含一些预定义的主题和图表。它在最新浏览器中使用SVG， 而在旧版本IE（包括IE6 及更新版本）中使用后备的VML。
 
 Page: <http://www.highcharts.com/>
  
-![](/assets/2014-04-30-DataVisualization-06.png)
+![](/assets/in-post/2014-04-30-DataVisualization-06.png)
 
 6.JavaScript InfoVis Toolkit: 简称JIT，它提供了一些预设的样式可用于展示不同的数据，包括很多例子，而文档的技术味道太浓。
 
 Page: <http://philogb.github.io/jit/index.html>
 
-![](/assets/2014-04-30-DataVisualization-01.png)
+![](/assets/in-post/2014-04-30-DataVisualization-01.png)
 
 7.jqPlot: jQuery 绘图插件，只支持一些简单的图表，适合不需要自定义样式的情况。
 
@@ -86,7 +86,7 @@ Page: <http://philogb.github.io/jit/index.html>
 
 Page: <http://benpickles.github.com/peity/>
 
-![](/assets/2014-04-30-DataVisualization-07.png)
+![](/assets/in-post/2014-04-30-DataVisualization-07.png)
  
 10.Timeline.js: 专门用于生成交互式时间线的一个库。不用编写代码，只用其代码生成器即可；只支持IE8及以后的版本。
 
@@ -96,13 +96,13 @@ Page: <http://benpickles.github.com/peity/>
 
 Page: <http://arborjs.org/> 
  
-![](/assets/2014-04-30-DataVisualization-08.png)
+![](/assets/in-post/2014-04-30-DataVisualization-08.png)
 
 2.Sigma.js: 一个非常轻量级的图谱可视化库。无论如何，你得看看它的网站，在页面上方的大图上晃几下鼠标，然后再看看它的演示。Sigma.js 很漂亮，速度也快，同样使用canvas。
 
 Page: <http://sigmajs.org/>
  
-![](/assets/2014-04-30-DataVisualization-09.png)
+![](/assets/in-post/2014-04-30-DataVisualization-09.png)
 
 ### 3.3 地图映射（包括地理位置数据或地理数据）
 
@@ -110,7 +110,7 @@ Page: <http://sigmajs.org/>
 
 Page: <http://kartograph.org/>
 
-![](/assets/2014-04-30-DataVisualization-10.png)
+![](/assets/in-post/2014-04-30-DataVisualization-10.png)
 
 2.Leaflet: 贴片地图的库，可以在桌面和移动设备上流畅地交互。它支持在地图贴片上显示一些SVG 数据层（参见Mike 的演示"Using D3 with Leaflet"：<http://bost.ocks.org/mike/leaflet/> )。 Leaflet 支持IE6（勉强）或IE7（好得多），当然还有其他更新版本的浏览器。
 
@@ -128,25 +128,25 @@ Page: <http://polymaps.org/>
 
 1.D3.js
 
-![](/assets/2014-04-30-DataVisualization-11.png)
+![](/assets/in-post/2014-04-30-DataVisualization-11.png)
 
 2.Processing.js
  
-![](/assets/2014-04-30-DataVisualization-12.png)
+![](/assets/in-post/2014-04-30-DataVisualization-12.png)
  
-![](/assets/2014-04-30-DataVisualization-13.png)
+![](/assets/in-post/2014-04-30-DataVisualization-13.png)
 
 3.Paper.js: 在canavs 上渲染矢量图形的框架。同样，它的网站也堪称互联网上最漂亮的网站之一，它们的演示做得让人难以置信。
 
 Page: <http://paperjs.org/>
  
-![](/assets/2014-04-30-DataVisualization-14.png)
+![](/assets/in-post/2014-04-30-DataVisualization-14.png)
 
 4.Raphaël: 一个绘制矢量图形的库。
 
 Page: <http://raphaeljs.com/>
  
-![](/assets/2014-04-30-DataVisualization-15.png)
+![](/assets/in-post/2014-04-30-DataVisualization-15.png)
 
 ### 3.5 三维图形
 
@@ -154,13 +154,13 @@ Page: <http://raphaeljs.com/>
 
 Page: <http://www.senchalabs.org/philogl/>
  
-![](/assets/2014-04-30-DataVisualization-16.png)
+![](/assets/in-post/2014-04-30-DataVisualization-16.png)
 
 2.Three.js: 能帮你生成任何3D 场景的一个库，谷歌Data Arts 团队出品。
 
 Page: <http://mrdoob.github.com/three.js/> 
 
-![](/assets/2014-04-30-DataVisualization-17.png)
+![](/assets/in-post/2014-04-30-DataVisualization-17.png)
 
 ----
 

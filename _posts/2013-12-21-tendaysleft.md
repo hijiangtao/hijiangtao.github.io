@@ -8,7 +8,7 @@ tags: [BIT]
 excerpt: Goodbye, my 2013.
 ---
 
-![2013](/assets/2013-12-21-tendaysleft.jpg)
+![2013](/assets/in-post/2013-12-21-tendaysleft.jpg)
 
 又是一年，时间过的真的好快。作为一个亲身经历者，在跋山涉水走过这一年的时光后，从现在去回首凝望，惊喜就在发现中。
 
