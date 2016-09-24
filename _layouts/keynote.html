@@ -106,15 +106,15 @@ layout: default
          */
         var navheight = document.getElementsByClassName("masthead")[0].offsetHeight, defaultnavspace = 85;
         $header.style.height = (window.innerHeight - navheight - defaultnavspace) + 'px';
-    }
+    };
     document.addEventListener('DOMContentLoaded', function(){
         resize();
-    })
+    });
     window.addEventListener('load', function(){
         resize();
-    })
+    });
     window.addEventListener('resize', function(){
         resize();
-    })
+    });
     resize();
 </script>
