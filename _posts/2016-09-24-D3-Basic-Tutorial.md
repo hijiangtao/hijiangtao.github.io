@@ -2,7 +2,7 @@
 date: 2016-09-24
 layout: keynote
 title: Step by Step - Introduction, installation and simple examples of D3
-thread: 190
+thread: 167
 categories: Documents
 tags: [D3, Visualization]
 excerpt: Introduction, installation and simple examples
