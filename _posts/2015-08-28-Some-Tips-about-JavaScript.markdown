@@ -34,6 +34,11 @@ excerpt: When I had my internship in DeepGlint, my supervisor gave me a lot of a
  - 把一个值转换为一个字符串有两种方式: 使用值的toString()方法; 使用转型函数String()，该函数能够将任何类型的值转换为字符串;
  - `result = variable instanceof constructor` // 查看variable是否为constructor类型;
 
+### JavaScript 秘密花园
+
+ - `hasOwnProperty` 是 JavaScript 中唯一一个处理属性但是不查找原型链的函数。
+ - 和 in 操作符一样，for in 循环同样在查找对象属性时遍历原型链上的所有属性。
+
 ### Others
 
 The most important four elements in understanding JavaScript are:
