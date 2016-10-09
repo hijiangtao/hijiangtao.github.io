@@ -28,7 +28,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "dark" # "light" (default), "dark"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -111,6 +111,7 @@ author:
   weibo            : hijiangtao
   xing             :
   youtube          :
+  cv               : "/Resume.pdf"
 
 
 # Reading Files
