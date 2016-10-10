@@ -15,6 +15,7 @@ gem "github-pages", group: :jekyll_plugins
 # To upgrade, run `bundle update`.
 
 # gem "jekyll"
+# gem "jekyll-paginate"
 
 gem "rake"
 
