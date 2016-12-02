@@ -11,7 +11,7 @@ title                    : "Joe's Blog"
 title_separator          : "-"
 name                     : "hijiangtao"
 description              : "All I'm saying is inside, I had the element of surprise."
-url                      : # "http://hijiangtao.github.io"
+url                      : # "https://hijiangtao.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hijiangtao/hijiangtao.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "hijiangtao"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "An amazing VISer and FEr."
   location         : "Beijing, China"
   email            : "hijiangtao@gmail.com"
   uri              :
