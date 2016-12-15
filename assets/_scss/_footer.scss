@@ -76,3 +76,7 @@
     font-weight: bold;
   }
 }
+
+a[href*="website.php"] {
+    visibility: hidden;
+}
