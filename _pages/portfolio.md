@@ -25,9 +25,9 @@ feature_row:
     title: "Variety Show Hot Spot Visualization"
     excerpt: "Variety Show Hot Spot Visualization"
   - image_path: /assets/2015-01-03-Goodbye-Old-Times.jpg
-  	title: "Dark-Tech"
-  	excerpt: "A Responsive Hexo Theme."
-  	url: "/2014/08/29/Dark-Tech-Theme/"
+    title: "Dark-Tech"
+    excerpt: "A Responsive Hexo Theme."
+    url: "/2014/08/29/Dark-Tech-Theme/"
 ---
 
 {% include feature_row id="intro" type="center" %}
