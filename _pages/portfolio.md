@@ -12,7 +12,7 @@ excerpt: "Joe's Portfolio."
 intro: 
   - excerpt: 'NULL'
 feature_row:
-  - image_path: https://hijiangtao.github.io/assets/in-post/2015-09-08-reusable-vis-component-2.png
+  - image_path: https://hijiangtao.github.io/assets/in-post/2015-09-08-reusable-vis-component-1.png
     alt: "VIS Monitor Components"
     title: "VIS Monitor Components"
     excerpt: "A series vis components for a secure system, to monitor different parts' states and confirm the system's health runnning."
