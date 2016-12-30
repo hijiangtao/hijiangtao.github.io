@@ -8,7 +8,7 @@ categories: documents
 tags: [student, UCAS, 2016]
 excerpt: 虽然有那么一次次感慨时间过得真慢,很想快进到新年,但真的只剩最后一天的时候,又开始有点感伤.这一年,毕竟即将结束.
 header:
-  image: /assets/in-post/2016-12-31-there-is-always-a-moment-that-can-remind-me-of-the-2016.png
+  image: ../assets/in-post/2016-12-31-there-is-always-a-moment-that-can-remind-me-of-the-2016.png
   caption: "Photo credit: [**hijiangtao**](https://hijiangtao.github.io/)"
 ---
 

@@ -131,7 +131,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
+  jekyll-paginate
   rake
 
 BUNDLED WITH
-   1.12.5
+   1.13.2
