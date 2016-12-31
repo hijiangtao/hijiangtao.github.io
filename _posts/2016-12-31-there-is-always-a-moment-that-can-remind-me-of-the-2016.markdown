@@ -9,7 +9,7 @@ tags: [student, UCAS, 2016]
 excerpt: 虽然有那么一次次感慨时间过得真慢,很想快进到新年,但真的只剩最后一天的时候,又开始有点感伤.这一年,毕竟即将结束.
 header:
   image: ../assets/in-post/2016-12-31-there-is-always-a-moment-that-can-remind-me-of-the-2016-header.png
-  caption: "Edited from: [happynewyear2017dp.com](https://happynewyear2017dp.com/happy-new-year-2017-whatsapp-video/)"
+  caption: "Edited from [web](https://happynewyear2017dp.com/happy-new-year-2017-whatsapp-video/)"
 ---
 
 最后一天了，在实验室静静想着这一年里都经历了些什么。似乎年初定的种种目标，也没有实现多少，很累很累，很忙很忙，似乎一直在奔波之中。这让我没有心情来规划元旦假期三天的安排，所以就安静待在实验室好了。
