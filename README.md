@@ -1,4 +1,4 @@
-# [Joe's Blog](hijiangtao.github.io)
+# [Joe's Blog](https://hijiangtao.github.io/)
 
 <!-- [![Build Status](https://travis-ci.org/hijiangtao/hijiangtao.github.io.svg?branch=master)](https://travis-ci.org/hijiangtao/hijiangtao.github.io) -->
 
