@@ -22,6 +22,13 @@ iframe: PUT YOUR URL HERE, such as https://hijiangtao.github.io/slides/s-D3-Basi
 ```
 
 ## About
+
+[Create](https://github.com/hijiangtao/hijiangtao.github.io/issues/new) a new issue to report bugs or communicate with me about your insights.
+
 This is the source code for my personal website.
 
 Unless stated otherwise, all content is MIT-licensed.
+
+Joe Jiang
+
+2017.2
