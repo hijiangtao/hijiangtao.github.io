@@ -5,7 +5,7 @@ permalink: /portfolio
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: https://hijiangtao.github.io/variety-show-hot-spot-vis/images/title.png
+  overlay_image: blogAlbumhomepage-banner-1.jpg
   cta_url: "https://github.com/hijiangtao/hijiangtao.github.io/"
   caption: "Photo credit: [**hijiangtao**](https://hijiangtao.github.io/)"
 excerpt: "Joe's Portfolio."
@@ -15,10 +15,12 @@ feature_row:
   - image_path: https://hijiangtao.github.io/assets/in-post/2015-09-08-reusable-vis-component-1.png
     alt: "VIS Monitor Components"
     title: "VIS Monitor Components"
-    excerpt: "A series vis components for a secure system, to monitor different parts' states and confirm the system's health runnning."
+    excerpt: "A series vis components for a secure system, to visualize system's monitoring data."
+    url: "/ss-vis-components/"
   - image_path: https://hijiangtao.github.io/variety-show-hot-spot-vis/images/title.png
     title: "Variety Show Hot Spot Visualization"
     excerpt: "Variety Show Hot Spot Visualization"
+    url: "/variety-show-hot-spot-vis/"
   - image_path: https://hijiangtao.github.io/assets/in-post/2015-01-03-Goodbye-Old-Times.jpg
     title: "Dark-Tech"
     excerpt: "A Responsive Hexo Theme."
