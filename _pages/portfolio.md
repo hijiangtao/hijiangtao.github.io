@@ -16,11 +16,6 @@ feature_row:
     alt: "VIS Monitor Components"
     title: "VIS Monitor Components"
     excerpt: "A series vis components for a secure system, to monitor different parts' states and confirm the system's health runnning."
-  - image_path: https://hijiangtao.github.io/assets/in-post/2013-09-03-hitravel-1.jpg
-    alt: "Hi-Travel"
-    title: "Hi-Travel"
-    excerpt: "Windows Appstore Application."
-    url: "/2013/09/03/hitravel/"
   - image_path: https://hijiangtao.github.io/variety-show-hot-spot-vis/images/title.png
     title: "Variety Show Hot Spot Visualization"
     excerpt: "Variety Show Hot Spot Visualization"
