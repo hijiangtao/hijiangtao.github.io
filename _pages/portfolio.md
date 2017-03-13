@@ -10,7 +10,7 @@ header:
   caption: "Photo credit: [**hijiangtao**](https://hijiangtao.github.io/)"
 excerpt: "Joe's Portfolio."
 intro: 
-  - excerpt: 'NULL'
+  - excerpt: 'Gallery'
 feature_row:
   - image_path: https://hijiangtao.github.io/assets/in-post/2015-09-08-reusable-vis-component-1.png
     alt: "VIS Monitor Components"
