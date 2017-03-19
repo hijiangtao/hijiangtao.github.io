@@ -8,11 +8,6 @@ title: "About"
 
 Tao Jiang, graduate student in University of Chinese Academy of Sciences.
 
-### Resume / 个人简历
-
-* [English Version (Update to Oct, 2015)](/Resume.pdf)
-* [中文版本 (更新至2015年10月)](/Resume_cn.pdf)
-
 ### Contact / 联系方式
 <ul class='pager about_ul'>
     <li><a href="http://hijiangtao.github.io/">Personal Blog</a> </li>
