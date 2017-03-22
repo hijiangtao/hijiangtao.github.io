@@ -5,9 +5,9 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">	
 <url>
-<loc>http://hijiangtao.github.io</loc>
+<loc>https://hijiangtao.github.io/</loc>
 <priority>1.00</priority>
-<lastmod>2016-08-05</lastmod>
+<lastmod>2017-03-22</lastmod>
 <changefreq>weekly</changefreq>
 </url>
 </urlset>
