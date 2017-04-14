@@ -29,7 +29,7 @@ excerpt: 正好熟练一下 ES2015 的新特性, 用它开发一个简单的力�
 
 在开始正式开发之前可以准备好的内容包括使用到的测试数据, 测试指标等等. 为了简化开发流程, 直接使用由[Donald Knuth](http://www-cs-faculty.stanford.edu/~uno/sgb.html) 制作的基于维克多雨果编著的悲惨世界一书中的人物相关关系数据, 做了少许修改, 数据见 [data.js](https://github.com/hijiangtao/Force-Directed-Layout/blob/master/src/data.js). 为了测试项目运行的性能效果, 可以开放如下参数供运行时监控: 绘制方式, 绘制耗时, 系统迭代次数, 当前系统能量, 当前系统点/边数量, 页面堆内存消耗, 系统占用 DOM 个数等等, 大部分数据我们在更新系统时都会计算, 页面内存消耗使用的是 `wwindow.performance.memory.usedJSHeapSize`. 该部分代码布置在函数 `updateDetails` 中, 每帧更新时会调用一次:
 
-```
+``` js
 /**
  * update details in page (container: table)
  * @param  {[type]} energy [description]
@@ -73,7 +73,7 @@ updateDetails(energy) {
 
 * Vector 向量类: 存储二维空间中的一个向量, 并包含其中的加减乘除等向量操作基本函数
 
-```
+``` js
 class Vector {
 	constructor(x, y) {
 		this.x = x; // x position
@@ -112,7 +112,7 @@ class Vector {
 
 * Point 质点类: 存储质点及其属性
 
-```
+``` js
 let Point = function(position, id = -1, group = -1, mass = 1.0) {
 	this.p = position; // 质点位置
 	this.m = mass; // 质点质量
@@ -130,7 +130,7 @@ let Point = function(position, id = -1, group = -1, mass = 1.0) {
 
 * Spring 弹簧类: 存储弹簧长度及相邻两个质点信息
 
-```
+``` js
 class Spring {
 	constructor(source, target, length) {
 		this.source = source;
@@ -148,7 +148,7 @@ class Spring {
 
 初始化点簇可以通过简单的随机函数实现, 假设我们初始化的实例中已经存有点边(this.nodes, this.edges)数据, 那么通过以下逻辑可以初始化由中心向周围一定距离随机分布的点簇系统. 这里考虑到点边的唯一性, 我们使用 [Set](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Set) 数据结构实现对点边数据的组织.
 
-```
+``` js
 let self = this,
 	nlen = this.nodes.length,
 	elen = this.edges.length;
@@ -186,7 +186,7 @@ for (let i = 0; i < elen; i++) {
 
 以上所说的三个力我们分别用三个函数单独实现 (注意: 其中`normalise`属性为标准化函数, `subtract`属性为向量减法函数, `updateAcc`属性为加速度更新函数, `divide`属性为除法函数, `multiply`属性为乘法函数, 详细向量操作类实现见[Vector.js](https://github.com/hijiangtao/Force-Directed-Layout/blob/master/src/Vector.js)):
 
-```
+``` js
 /**
  * Update repulsion forces between nodes
  * @return {[type]} [description]
@@ -250,7 +250,7 @@ attractToCentre() {
 
 加速度可以通过简单受力除以质点质量得出, 但是在进一步计算质量的位移更新之前我们需要为系统加上一个阻尼力, 使质量在正常受力的情况下有一个Suunto衰减的过程, 以不至于系统永远处于不收敛状态. 我们将阻尼系数存在 `this.props.damping` 中, 于是得到速度和位移的更新函数可以如下表示:
 
-```
+``` js
 attractToCentre() {
 	let len = this.nodes.length;
 
@@ -283,7 +283,7 @@ updateVelocity(interval) {
 
 在这个项目中, 我们将系统能量阈值设置为 0.1, 最大迭代次数设置为 1000000. 我们将该部分判断逻辑加入系统逐帧更新 (利用 `window.requestAnimationFrame` 实现) 的逻辑部分:
 
-```
+``` js
 window.requestAnimationFrame(function step() {
 	self.tick(self.props.tickInterval); // 每次受力与质点系统位置的更新
 	self.render(); // 页面绘制的更新
@@ -312,7 +312,7 @@ window.requestAnimationFrame(function step() {
 
 * 获取画布并重置 (假设我们已经在之前生成过 Canvas 画布)
 
-```
+``` js
 if (this.props.approach === 'canvas') {
 	this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 }
@@ -320,7 +320,7 @@ if (this.props.approach === 'canvas') {
 
 * 遍历系统中存在的边用 `ctx.beginPath` 方法进行绘制 (source, target 分别为源节点与目标节点)
 
-```
+``` js
 if (self.props.approach === 'canvas') {
 	self.ctx.strokeStyle = strokeStyle;
 	self.ctx.lineWidth = strokeWidth;
@@ -335,7 +335,7 @@ if (self.props.approach === 'canvas') {
 
 * 遍历系统中存在的节点用 `ctx.arc` 方法进行绘制 (val为绘制的节点数据结构)
 
-```
+``` js
 if (self.props.approach === 'canvas') {
 	self.ctx.strokeStyle = strokeStyle;
 	self.ctx.fillStyle = fillStyle;
@@ -353,7 +353,7 @@ if (self.props.approach === 'canvas') {
 
 针对以上设计的不同模块, 我们在实现了之后将其简单封装在一个命名空间中, 比如 `forceLayout`, 那么之后再开发中我们就可以直接使用以下语句引入该模块进行图形绘制或者二次开发了:
 
-```
+``` js
 import forceLayout from 'forceLayout'
 ``` 
 
@@ -365,7 +365,7 @@ import forceLayout from 'forceLayout'
 
 * 项目文件结构如下, 实现库源代码置于 `src` 文件夹中, `index.js` 为样例页面引用脚本文件, `forceLayout.js` 为项目主代码入口;
 
-```
+``` linux
 Force-Directed-Layout
 ├── default.css
 ├── dist
