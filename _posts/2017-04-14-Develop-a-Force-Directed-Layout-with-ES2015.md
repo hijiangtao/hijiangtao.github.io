@@ -1,5 +1,5 @@
 ---
-title: 用 ES2015 写一个简单的力导向可视化图库
+title: 用 ES2015 实现一个简单的力导向可视化图库
 layout: post
 thread: 171
 date: 2017-04-14
