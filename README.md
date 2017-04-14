@@ -21,6 +21,13 @@ iframe: PUT YOUR URL HERE, such as https://hijiangtao.github.io/slides/s-D3-Basi
 ---
 ```
 
+## Serve locally
+
+```
+git clone git@github.com:hijiangtao/Force-Directed-Layout.git
+bundle exec jekyll serve
+```
+
 ## About
 
 [Create](https://github.com/hijiangtao/hijiangtao.github.io/issues/new) a new issue to report bugs or communicate with me about your insights.
