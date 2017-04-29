@@ -10,6 +10,8 @@ excerpt: Dark-Tech.
 
 ## Dark-Tech : A New Hexo Theme
 
+![](/assets/in-post/2014-08-29-Dark-Tech-Theme.jpg )
+
 Dark-Tech theme is really a cool ideal personal-blog resolution, which is inspired by Hacker Cultrue and Metro-light Theme(Author:[halfer53](https://github.com/halfer53/)). It’s a flat, minimal and responsive theme designed for hexo, and developed based on dark. Welcome the Redevelopment based on Dark-Tech as well as the Use of it.
 
 <!--more-->
