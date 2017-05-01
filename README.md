@@ -24,7 +24,7 @@ iframe: PUT YOUR URL HERE, such as https://hijiangtao.github.io/slides/s-D3-Basi
 ## Serve locally
 
 ```
-git clone git@github.com:hijiangtao/Force-Directed-Layout.git
+git clone git@github.com:hijiangtao/hijiangtao.github.io.git
 bundle exec jekyll serve
 ```
 
