@@ -6,25 +6,8 @@ title: "About"
 
 {% include base_path %}
 
-Tao Jiang, graduate student in University of Chinese Academy of Sciences.
+Tao Jiang, M.S. Student in Computer Science at UCAS with programming skills in diverse languages and experience in industrial and research settings. Pursuing 2017 internships in Front-End Web Development / Visualization / Visual Analytics.
 
-### Contact / 联系方式
-<ul class='pager about_ul'>
-    <li><a href="http://hijiangtao.github.io/">Personal Blog</a> </li>
-    <li><a href="https://cn.linkedin.com/in/hijiangtao">LinkedIn</a> </li>
-    <li><a href="mailto:hijiangtao@gmail.com">EMAIL</a> </li>
-    
-</ul>
-
-### Social Network / 社交网络
-<ul class='pager about_ul'>
-    <li><a href="http://weibo.com/hijiangtao">Weibo</a> </li>
-    <li><a href="http://www.zhihu.com/people/hijiangtao">Zhihu</a></li>
-    <li><a href="https://www.facebook.com/hijiangtao">Facebook</a> </li>
-</ul>
-
-### Address / 联系地址
-
-SKLCS, Institute of Sofware, Chinese Academy of Sciences (中国科学院软件研究所)
+Address: SKLCS, Institute of Sofware, Chinese Academy of Sciences (中国科学院软件研究所)
 
 Building 5#, Software Park, 4# South 4th Street, Zhongguancun, Haidian District, Beijing, China
