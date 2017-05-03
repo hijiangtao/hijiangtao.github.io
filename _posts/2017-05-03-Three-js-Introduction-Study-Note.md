@@ -43,25 +43,25 @@ Three.js 采用右手坐标系, 如下图所示:
 
 [Geometry#Three.js](https://threejs.org/docs/index.html#api/core/Geometry) 是所有几何形状的基类, 用户也可以操作继承该类用于自定义形状的定义和绘制, 常见的 Three.js 中几何形状包括立方体,柱体,球体等等.
 
-* BoxGeometry 是四边形几何类, 它通常用给定的长宽高参数构造立方体或不规则四边形(CubeGeometry 也可以实现相同效果,但在 Three.js 中该函数已被删除);
+* **BoxGeometry** 是四边形几何类, 它通常用给定的长宽高参数构造立方体或不规则四边形(CubeGeometry 也可以实现相同效果,但在 Three.js 中该函数已被删除);
 
 ```
 THREE.BoxGeometry(width, height, depth, widthSegments, heightSegments, depthSegments)
 ```
 
-* PlaneGeometry 是平面类, 其实是一个长方形，而不是数学意义上无限大小的平面;
+* **PlaneGeometry** 是平面类, 其实是一个长方形，而不是数学意义上无限大小的平面;
 
 ```
 THREE.PlaneGeometry(width, height, widthSegments, heightSegments)
 ```
 
-* SphereGeometry 是球体类, 构造函数如下所示 ( `radius` 是半径； `segmentsWidth` 表示经度上的切片数； `segmentsHeight` 表示纬度上的切片数； `phiStart` 表示经度开始的弧度； `phiLength` 表示经度跨过的弧度； `thetaStart` 表示纬度开始的弧度； `thetaLength` 表示纬度跨过的弧度), 其中需要注意的是在使用时可以根据经纬度切片数来定制球形外形, 可以通过经纬度弧度来定制球形起始形状;
+* **SphereGeometry** 是球体类, 构造函数如下所示 ( `radius` 是半径； `segmentsWidth` 表示经度上的切片数； `segmentsHeight` 表示纬度上的切片数； `phiStart` 表示经度开始的弧度； `phiLength` 表示经度跨过的弧度； `thetaStart` 表示纬度开始的弧度； `thetaLength` 表示纬度跨过的弧度), 其中需要注意的是在使用时可以根据经纬度切片数来定制球形外形, 可以通过经纬度弧度来定制球形起始形状;
 
 ```
 THREE.SphereGeometry(radius, segmentsWidth, segmentsHeight, phiStart, phiLength, thetaStart, thetaLength)
 ```
 
-* CircleGeometry 几何类可以创建圆形或者扇形;
+* **CircleGeometry** 几何类可以创建圆形或者扇形;
 
 ```
 THREE.CircleGeometry(radius, segments, thetaStart, thetaLength)
@@ -69,13 +69,13 @@ THREE.CircleGeometry(radius, segments, thetaStart, thetaLength)
 
 ![](/assets/in-post/2017-05-03-Three-js-Introduction-Study-Note-2.png )
 
-* CylinderGeometry 表示柱体类, 构造函数如下所示( `radiusTop` 与 `radiusBottom` 分别是顶面和底面的半径，由此可知，当这两个参数设置为不同的值时，实际上创建的是一个圆台； `height` 是圆柱体的高度； `radiusSegments` 与 `heightSegments` 可类比球体中的分段； `openEnded` 是一个布尔值，表示是否没有顶面和底面，缺省值为false，表示有顶面和底面);
+* **CylinderGeometry** 表示柱体类, 构造函数如下所示( `radiusTop` 与 `radiusBottom` 分别是顶面和底面的半径，由此可知，当这两个参数设置为不同的值时，实际上创建的是一个圆台； `height` 是圆柱体的高度； `radiusSegments` 与 `heightSegments` 可类比球体中的分段； `openEnded` 是一个布尔值，表示是否没有顶面和底面，缺省值为false，表示有顶面和底面);
 
 ```
 THREE.CylinderGeometry(radiusTop, radiusBottom, height, radiusSegments, heightSegments, openEnded)
 ```
 
-* TetrahedronGeometry / 正四面体、OctahedronGeometry / 正八面体、IcosahedronGeometry / 正二十面体的构造函数分别如下所示;
+* **TetrahedronGeometry** / 正四面体、**OctahedronGeometry** / 正八面体、**IcosahedronGeometry** / 正二十面体的构造函数分别如下所示;
 
 ```
 THREE.TetrahedronGeometry(radius, detail)
@@ -83,13 +83,13 @@ THREE.OctahedronGeometry(radius, detail)
 THREE.IcosahedronGeometry(radius, detail)
 ```
 
-* TorusGeometry 即圆环面, 也为甜甜圈的形状;
+* **TorusGeometry** 即圆环面, 也为甜甜圈的形状;
 
 ```
 THREE.TorusGeometry(radius, tube, radialSegments, tubularSegments, arc)
 ```
 
-* TorusKnotGeometry / 圆环结, 形如打了结的甜甜圈;
+* **TorusKnotGeometry** / 圆环结, 形如打了结的甜甜圈;
 
 ```
 THREE.TorusKnotGeometry(radius, tube, radialSegments, tubularSegments, p, q, heightScale)
@@ -97,13 +97,13 @@ THREE.TorusKnotGeometry(radius, tube, radialSegments, tubularSegments, p, q, hei
 
 ![](/assets/in-post/2017-05-03-Three-js-Introduction-Study-Note-3.png )
 
-* ExtrudeGeometry 几何类, 用于从一条路径中抽取出特征用于构建几何形状;
+* **ExtrudeGeometry** 几何类, 用于从一条路径中抽取出特征用于构建几何形状;
 
 ```
-ExtrudeGeometry(shapes, options)
+THREE.ExtrudeGeometry(shapes, options)
 ```
 
-* ConeGeometry 锥形几何类;
+* **ConeGeometry** 锥形几何类;
 
 ```
 THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded, thetaStart, thetaLength)
