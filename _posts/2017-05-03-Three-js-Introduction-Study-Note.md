@@ -39,6 +39,24 @@ Three.js 采用右手坐标系, 如下图所示:
 
 ![](/assets/in-post/2017-05-03-Three-js-Introduction-Study-Note-4.jpg )
 
+## 矩阵变换
+
+在三维图形学中,几何变换大致分为三种,平移变换(Translation),缩放变换(Scaling),旋转变换(Rotation).
+
+* [矩阵](http://www.opengl-tutorial.org/cn/beginners-tutorials/tutorial-3-matrices/) - opengl-tutorial
+* [Matrix4](https://threejs.org/docs/#api/math/Matrix4) - three.js
+* 三维顶点为三元组(x,y,z),引入一个新的分量w，得到向量(x,y,z,w): 若w=1，则向量(x, y, z, 1)为空间中的点;若w=0，则向量(x, y, z, 0)为方向;
+* 三维图形学中我们只用到4x4矩阵，它能对顶点(x,y,z,w)作变换。这一变换是用矩阵左乘顶点来实现的：矩阵\*顶点= 变换后的顶点;
+* 将三维空间中的一个点 `[x, y, z, 1]` 移动到另外一个点 `[x', y', z', 1]` ，三个坐标轴的移动分量分别为 `dx=Tx, dy=Ty, dz=Tz`;
+* 平移变换矩阵的逆矩阵与原来的平移量相同但是方向相反;
+* 旋转变换矩阵的逆矩阵与原来的旋转轴相同但是角度相反;
+* 缩放变换的逆矩阵正好和原来的效果相反，如果原来是放大，则逆矩阵是缩小，如果原来是缩小，则逆矩阵是放大;
+* 累积变换的顺序: 先缩放,接着旋转,最后平移;
+
+```
+TransformedVector = TranslationMatrix * RotationMatrix * ScaleMatrix * OriginalVector;
+```
+
 ## Geometry 几何形状类型汇总
 
 [Geometry#Three.js](https://threejs.org/docs/index.html#api/core/Geometry) 是所有几何形状的基类, 用户也可以操作继承该类用于自定义形状的定义和绘制, 常见的 Three.js 中几何形状包括立方体,柱体,球体等等.
@@ -111,8 +129,14 @@ THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded, th
 
 * Three.js 还提供了很多其他几何类, 详情可以在 Three.js 文档搜索框中输入 `Geometry` 关键字, 查看 Geometries 下栏目.
 
+## 其他: 光与影
+
+* three.js 中常用的四种光源模型为环境光、平行光、点光源、聚光灯;
+* 在Three.js中，能形成阴影的光源只有THREE.DirectionalLight与THREE.SpotLight；而相对地，能表现阴影效果的材质只有THREE.LambertMaterial与THREE.PhongMaterial。因而在设置光源和材质的时候，一定要注意这一点;
+
 ## 参考
 
 * [three.js / docs](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
 * [Three.js 入门指南](http://www.ituring.com.cn/article/47975)
 * [three.js右手坐标系， 显示和线条](http://www.cnblogs.com/Yimi/p/6007811.html)
+* [Intro to WebGL with Three.js](http://davidscottlyons.com/threejs/presentations/frontporch14/)
