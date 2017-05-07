@@ -38,16 +38,16 @@ var user = {
         {name:"T. Woods", age:37},
         {name:"P. Mickelson", age:43}
     ],
-    clickHandler:function (event) {
+    clickHandler:function(event) {
         var randomNum = ((Math.random () * 2 | 0) + 1) - 1; // random number between 0 and 1​
 ​
         // 从 data 数组中随机选取一个名字填入 input 框内
-        $ ("input").val (this.data[randomNum].name + " " + this.data[randomNum].age);
+        $("input").val(this.data[randomNum].name + " " + this.data[randomNum].age);
     }
 }
 ​
 // 给点击事件添加一个事件处理器
-$ ("button").click(user.clickHandler);
+$("button").click(user.clickHandler);
 ```
 
 当你点击按钮时, 会发现一个报错信息: 因为 clickHandler() 方法中的 this 绑定的是按钮 HTML 内容的上下文, 因为这才是 clickHandler 方法的执行时的调用对象.
@@ -66,7 +66,7 @@ $ ("button").click(user.clickHandler.bind(user));
 
 ```javascript
 if (!Function.prototype.bind) {
-  Function.prototype.bind = function (oThis) {
+  Function.prototype.bind = function(oThis) {
     if (typeof this !== "function") {
       // closest thing possible to the ECMAScript 5
       // internal IsCallable function
