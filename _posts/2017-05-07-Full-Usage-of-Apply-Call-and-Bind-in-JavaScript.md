@@ -54,10 +54,10 @@ $("button").click(user.clickHandler);
 
 在 JavaScript 中这种问题比较常见, JavaScript 框架中例如 Backbone.js, jQuery 都自动为我们做好了绑定的工作, 所以在使用时 this 总是可以绑定到我们所期望的那个对象上.
 
-为了解决之前例子中存在的问题, 我们利用 bind() 方法将 `$ ("button").click (user.clickHandler);` 换成以下形式:
+为了解决之前例子中存在的问题, 我们利用 bind() 方法将 `$("button").click(user.clickHandler);` 换成以下形式:
 
 ```javascript
-$ ("button").click(user.clickHandler.bind(user));
+$("button").click(user.clickHandler.bind(user));
 ```
 
 再考虑另一个方法来修复 this 的值: 你可以给 click() 方法传递一个匿名回调函数, jQuery 会将匿名函数的 this 绑定到按钮对象上.
@@ -111,7 +111,7 @@ var user = {
     showData:function(event) {
         var randomNum = ((Math.random () * 2 | 0) + 1) - 1; // random number between 0 and 1​
 ​
-        console.log (this.data[randomNum].name + " " + this.data[randomNum].age);
+        console.log(this.data[randomNum].name + " " + this.data[randomNum].age);
     }
 ​
 }
