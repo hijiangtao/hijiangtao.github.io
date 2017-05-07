@@ -47,18 +47,18 @@ var user = {
 }
 ​
 // 给点击事件添加一个事件处理器
-$ ("button").click (user.clickHandler);
-```javascript
+$ ("button").click(user.clickHandler);
+```
 
-当你点击按钮时, 会发现一个报错信息: 因为 clickHandler() 方法中的 this 绑定的是按钮 HTML 内容的上下文, 因为这才是 clickHandler方法的执行时的调用对象.
+当你点击按钮时, 会发现一个报错信息: 因为 clickHandler() 方法中的 this 绑定的是按钮 HTML 内容的上下文, 因为这才是 clickHandler 方法的执行时的调用对象.
 
 在 JavaScript 中这种问题比较常见, JavaScript 框架中例如 Backbone.js, jQuery 都自动为我们做好了绑定的工作, 所以在使用时 this 总是可以绑定到我们所期望的那个对象上.
 
 为了解决之前例子中存在的问题, 我们利用 bind() 方法将 `$ ("button").click (user.clickHandler);` 换成以下形式:
 
 ```javascript
-$ ("button").click (user.clickHandler.bind (user));
-```javascript
+$ ("button").click(user.clickHandler.bind(user));
+```
 
 再考虑另一个方法来修复 this 的值: 你可以给 click() 方法传递一个匿名回调函数, jQuery 会将匿名函数的 this 绑定到按钮对象上.
 
@@ -75,8 +75,8 @@ if (!Function.prototype.bind) {
 
     var aArgs = Array.prototype.slice.call(arguments, 1), 
         fToBind = this, // 此处的 this 指向目标函数
-        fNOP = function () {},
-        fBound = function () {
+        fNOP = function() {},
+        fBound = function() {
           return fToBind.apply(this instanceof fNOP
             ? this // 此处 this 为 调用 new obj() 时所生成的 obj 本身
             : oThis || this, // 若 oThis 无效则将 fBound 绑定到 this
@@ -91,7 +91,7 @@ if (!Function.prototype.bind) {
     return fBound;
   };
 }
-```javascript
+```
 
 继续之前的例子, 如果我们将包含 this 的方法赋值给一个变量, 那么 this 的指向也会绑定到另一个对象上, 如下所示:
 
@@ -108,7 +108,7 @@ var user = {
         {name:"T. Woods", age:37},
         {name:"P. Mickelson", age:43}
     ],
-    showData:function (event) {
+    showData:function(event) {
         var randomNum = ((Math.random () * 2 | 0) + 1) - 1; // random number between 0 and 1​
 ​
         console.log (this.data[randomNum].name + " " + this.data[randomNum].age);
@@ -119,8 +119,8 @@ var user = {
 // 将 user 对象的 showData 方法赋值给一个变量
 var showDataVar = user.showData;
 ​
-showDataVar (); // Samantha 12 (来自全局变量数组而非局部变量数组)​
-```javascript
+showDataVar(); // Samantha 12 (来自全局变量数组而非局部变量数组)​
+```
 
 当我们执行 showDataVar() 函数时, 输出到 console 的数值来自全局 data 数组, 而不是 user 对象. 这是因为 showDataVar() 函数是被当做一个全局函数执行的, 所以在函数内部 this 被绑定位全局对象, 即浏览器中的 window 对象.
 
@@ -128,8 +128,8 @@ showDataVar (); // Samantha 12 (来自全局变量数组而非局部变量数组
 
 ```javascript
 // Bind the showData method to the user object
-var showDataVar = user.showData.bind (user);
-```javascript
+var showDataVar = user.showData.bind(user);
+```
 
 ## Bind 方法允许我们实现函数借用
 
@@ -147,9 +147,9 @@ var cars = {
 ​
 // 我们从之前定义的 user 对象借用 showData 方法
 // 这里我们将 user.showData 方法绑定到刚刚新建的 cars 对象上​
-cars.showData = user.showData.bind (cars);
+cars.showData = user.showData.bind(cars);
 cars.showData(); // Honda Accord 14​
-```javascript
+```
 
 这里存在一个问题, 当我们在 cars 对象上添加一个新方法(showData)时我们可能不想只是简单的借用一个函数那样, 因为 cars 本身可能已经有一个方法或者属性叫做 showData 了, 我们不想意外的将这个方法覆盖了. 正如在之后的 *Apply 和 Call 方法* 章节我们会介绍, 借用函数的最佳实践应该是使用 Apply 或者 Call 方法.
 
@@ -172,12 +172,12 @@ increment(2);
 
 addTen(2);
 // 12
-```javascript
+```
 
 现在, 我们使用 bind() 方法来实现函数的柯里化. 我们首先定义一个接收三个参数的 greet() 函数:
 
 ```javascript
-function greet (gender, age, name) {
+function greet(gender, age, name) {
     // if a male, use Mr., else use Ms.​
     var salutation = gender === "male" ? "Mr. " : "Ms. ";
 
@@ -188,7 +188,7 @@ function greet (gender, age, name) {
         return "Hey, " + name + ".";
     }
 }
-```javascript
+```
 
 接着我们使用 bind() 方法柯里化 greet() 方法. bind() 接收的第一个参数指定了 this 的值:
 
@@ -196,12 +196,12 @@ function greet (gender, age, name) {
  // 在 greet 函数中我们可以传递 null, 因为函数中并未使用到 this 关键字
 var greetAnAdultMale = greet.bind (null, "male", 45);
 ​
-greetAnAdultMale ("John Hartlove"); // "Hello, Mr. John Hartlove."​
+greetAnAdultMale("John Hartlove"); // "Hello, Mr. John Hartlove."​
 ​
-var greetAYoungster = greet.bind (null, "", 16);
-greetAYoungster ("Alex"); // "Hey, Alex."​
-greetAYoungster ("Emma Waterloo"); // "Hey, Emma Waterloo."​
-```javascript
+var greetAYoungster = greet.bind(null, "", 16);
+greetAYoungster("Alex"); // "Hey, Alex."​
+greetAYoungster("Emma Waterloo"); // "Hey, Emma Waterloo."​
+```
 
 当我们用 bind() 实现柯里化时, greet() 函数参数中除了最后一个参数都被预定义好了, 所以当我们调用柯里化后的新函数时只需要指定最后一位参数.
 
@@ -249,7 +249,7 @@ avg.call(gameController, gameController.scores);
 ​
 console.log(window.avgScore); // 全局变量 avgScore 的值​
 console.log(gameController.avgScore); // 46.4
-```javascript
+```
 
 以上例子中 call() 中的第一个参数明确了 this 的指向, 第二参数被传递给了 avg() 函数.
 
@@ -270,19 +270,19 @@ var clientData = {
     }
 }
 
-function getUserInput (firstName, lastName, callback, callbackObj) {
+function getUserInput(firstName, lastName, callback, callbackObj) {
     // 使用 apply 方法将 "this" 绑定到 callbackObj 对象
-    callback.apply (callbackObj, [firstName, lastName]);
+    callback.apply(callbackObj, [firstName, lastName]);
 }
-```javascript
+```
 
 如下样例中传递给 callback 函数
 中的参数将会在 clientData 对象中被设置/更新.
 
 ```javascript
-getUserInput ("Barack", "Obama", clientData.setUserName, clientData);
-console.log (clientData.fullName); // Barack Obama​
-```javascript
+getUserInput("Barack", "Obama", clientData.setUserName, clientData);
+console.log(clientData.fullName); // Barack Obama​
+```
 
 ## 使用 Apply 或者 Call 借用函数(必备知识)
 
@@ -291,69 +291,69 @@ console.log (clientData.fullName); // Barack Obama​
 ```javascript
 // An array-like object: note the non-negative integers used as keys​
 var anArrayLikeObj = {0:"Martin", 1:78, 2:67, 3:["Letta", "Marieta", "Pauline"], length:4 };
-```javascript
+```
 
 接下来我们可以这样使用数组的原生方法:
 
 ```javascript
  // Make a quick copy and save the results in a real array:​
 // First parameter sets the "this" value​
-var newArray = Array.prototype.slice.call (anArrayLikeObj, 0);
+var newArray = Array.prototype.slice.call(anArrayLikeObj, 0);
 ​
-console.log (newArray); // ["Martin", 78, 67, Array[3]]​
+console.log(newArray); // ["Martin", 78, 67, Array[3]]​
 ​
 // Search for "Martin" in the array-like object​
-console.log (Array.prototype.indexOf.call (anArrayLikeObj, "Martin") === -1 ? false : true); // true​
+console.log(Array.prototype.indexOf.call(anArrayLikeObj, "Martin") === -1 ? false : true); // true​
 ​
 // Try using an Array method without the call () or apply ()​
-console.log (anArrayLikeObj.indexOf ("Martin") === -1 ? false : true); // Error: Object has no method 'indexOf'​
+console.log(anArrayLikeObj.indexOf("Martin") === -1 ? false : true); // Error: Object has no method 'indexOf'​
 ​
 // Reverse the object:​
-console.log (Array.prototype.reverse.call (anArrayLikeObj));
+console.log(Array.prototype.reverse.call(anArrayLikeObj));
 // {0: Array[3], 1: 67, 2: 78, 3: "Martin", length: 4}​
 ​
 // Sweet. We can pop too:​
-console.log (Array.prototype.pop.call (anArrayLikeObj));
-console.log (anArrayLikeObj); // {0: Array[3], 1: 67, 2: 78, length: 3}​
+console.log(Array.prototype.pop.call(anArrayLikeObj));
+console.log(anArrayLikeObj); // {0: Array[3], 1: 67, 2: 78, length: 3}​
 ​
 // What about push?​
-console.log (Array.prototype.push.call (anArrayLikeObj, "Jackie"));
-console.log (anArrayLikeObj); // {0: Array[3], 1: 67, 2: 78, 3: "Jackie", length: 4}​
-```javascript
+console.log(Array.prototype.push.call(anArrayLikeObj, "Jackie"));
+console.log(anArrayLikeObj); // {0: Array[3], 1: 67, 2: 78, 3: "Jackie", length: 4}​
+```
 
 这样的操作使得我们定义的对象既保留有所有对象的属性, 同时也能够在对象上使用数组方法.
 
-**arguments** 对象是所有 JavaScript 函数中的一个类数组对象, 因此 call () 和 apply() 的一个最常用的用法是从 arguments 中提取参数并将其传递给一个函数.
+**arguments** 对象是所有 JavaScript 函数中的一个类数组对象, 因此 call() 和 apply() 的一个最常用的用法是从 arguments 中提取参数并将其传递给一个函数.
 
 以下为 Ember.js 源码中的一部分, 加上了我的一些注释:
 
 ```javascript
-function transitionTo (name) {
+function transitionTo(name) {
     // 因为 arguments 是一个类数组对象, 所以我们可以使用 slice()来处理它
     // 参数 "1" 表示我们返回一个从下标为1到结尾元素的数组
-    var args = Array.prototype.slice.call (arguments, 1);
+    var args = Array.prototype.slice.call(arguments, 1);
 ​
     // 添加该行代码用于查看 args 的值
-    console.log (args);
+    console.log(args);
 ​
     // 注释本例不需要使用到的代码
     //doTransition(this, name, this.updateURL, args);​
 }
 ​
 // 使用案例
-transitionTo ("contact", "Today", "20"); // ["Today", "20"]​
-```javascript
+transitionTo("contact", "Today", "20"); // ["Today", "20"]​
+```
 
 以上例子中, args 变量是一个真正的数组. 从以上案例中我们可以写一个得到快速得到传递给函数的所有参数(以数组形式)的函数:
 
 ```javascript
-function doSomething () {
-    var args = Array.prototype.slice.call (arguments);
-    console.log (args);
+function doSomething() {
+    var args = Array.prototype.slice.call(arguments);
+    console.log(args);
 }
 ​
-doSomething ("Water", "Salt", "Glue"); // ["Water", "Salt", "Glue"]​
-```javascript
+doSomething("Water", "Salt", "Glue"); // ["Water", "Salt", "Glue"]​
+```
 
 考虑到字符串是不可变的, 如果使用 apply 或者 call 方法借用字符串的方法, 不可变的数组操作对他们来说才是有效的, 所以你不能使用类似 reverse 或者 pop 等等这类的方法. 除此外, 我们也可以用他们借用我们自定义的方法.
 
@@ -370,32 +370,32 @@ var gameController = {
 var appController = {
     scores  :[900, 845, 809, 950],
     avgScore:null,
-    avg     :function () {
-        var sumOfScores = this.scores.reduce(function (prev, cur, index, array) {
+    avg     :function() {
+        var sumOfScores = this.scores.reduce(function(prev, cur, index, array) {
             return prev + cur;
         });
         this.avgScore = sumOfScores / this.scores.length;
     }
 }
 ​
-// Note that we are using the apply () method, so the 2nd argument has to be an array​
-appController.avg.apply (gameController);
-console.log (gameController.avgScore); // 46.4​
+// Note that we are using the apply() method, so the 2nd argument has to be an array​
+appController.avg.apply(gameController);
+console.log(gameController.avgScore); // 46.4​
 ​
 // appController.avgScore is still null; it was not updated, only gameController.avgScore was updated​
-console.log (appController.avgScore); // null​
-```javascript
+console.log(appController.avgScore); // null​
+```
 
 这个例子非常简单, 我们定义的 gameController 对象借用了 appController 对象的 avg() 方法. 你也许会想, 如果我们借用的函数定义发生了变化, 那么我们的代码会发生什么变化. 借用(复制后)的函数也会变化么, 还是说他在完整复制后已经和原始的方法切断了联系? 让我们用下面这个小例子来说明这个问题:
 
 ```javascript
-appController.maxNum = function () {
-    this.avgScore = Math.max.apply (null, this.scores);
+appController.maxNum = function() {
+    this.avgScore = Math.max.apply(null, this.scores);
 }
 ​
-appController.maxNum.apply (gameController, gameController.scores);
-console.log (gameController.avgScore); // 77​
-```javascript
+appController.maxNum.apply(gameController, gameController.scores);
+console.log(gameController.avgScore); // 77​
+```
 
 正如我们所期望的那样, 如果我们修改原始的方法, 这样的变化会在借用实例的方法上体现出来. 我们总是希望如此, 因为我们从来不希望完整的复制一个方法, 我们只是想简单的借用一下.
 
@@ -406,22 +406,22 @@ console.log (gameController.avgScore); // 77​
 Math.max() 方法是 JavaScript 中一个常见的参数可变函数:
 
 ```javascript
-console.log (Math.max (23, 11, 34, 56)); // 56
-```javascript
+console.log(Math.max(23, 11, 34, 56)); // 56
+```
 
 但如果我们有一个数组要传递给 Math.max(), 是不能这样做的:
 
 ```javascript
 var allNumbers = [23, 11, 34, 56];
-console.log (Math.max (allNumbers)); // NaN
-```javascript
+console.log(Math.max(allNumbers)); // NaN
+```
 
 使用 apply 我们可以像下面这样传递数组:
 
 ```javascript
 var allNumbers = [23, 11, 34, 56];
-console.log (Math.max.apply (null, allNumbers)); // 56
-```javascript
+console.log(Math.max.apply(null, allNumbers)); // 56
+```
 
 正如之前讨论, apply() 的第一个参数用于设置 this 的指向, 但是 Math.max() 并未使用到 this, 所以我们传递 null 给他.
 
@@ -431,16 +431,16 @@ console.log (Math.max.apply (null, allNumbers)); // 56
 var students = ["Peter Alexander", "Michael Woodruff", "Judy Archer", "Malcolm Khan"];
 
 // 不定义参数, 因为我们可以传递任意多个参数进入该函数​
-function welcomeStudents () {
-    var args = Array.prototype.slice.call (arguments);
+function welcomeStudents() {
+    var args = Array.prototype.slice.call(arguments);
 ​
-    var lastItem = args.pop ();
-    console.log ("Welcome " + args.join (", ") + ", and " + lastItem + ".");
+    var lastItem = args.pop();
+    console.log("Welcome " + args.join (", ") + ", and " + lastItem + ".");
 }
 ​
-welcomeStudents.apply (null, students);
+welcomeStudents.apply(null, students);
 // Welcome Peter Alexander, Michael Woodruff, Judy Archer, and Malcolm Khan.
-```javascript
+```
 
 ## 区别与注意事项
 
