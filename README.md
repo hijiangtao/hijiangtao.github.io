@@ -21,6 +21,8 @@ iframe: PUT YOUR URL HERE, such as https://hijiangtao.github.io/slides/s-D3-Basi
 ---
 ```
 
+Progressive Web APP Support: TBD
+
 ## Serve locally
 
 ```
