@@ -170,6 +170,10 @@ function WelcomeDialog() {
 
 ## Vue
 
+Vue 官网如此介绍自己：
+
+> 渐进式 JavaScript 框架
+
 相比之下， Vue 更适合零基础入门。因为只要我们通过 `script` 标签引入任一版本的 Vue.js 源码文件，即可以通过类似下面的操作去实现 MVVM 的双向绑定。
 
 ```
@@ -279,13 +283,15 @@ this.$emit('update:foo', newValue)
 
 React 通过 props 和 state 将状态管理给明确了出来，相应的在 Vue 中，props 和 store 用来实现类似的功能；Vue 中的 .sync 用于实现 prop 双向绑定，而 React 利用状态提升来解决组件间的共用状态数据的情况。与此同时，在计算属性、样式绑定、事件处理器、组件等方面，Vue 均以一种和 HTML/JavaScript 搭配的方式去定义实现，而另一方面 React 较早的引入很多思想来规范实践，因此为了更方便的使用 React， 开发者在使用的时候往往需要提前了解好 state/props/component/状态提升 等概念。另一方面， JSX 虽然是为了更灵活的定义组件而实现的语法扩展，但是在个人看来，这样的定义还是需要一定的适应时间，毕竟 XML 结合 JavaScript 的结构看上去还是有点奇怪。
 
-我最开始在实践中使用的是 Vue，当初还不需要了解很多类似状态管理或者组件开发的概念，所以结合原生 JavaScript 我也可以快速的开发出一个 MVVM 双向绑定的页面，而后随着需求越来越复杂，我也可以渐进的去了解更多的 Vue 生态的相关知识。但是如果换做 React 可能最开始学习成本会相比之下高出很多。同样的，相同的功能在 Vue 中实现所需要的代码会比 React 要少不少。
+我最开始在实践中使用的是 Vue，当初还不需要了解很多类似状态管理或者组件开发的概念，所以结合原生 JavaScript 我也可以快速的开发出一个 MVVM 双向绑定的页面，而后随着需求越来越复杂，我也可以渐进的去了解更多的 Vue 生态的相关知识。但是如果换做 React 可能最开始学习成本会相比之下高出很多。同样的，相同的功能在 Vue 中实现所需要的代码会比 React 少不少。
 
-由于个人原因，最近开始学习 React，可能是因为对于 Vue + Vuex + Vue-router 这一套系统稍有了解了，所以 React 看起来会有几分相似的缘故，相应的生态里 React 也具有 React + Redux + React router。简短的将 React 快速入门的文档看了一遍下来，发现其中很多思想还是值得提前去了解好的，虽然刚开始需要一段时间学习、但是随之而来在开发上给自己带来的收益会远远超出自己开始的付出，这使得自己能够尽早的写出架构更完美的代码。
+由于个人原因，最近开始学习 React，可能是因为对于 Vue + Vuex + Vue-router 这一套系统稍有了解了，所以 React 看起来很容易理解其中的一些设计思想，相应的生态里 React 也具有 React + Redux + React router。简短的将 React 快速入门的文档看了一遍下来，发现其中很多思想还是值得提前去了解好的，虽然刚开始需要一段时间学习、但是随之而来在开发上给自己带来的收益会远远超出自己开始的付出，相比 Vue 的渐进式开发，React 能“强迫”自己尽早的写出结构更完美的代码。
+
+## 总结
 
 ECMAScript 标准以及实现是前端工程师需要去详细透彻了解的内容，框架只是提升我们工作效率的一个手段。当然，闲暇之余，React/Vue/Angular 的设计思想还是值得我们去研究的，这对我们写出更好的代码以及设计更好的应用架构都很有很大的帮助。
 
-最近，用 Vue + Vuex + Vue-router + PWA 等开发了一个简单的笔记应用，代码可以在 [Github](https://github.com/hijiangtao/octo-note) 查看，在线演示见 [demo](https://hijiangtao.github.io/octo-note/)。
+最近，用 Vue + Vuex + Vue-router + PWA + HTML5 localStorage 开发了一个简单的笔记应用，代码可以在 [Github](https://github.com/hijiangtao/octo-note) 查看，在线演示见 [demo](https://hijiangtao.github.io/octo-note/)。
 
 与此同时，由于学习 React，跟着入门教程也开发了一版 tic-tac-toe 游戏，代码见 [Github](https://github.com/hijiangtao/tic-tac-toe)，在线演示见 [demo](https://hijiangtao.github.io/tic-tac-toe/)。
 
