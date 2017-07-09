@@ -36,7 +36,7 @@ excerpt: 什么是物理像素、虚拟像素、逻辑像素、设备像素，�
 一个参考像素即为从一臂之遥看解析度为 96DPI 的设备输出（即1英寸96点）时，1点（即1/96英寸）的视角。它并不是1/96英寸长度，而是从一臂之遥的距离处看解析度为 96DPI 的设备输出一单位（即1/96英寸）时视线与水平线的夹角。通常认为常人臂长为28英寸，所以它的视角是:
 (1/96)in / (28in * 2 * PI / 360deg) = 0.0213度。如下图是一个示意图：
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-2.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-2.png )
 
 对于人来说，眼睛看到的大小取决于可视角度。而可视角度取决于物体的实际大小以及物体与眼睛的距离。10米远处一个1米见方的东西，与1米远处的10厘米见方的东西，看上去的大小差不多是一样的，所谓一叶障目不见泰山，讲的就是这个常识。
 
@@ -64,7 +64,7 @@ excerpt: 什么是物理像素、虚拟像素、逻辑像素、设备像素，�
 
 * **像素密度**：从 iPhone4 开始，苹果推出了 Retina 屏，分辨率提高了一倍（640*960），而屏幕尺寸却没变。这时一个css像素=2个设备像素（换算公式为 `1px = (dpr)^2 * 1dp`, 必须让css中的1px代表更多的设备像素，才能让1px的东西在屏幕上的大小与那些低分辨率的设备差不多，否则会因太小而看不清），即 DPR=2，示意图如下：
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-1.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-1.png )
 
 * **缩放操作**：缩放也会引起 css 中 px 的变化。放大页面到200%，字体大小与元素宽度的像素值不变，只是css的1px代表设备像素中的4px，宽高都是200%，DPR增加了。此时，获取 `screen.width` 值不变，而 `window.innerWidth/Height` 值（visual viewport）变成原来的一半。缩放值越大，当前 viewport 宽度会越小。
 
@@ -72,7 +72,7 @@ excerpt: 什么是物理像素、虚拟像素、逻辑像素、设备像素，�
 
 举个例子说明 CSS 像素的相对性，如下示意图：
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-3.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-3.png )
 
 作为Web开发者，我们接触的更多的是用于控制元素样式的样式单位像素。这里的像素我们称之为CSS像素。假设我们用PC浏览器打开一个页面，浏览器此时的效果如左图所示，但如果我们把页面放大（通过“Ctrl键”加上“+号键”），此时块状容器则横向扩张，如右图所示（黑色为实际效果，灰色为原来效果）。吊诡的是此时我们既没有调整浏览器窗口大小，也没有改变块状元素的css宽度，但是它看上去却变大了一倍——这是因为我们把CSS像素放大为了原来的两倍。
 
@@ -89,7 +89,7 @@ CSS像素 = 设备独立像素 = 逻辑像素
 
 有关倍率，我们用 iPhone 3gs 和 4s 来举例。假设有个邮件列表界面，我们不妨按照PC端网页设计的思维来想象。3gs上大概只能显示4-5行，4s就能显示9-10行，而且每行会变得特别宽。但两款手机其实是一样大的。如果照这种方式显示，3gs上刚刚好的效果，在4s上就会小到根本看不清字。
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-4.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-4.png )
 
 在现实中，这两者效果却是一样的。这是因为Retina屏幕把2x2个像素当1个像素使用。比如原本44像素高的顶部导航栏，在Retina屏上用了88个像素的高度来显示。导致界面元素都变成2倍大小，反而和3gs效果一样了。画质却更清晰。
 
@@ -105,7 +105,7 @@ CSS像素 = 设备独立像素 = 逻辑像素
 
 然而，layout viewport 的宽度是大于浏览器可视区域的宽度的，所以我们还需要一个viewport来代表 浏览器可视区域的大小，我们叫他 **visual viewport**。visual viewport 的宽度可以通过 window.innerWidth 来获取，但在 Android 2, Oprea mini 和 UC 8 中无法正确获取。下图为两个 viewport 的示意图：
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-6.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-6.png )
 
 现在我们已经有两个viewport了 - layout viewport 和 visual viewport。但浏览器觉得还不够，因为现在越来越多的网站都会为移动设备进行单独的设计，所以必须还要有一个能完美适配移动设备的 viewport。所谓的完美适配指的是，首先不需要用户缩放和横向滚动条就能正常的查看网站的所有内容；第二，显示的文字的大小是合适，比如一段14px大小的文字，不会因为在一个高密度像素的屏幕里显示得太小而无法看清，理想的情况是这段14px的文字无论是在何种密度屏幕，何种分辨率下，显示出来的大小都是差不多的。当然，不只是文字，其他元素像图片什么的也是这个道理，这就是第三个 viewport ——移动设备的理想 viewport (ideal viewport)。
 
@@ -169,7 +169,7 @@ width=400表示把当前viewport的宽度设为400px，initial-scale=1则表示�
 
 所以总结一下：**在iphone和ipad上，无论你给viewport设的宽的是多少，如果没有指定默认的缩放值，则iphone和ipad会自动计算这个缩放值，以达到当前页面不会出现横向滚动条(或者说viewport的宽度就是屏幕的宽度)的目的。**
 
-![](/assets/in-post/2017-07-08-Device-Viewport-and-Pixel-Introduction-7.png "")
+![](/assets/in-post/2017-07-09-Device-Viewport-and-Pixel-Introduction-7.png )
 
 ### JavaScript 动态更改 meta viewport 标签
 
