@@ -1,5 +1,5 @@
 ---
-title: 如何监听页面 DOM 变动并利用截流／节流函数高效响应
+title: 如何监听页面 DOM 变动并高效响应
 layout: post
 thread: 179
 date: 2017-08-03
