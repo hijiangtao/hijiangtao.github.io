@@ -17,9 +17,9 @@ excerpt: 最近在做 chrome 插件开发，既然是插件那就难免不对现
 
 首先假设大家已经知道 JavaScript 中事件的发生阶段（捕获-命中-冒泡），附上一张图带过这个内容，我们直接进入寻找解决方法的过程。
 
-![]()
+![](https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg )
 
-> [Graphical representation of an event dispatched in a DOM tree using the DOM event flow](https://www.w3.org/TR/DOM-Level-3-Events/#dom-event-architecture)
+*[Graphical representation of an event dispatched in a DOM tree using the DOM event flow](https://www.w3.org/TR/DOM-Level-3-Events/#dom-event-architecture)*
 
 开始的时候我一直在 window 状态改变涉及到的事件中寻找，一圈搜寻下来发现也就 `onload` 事件最接近了，所以我们看看 MDN 对该事件的定义：
 
