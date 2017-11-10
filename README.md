@@ -1,7 +1,6 @@
 # [Joe's Blog](https://hijiangtao.github.io/)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cd4fd74b864245a391d8678f1f458359)](https://www.codacy.com/app/hijiangtao/hijiangtao.github.io?utm_source=github.com&utm_medium=referral&utm_content=hijiangtao/hijiangtao.github.io&utm_campaign=badger)
-<!-- [![Build Status](https://travis-ci.org/hijiangtao/hijiangtao.github.io.svg?branch=master)](https://travis-ci.org/hijiangtao/hijiangtao.github.io) -->
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cd4fd74b864245a391d8678f1f458359)](https://www.codacy.com/app/hijiangtao/hijiangtao.github.io?utm_source=github.com&utm_medium=referral&utm_content=hijiangtao/hijiangtao.github.io&utm_campaign=badger) [![GitHub contributors](https://img.shields.io/github/contributors/hijiangtao/hijiangtao.github.io.svg)]() [![GitHub issues](https://img.shields.io/github/issues/hijiangtao/hijiangtao.github.io.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contribute) [![license](https://img.shields.io/github/license/hijiangtao/hijiangtao.github.io.svg)]() [![Travis](https://img.shields.io/travis/hijiangtao/hijiangtao.github.io/master.svg)]()
 
 ## Features
 
