@@ -1,5 +1,5 @@
 ---
-title: JavaScript 中至关重要的 Apply, Call 和 Bind
+title: \[译\] JavaScript 中至关重要的 Apply, Call 和 Bind
 layout: post
 thread: 173
 date: 2017-05-07
