@@ -4,7 +4,7 @@ layout: post
 title: 2014年美国数学建模题目及翻译
 thread: 22
 categories: Documents
-tags: [数学建模]
+tags: [数学建模, Translation]
 excerpt: 
 ---
 
