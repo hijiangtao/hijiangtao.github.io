@@ -7,6 +7,9 @@ author: Joe Jiang
 categories: documents
 tags: [2017, JavaScript, FE, Translation]
 excerpt: 前端领域在 2017 年再次以狂热的节奏向前发展。该文章列出过去的一年中最值得关注的一系列事情。
+header:
+  image: ../assets/in-post/2017-12-18-A-Recap-of-Front-End-Development-in-2017-teaser.png
+  caption: "From Internet"
 ---
 
 > 原文 - A recap of front-end development in 2017
