@@ -9,7 +9,7 @@ tags: [WebAssembly, JavaScript, FAQ, Translation]
 excerpt: WebAssembly 或者 wasm 是一个可移植、体积小、加载快并且兼容 Web 的全新格式，针对刚了解该概念的新手来说，肯定充满不少疑惑。WebAssembly 官网针对常见的疑惑进行了解答，本文基于该内容对其进行了翻译，希望能够给大家进一步了解 WebAssembly 这项新技术带来帮助。
 header:
   image: ../assets/in-post/2017-07-31-WebAssembly-CN-FAQ.png
-  caption: "Edited from [web](https://medium.com/@ianjsikes/get-started-with-rust-webassembly-and-webpack-58d28e219635)"
+  caption: "©hijiangtao"
 ---
 
 **前言**： WebAssembly 或者 wasm 是一个可移植、体积小、加载快并且兼容 Web 的全新格式，针对刚了解该概念的新手来说，肯定充满不少疑惑。WebAssembly 官网针对常见的疑惑进行了解答，本文基于该内容对其进行了翻译，希望能够给大家进一步了解 WebAssembly 这项新技术带来帮助。
