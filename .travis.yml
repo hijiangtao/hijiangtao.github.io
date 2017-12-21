@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.3.3
 
-before_script: bundle install
+install: bundle install
 script: bundle exec jekyll serve
 
 env:
