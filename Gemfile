@@ -17,7 +17,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll"
 gem "jekyll-paginate"
 
-gem "rake"
+# gem "rake"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
