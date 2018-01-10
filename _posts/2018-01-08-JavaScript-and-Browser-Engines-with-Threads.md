@@ -166,6 +166,8 @@ JavaScript 代码中有帧的概念，对于同步代码是在当前帧运行的
 
 这里需要明白的是：JavaScript 引擎的工作机制是当线程中没有执行任何同步代码的前提下才会执行异步代码，setTimeout 是异步代码，所以 setTimeout 只能等 JavaScript 引擎空闲才会执行。
 
+经网友指出，补充一句。该部分只是简单的介绍了关于 JavaScript 执行的内容，更多内容可以查看《[定时器](http://javascript.ruanyifeng.com/advanced/timer.html)》以及《[JavaScript 运行机制详解：再谈Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)》。
+
 ## 总结
 
 总体来看，本文先介绍了浏览器的主要组件及各自功能，然后从前端开发的角度出发着重介绍了呈现引擎（也就是 UI 渲染线程）和 JavaScript 解释器（也就是 JavaScript 引擎线程）的作用以及各自的工作机制。
