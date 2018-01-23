@@ -21,6 +21,8 @@ header:
 > 译者 - [hijiangtao](https://github.com/hijiangtao)
 >
 > 译文地址 - <https://hijiangtao.github.io/2017/12/18/A-Recap-of-Front-End-Development-in-2017/>
+>
+> 知乎专栏 - <https://zhuanlan.zhihu.com/p/32119668>
 
 前端领域在 2017 年再次以狂热的节奏向前发展。以下列出过去的一年中最值得关注的一系列事情。
 

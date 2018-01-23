@@ -21,8 +21,10 @@ header:
 > 译者 - [hijiangtao](https://github.com/hijiangtao)
 >
 > 译文地址 - <https://hijiangtao.github.io/2018/01/23/learn-react-js-from-top-45-tutorials-for-the-past-year-v-2018/>
+>
+> 知乎专栏 - <https://zhuanlan.zhihu.com/p/33207643>
 
-*译者注：原文作者研究了近1.8万篇 React.js 文章得出这篇总结，全文既包含 React 入门，进阶和综合应用专题，也包括对路由、React Native、动画、PWA等内容的专题介绍，非常适合用于对自己 React 技术栈的比对，用于查漏补缺，适合收藏阅读。译者保留了原文链接以及对应作者的 medium 或者 twitter 链接地址，方便读者进行进一步查看和学习。文中如有错误，欢迎评论指出。*
+*译者注：原文作者研究了近1.8万篇 React.js 文章得出这篇总结，全文既包含 React 入门，进阶和综合应用专题，也包括对路由、React Native、动画、PWA等内容的专题介绍，其中还不乏各大公司团队在前端重构的经验以及热门美剧《硅谷》在 react native 上的尝试，非常适合用于对自己 React 技术栈的比对，用于查漏补缺，适合收藏阅读。译者保留了原文链接以及对应作者的 medium 或者 twitter 链接地址，方便读者进行进一步查看和学习。文中如有错误，欢迎评论指出。*
 
 在2017年1月至12月之间，我们对比了近18000篇 React.js 文章，并从中挑选出在2018年最有可能帮助提升你 web 开发技能的45篇学习指南。
 
