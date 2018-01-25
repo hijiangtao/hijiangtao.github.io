@@ -1,5 +1,5 @@
 ---
-title: \[译\]从过去一年最好的文章中学习原生 JavaScript（2018版）
+title: \[译\]从2.4万篇文章中挑出的最棒的 JavaScript 学习指南（2018版）
 layout: post
 thread: 189
 date: 2018-01-25
@@ -12,7 +12,7 @@ header:
   caption: "From Mybridge"
 ---
 
-> 原文 - Learn React.js from Top 45 Tutorials for the past year (v.2018)
+> 原文 - Learn Plain JavaScript from Top Articles for the Past Year (v.2018)
 >
 > 原文作者 - Mybridge
 >
@@ -22,7 +22,7 @@ header:
 >
 > 译文地址 - <https://hijiangtao.github.io/2018/01/25/learn-plain-javascript-from-top-tutorials-for-the-past-year-v-2018/>
 >
-> 知乎专栏 - <https://zhuanlan.zhihu.com/p/>
+> 知乎专栏 - <https://zhuanlan.zhihu.com/p/33298555>
 
 *译者注：原文作者研究了近2.4万篇 JavaScript 文章得出这篇总结，全文包含学习指南、新人上手、Webpack、性能、基础概念、函数式编程、面试、教程案例、Async Await、并发、V8、机器学习、数据可视化、调试、单元测试等章节，非常适合用于对自己 JavaScript 技术栈的比对，用于查漏补缺，适合收藏阅读。有删减。文中如有错误，欢迎评论指出。*
 
