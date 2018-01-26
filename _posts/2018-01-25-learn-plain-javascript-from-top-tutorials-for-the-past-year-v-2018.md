@@ -16,7 +16,7 @@ header:
 >
 > 原文作者 - Mybridge
 >
-> 原文地址 - <https://github.com/jiwonbest/javascript-tutorial>
+> 原文地址 - <https://github.com/Mybridge/learn-javascript>
 > 
 > 译者 - [hijiangtao](https://github.com/hijiangtao)
 >
