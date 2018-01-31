@@ -6,7 +6,7 @@ date: 2018-01-31
 author: Joe Jiang
 categories: Documents
 tags: [2018, Web, JavaScript, Software]
-excerpt: 
+excerpt: 原文作者研究了近1.6万篇 Web 生态相关的文章得出这篇总结，全文既包含 Web 开发入门（前端相关），进阶和综合应用专题，也包括对 Web 生态中 Git/HTTPS/设计模式/Vim/性能/PWA 等内容的专题介绍，非常适合 Web 前端开发者用于查漏补缺，同时扩充自己的知识广度、并将眼界拓宽到前端领域之外，适合收藏阅读。译者保留了原文链接方便读者进行进一步查看和学习。
 header:
   image: ../assets/in-post/2018-01-31-learn-web-development-from-top-articles-of-the-year-v-2018-teaser.png
   caption: "From Mybridge"
