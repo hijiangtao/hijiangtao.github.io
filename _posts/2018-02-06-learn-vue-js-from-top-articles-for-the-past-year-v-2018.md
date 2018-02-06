@@ -1,5 +1,5 @@
 ---
-title: \[译\]从1万篇文章中挑出40篇最棒的 Vue 学习指南（2018版）
+title: \[译\]从1万篇文章中挑出的40篇最棒的 Vue 学习指南（2018版）
 layout: post
 thread: 191
 date: 2018-02-06
@@ -14,11 +14,11 @@ header:
 
 > 原文 - [Learn Vue.js from Top Articles for the Past Year (v.2018)](https://github.com/Mybridge/learn-vue.js)
 > 
-> 译文 - [从1万篇文章中挑出40篇最棒的 Vue 学习指南（2018版）](https://hijiangtao.github.io/2018/02/06/2018-02-06-learn-vue-js-from-top-articles-for-the-past-year-v-2018/)
+> 译文 - [从1万篇文章中挑出的40篇最棒的 Vue 学习指南（2018版）](https://hijiangtao.github.io/2018/02/06/2018-02-06-learn-vue-js-from-top-articles-for-the-past-year-v-2018/)
 >
-> 知乎专栏 - [地址](https://zhuanlan.zhihu.com/p/)
+> 知乎专栏 - [地址](https://zhuanlan.zhihu.com/p/33642051)
 
-*译者注：你们要的，有关 Vue 的最好学习指南来了！作者研究了近1万篇 Vue 生态相关的文章得出这篇总结，全文既包含新手指南、年度回顾也包括框架对比、案例分析等专题，非常适合 Vue 开发者用于查漏补缺、收藏阅读。请大家注意该文中的大部分链接原文均为英文。文中如有错误，欢迎评论指出。*
+*译者注：你们要的，有关 Vue 最棒的学习指南来了！作者研究了近1万篇 Vue 生态相关的文章得出这篇总结，全文既包含新手指南、年度回顾也包括框架对比、案例分析等专题，非常适合 Vue 开发者用于查漏补缺、收藏阅读。请大家注意该文中的大部分链接原文均为英文。文中如有错误，欢迎评论指出。*
 
 *系列译文*
 
