@@ -1,5 +1,5 @@
 ---
-title: \[译\] JavaScript 十大新闻 - 2018年2月版
+title: \[译\]2018年1月 JavaScript 十大文章
 layout: post
 thread: 192
 date: 2018-02-11
