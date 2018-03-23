@@ -8,7 +8,7 @@ git add .
 # commit changes
 # read commitMessage
 now = date +"%Y-%m-%d %H:%M:%S"
-git commit -am "[update post] - $now"
+git commit -am "[update post] - `date +"%Y-%m-%d %H:%M:%S"`"
 # push to git remote repository
 git push origin master
 ###########################
