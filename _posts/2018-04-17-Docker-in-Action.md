@@ -32,7 +32,7 @@ header:
 5. 总结
 6. 参考
 
-其中第一章与第二章非常详细地介绍了 Docker 的相关概念与基本组成，主要是概论介绍等文字描述，第三章与第四章偏重于上手实践，从 Docker 环境安装、运行加速、镜像使用、镜像构成到镜像定制与发布，分解了各步骤的流程，通过教程加注解的形式加深读者印象。
+其中第一章与第二章非常详细地介绍了 Docker 的相关概念与基本组成，主要是概论介绍等文字描述，第三章与第四章偏重于上手实践，从 Docker 环境安装、运行加速、镜像使用、镜像构成到镜像定制与发布，分解了各步骤的流程，通过教程加注解的形式加深读者印象。其中建立镜像的示例代码可以从 [GitHub](https://github.com/hijiangtao/friendlyhello-docker) 打包下载。
 
 由于软硬件环境变化日新月异，除概念介绍与解读部分，在运行本文代码之前请确保运行环境以及 Docker 自身版本。本文代码均运行于 macOS 环境（macOS Sierra 10.12.5），所使用 Docker 版本为 18.03.0-ce。
 
@@ -610,7 +610,7 @@ docker push hijiangtao/friendlyhello:v1
 docker run -p 4000:80 hijiangtao/friendlyhello:v1
 ```
 
-如果我们经常更新镜像，可以尝试使用自动创建（Automated Builds）功能来简化我们的流程，这一块可以结合 GitHub 一起操作，对于需要经常升级镜像内程序来说，这会十分方便。本文中所述的镜像就托管在 [GitHub](https://github.com/hijiangtao/friendlyhello)。
+如果我们经常更新镜像，可以尝试使用自动创建（Automated Builds）功能来简化我们的流程，这一块可以结合 GitHub 一起操作，对于需要经常升级镜像内程序来说，这会十分方便。本文中所述的镜像就托管在 [GitHub](https://github.com/hijiangtao/friendlyhello-docker)。
 
 使用自动构建前，首先要要将 GitHub 或 Bitbucket 帐号连接到 Docker Hub。如果你使用了这种方式，那么每次你 `git commit` 之后都应该可以在你的 docker cloud 上看到类似下方的镜像构建状态。
 
