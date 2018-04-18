@@ -1,5 +1,5 @@
 ---
-title: 新手笔记之半小时 Docker 从入门到放弃
+title: Docker 学习新手笔记：从入门到放弃
 layout: post
 thread: 194
 date: 2018-04-17
