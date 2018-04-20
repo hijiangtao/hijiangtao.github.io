@@ -1,19 +1,22 @@
 ---
-title: 超大型 JavaScript 应用设计的哲学
+title: \[译\]超大型 JavaScript 应用设计的哲学
 layout: post
 thread: 195
 date: 2018-04-20
 author: Joe Jiang
 categories: Documents
 tags: [Application, Design, JavaScript, Software, 软件开发, 软件设计]
-excerpt: 大型 JavaScript 应用程序设计
+excerpt: 一个超大型 JavaScript 应用该如何设计，其中蕴含哪些哲学？来看看 Malte 在 JSConf 上是怎么说的吧。
+header:
+  image: ../assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-1.png
+  caption: "From medium.com/@cramforce"
 ---
 
-*前言：（待完善）*
+本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。希望本文能让大家有所收获。
 
-本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理翻译，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，所以译稿并不细抠每一词句，但会尽力保证原文语义不发生变化。
+原文 [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)，译者 [hijiangtao](https://github.com/hijiangtao)，以下开始正文。
 
-![Slide text: Hello, I used to build very large JavaScript applications.](https://cdn-images-1.medium.com/max/4024/1*DqvlkOgHSKmp5Tu1eX5mdw.png)
+![Slide text: Hello, I used to build very large JavaScript applications.](https://cdn-images-1.medium.com/max/800/1*DqvlkOgHSKmp5Tu1eX5mdw.png)
 <center><small>嗨，我曾经开发过非常大型的 JavaScript 应用</small></center>
 
 嗨，我曾经开发过非常大型的 JavaScript 应用。但我现在不再那么做了，所以是时候回顾一下我的收获并将它们分享出来了。昨天聚会上我正拿着一杯啤酒，被人问到：“嗨 Malte，究竟是什么经历让你能够讨论这个话题的？”尽管谈论自身让我觉得有些奇怪，但我想答案实际上就是这篇演讲的主题。我在 Google 开发了一个 JavaScript 框架，它被用在诸如 Photos，Sites，Plus，Drive，Play 以及搜索等站点上。你可能也使用过不少了，其中一些（网站）规模还挺大。
@@ -303,3 +306,15 @@ npm 所使用的 package.json 就是一个很好的例子。每个软件包的�
 <center><small>共鸣和经验 -> 正确的抽象</small></center>
 
 正如我在演讲开始时所说的：和团队中的工程师们一起思考吧，想想他们会如何使用你的 API​​ 与抽象。我做过不少错误的尝试，且我现在仍在继续，但我觉得应该是在向好的方向发展了。请记住，在为你的应用选择正确的抽象方式前，想办法与团队协作产生共鸣，并运用已有的经验来辅助自己。
+
+谢谢！
+
+（完）
+
+*题图来自 <https://medium.com/@cramforce>*
+
+*后记：前两天情封大大给我推荐了一篇文章，问我是否有意翻译分享一下。一看才发表两天就有6000多次鼓掌（现在快一万了），快速扫了全文感觉是篇很棒的演讲，便决定开始干，于是，真正的痛苦便开始了。*
+
+*Medium 预估原文阅读需耗时21分钟，这足以表明原文长度了，但这还不是最糟的，由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍，使得翻译过程缺失了不少上下文。自己答应大大做的事，喊着泪也要完成。于是开始了一遍遍的视频暂停、播放、回放等的过程，堪比高考做听力的那段痛苦经历啊。由于文中存在诸多口语表述，翻译时也不像技术文档或者教程那么连贯，这也是难点之一。*
+
+*好在最终坚持下来完成了，感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 的帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
