@@ -12,14 +12,22 @@ header:
   caption: "From medium.com/@cramforce"
 ---
 
+*前言：前两天情封大大给我推荐了一篇文章，问我是否有意翻译分享一下。乍一看这个才发表两天的文章就有6000多次鼓掌（现在快一万了），快速扫了全文感觉是篇很棒的演讲，便决定开始干，于是，真正的痛苦便开始了。*
+
+*Medium 预估原文阅读需耗时21分钟，这足以表明原文长度了，但这还不是最糟的，由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍以及遗漏，使得翻译过程发现语段间缺失了不少上下文（但并不妨碍这是一篇好文）。自己答应大大做的事，喊着泪也要完成。于是打开 Youtube 开始了一遍遍的视频暂停、播放、回放等的过程，堪比高考做听力的那段痛苦经历啊。由于文中存在诸多口语表述，翻译时也不像技术文档或者教程那么连贯，也是难点之一。*
+
+*好在最终坚持下来完成了，感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
+
 本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。希望本文能让大家有所收获。
+
+Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 应用，以确保不论开发人员多少、不论应用逻辑和 UI 多么繁重，用户在交互时首屏加载负担都能维持在较好的水平；二是如何保证应用在整个生命周期的轻量运行，即加载当前不需要的 JS 代码。整体演讲中，Malte 提到了几个概念，分别是懒惰装饰（lazy decoration），异步依赖注入（asynchronous dependency injection）和模块系统的反向依赖关系（reverse dependencies）。
 
 原文 [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)，译者 [hijiangtao](https://github.com/hijiangtao)，以下开始正文。
 
 ![Slide text: Hello, I used to build very large JavaScript applications.](https://cdn-images-1.medium.com/max/800/1*DqvlkOgHSKmp5Tu1eX5mdw.png)
 <center><small>嗨，我曾经开发过非常大型的 JavaScript 应用</small></center>
 
-嗨，我曾经开发过非常大型的 JavaScript 应用。但我现在不再那么做了，所以是时候回顾一下我的收获并将它们分享出来了。昨天聚会上我正拿着一杯啤酒，被人问到：“嗨 Malte，究竟是什么经历让你能够讨论这个话题的？”尽管谈论自身让我觉得有些奇怪，但我想答案实际上就是这篇演讲的主题。我在 Google 开发了一个 JavaScript 框架，它被用在诸如 Photos，Sites，Plus，Drive，Play 以及搜索等站点上。你可能也使用过不少了，其中一些（网站）规模还挺大。
+嗨，我曾经开发过非常大型的 JavaScript 应用。但我现在已不再做了，因此是时候回顾一下我的收获，并将它们分享出来了。昨天聚会上我正拿着一杯啤酒，被人问到：“嗨 Malte，究竟是什么经历让你能够讨论这个话题的？”尽管谈论自己让我觉得有些奇怪，但我想问题的答案实际上就是这篇演讲的主题。我在 Google 开发了一个 JavaScript 框架，它被用在诸如 Photos，Sites，Plus，Drive，Play 以及搜索等站点上。你可能也使用过不少了，其中一些（网站）规模还挺大。
 
 ![Slide text: I thought React was good.](https://cdn-images-1.medium.com/max/4032/1*v0r4OVf-RXr9ePakdmv5LQ.png)
 <center><small>我认为 React 很好</small></center>
@@ -29,7 +37,7 @@ header:
 ![Picture of lots of people.](https://cdn-images-1.medium.com/max/4032/1*LL3uYYDMT5uIFRxR_7JxPQ.png)
 <center><small>人山人海</small></center>
 
-那么，让我们来谈谈超大型应用都有哪些共同的特点吧。当然，都会有很多的开发者。可能几十个也可能更多，而他们都是有情感以及需要处理人际关系的人类，这一点是你必须考虑的事。
+那么，让我们来谈谈开发超大型应用的团队都有哪些共同的特点吧。当然，都会有很多的开发者。可能几十个也可能更多，而他们都是有情感以及需要处理人际关系的人类，这一点是你必须考虑的事。
 
 ![Picture of very old building.](https://cdn-images-1.medium.com/max/4032/1*WEH24kaBbar8-1gzN_AO3w.png)
 <center><small>古老建筑</small></center>
@@ -59,7 +67,7 @@ header:
 ![Slide text: “I can anticipate how API choices and abstractions impact the way other people would solve the problem.”](https://cdn-images-1.medium.com/max/4012/1*zBBGLRIZw94gp54pspvx-g.png)
 <center><small>“我可以预见 API 的选择和抽象方式是如何影响他人解决这个问题的”</small></center>
 
-让我们更具体一点。达到这个水平，你应该做到：“我可以预见，我决定和选择的 API 和在项目中引入的抽象，是如何影响到其他人解决一个问题的。”我认为这是一个很厉害的概念，它使我能够推断我正在做的决定是如何影响到一个应用（发展）的。
+让我们更具体一点。达到这个水平，你应该做到：“我可以预见，我决定和选择的 API 以及在项目中引入的抽象，是如何影响到其他人解决一个问题的。”我认为这是一个很厉害的概念，它使我能够推断我正在做的决定是如何影响到一个应用（发展）的。
 
 ![Slide text: An application of empathy.](https://cdn-images-1.medium.com/max/4004/1*LnDv6Ry0Hq2MaQEARaD8rg.png)
 <center><small>有共鸣的应用</small></center>
@@ -96,7 +104,7 @@ header:
 ![Slide text: Human](https://cdn-images-1.medium.com/max/4012/1*DqT7As1rm_M9cxyW1RIW6w.png)
 <center><small>人类</small></center>
 
-此外，人类参与了这部分工作，因为代码分离需要你给 bundle 定义分类并确定它们的加载时机，因此团队中工程师考虑这些逻辑，即何时何地加载这些 bundle。当每次有人参与时，编程模型都会明显地受到影响，因为人们需要考虑更多诸如此类的事情了。
+此外，人类参与了这部分工作，因为代码分离需要你给 bundle 定义分类并确定它们的加载时机，因此团队中工程师需要考虑这些逻辑，即何时何地加载这些 bundle。当每次有人参与时，编程模型都会明显地受到影响，因为人们需要考虑许多诸如此类的事情。
 
 ![Slide text: Route based code splitting](https://cdn-images-1.medium.com/max/4028/1*0jNa8A5ciY6pCJCN65vLiA.png)
 <center><small>基于路径的代码分离</small></center>
@@ -143,7 +151,7 @@ header:
 ![Slide text: Static -> Dynanic](https://cdn-images-1.medium.com/max/4012/1*N5AMAbobPjsO_lXCPt9-ZA.png)
 <center><small>静态 -> 动态</small></center>
 
-事情不再那么美好——一些静态的东西现在变成了动态的，这是改变编程模型受到改变的又一影响因素。
+事情不再那么美好——一些静态的东西现在变成了动态的，这是改变编程模型的又一个影响因素。
 
 ![Slide text: Who decides what to lazy load when?](https://cdn-images-1.medium.com/max/4012/1*j9OB_yjli59MZMyIs9V0_A.png)
 <center><small>“谁决定什么时候延迟加载？”</small></center>
@@ -163,7 +171,7 @@ header:
 ![Slide text: Only load logic if it was rendered.](https://cdn-images-1.medium.com/max/4020/1*vMskVnAwJgkZmvl4E-8E4Q.png)
 <center><small>仅在渲染完成时加载逻辑</small></center>
 
-所以，现在我们有两件分开的事情，且我们只在渲染完毕后才加载组件的应用程序逻辑。事实证明这是一个非常简单的模型，因为你可以在服务器端渲染一个页面，且不管渲染内容如何，然后触发加载关联的应用 bundle。这使得人们所扮演的角色从系统中脱离出来，因为加载是通过渲染自动触发的。
+所以，现在我们有两件分开的事情要做，且我们只在内容渲染完毕后才加载组件的应用程序逻辑。事实证明这是一个非常简单的模型，因为你可以在服务器端渲染一个页面，且不管渲染内容如何，然后触发加载相关联的应用 bundle。这使得人们所扮演的角色从应用中脱离了出来，因为加载是通过渲染自动触发的。
 
 ![Slide text: Currency converter on search result page.](https://cdn-images-1.medium.com/max/4024/1*Doqt-GOkUp13Qgk5r7WR1g.png)
 <center><small>搜索结果页面上的货币转换器</small></center>
@@ -305,16 +313,10 @@ npm 所使用的 package.json 就是一个很好的例子。每个软件包的�
 ![Slide text: Empathy and experience -> Right abstractions.](https://cdn-images-1.medium.com/max/4016/1*oNXlH0ththqRlPeRm2z0Sw.png)
 <center><small>共鸣和经验 -> 正确的抽象</small></center>
 
-正如我在演讲开始时所说的：和团队中的工程师们一起思考吧，想想他们会如何使用你的 API​​ 与抽象。我做过不少错误的尝试，且我现在仍在继续，但我觉得应该是在向好的方向发展了。请记住，在为你的应用选择正确的抽象方式前，想办法与团队协作产生共鸣，并运用已有的经验来辅助自己。
+正如我在演讲开始时所说的：和团队中的工程师们一起思考吧，想想他们会如何使用你的 API​​ 与抽象。我做过不少错误的尝试，现在可能仍在继续，但我觉得应该是在向好的方向发展了。请记住，在为你的应用选择正确的抽象方式前，想办法与团队协作产生共鸣，并运用已有的经验来辅助自己。
 
 谢谢！
 
 （完）
 
 *题图来自 <https://medium.com/@cramforce>*
-
-*后记：前两天情封大大给我推荐了一篇文章，问我是否有意翻译分享一下。一看才发表两天就有6000多次鼓掌（现在快一万了），快速扫了全文感觉是篇很棒的演讲，便决定开始干，于是，真正的痛苦便开始了。*
-
-*Medium 预估原文阅读需耗时21分钟，这足以表明原文长度了，但这还不是最糟的，由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍，使得翻译过程缺失了不少上下文。自己答应大大做的事，喊着泪也要完成。于是开始了一遍遍的视频暂停、播放、回放等的过程，堪比高考做听力的那段痛苦经历啊。由于文中存在诸多口语表述，翻译时也不像技术文档或者教程那么连贯，这也是难点之一。*
-
-*好在最终坚持下来完成了，感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 的帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
