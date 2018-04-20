@@ -8,7 +8,7 @@ categories: Documents
 tags: [Application, Design, JavaScript, Software, 软件开发, 软件设计]
 excerpt: 一个超大型 JavaScript 应用该如何设计，其中蕴含哪些哲学？来看看 Malte 在 JSConf 上是怎么说的吧。
 header:
-  image: ../assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-1.png
+  image: ../assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-teaser.png
   caption: "From medium.com/@cramforce"
 ---
 
