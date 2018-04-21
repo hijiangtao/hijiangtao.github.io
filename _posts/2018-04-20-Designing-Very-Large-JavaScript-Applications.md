@@ -1,5 +1,5 @@
 ---
-title: \[译\]超大型 JavaScript 应用设计的哲学
+title: \[译\] 超大型 JavaScript 应用设计的哲学
 layout: post
 thread: 195
 date: 2018-04-20
@@ -9,18 +9,18 @@ tags: [Application, Design, JavaScript, Software, 软件开发, 软件设计]
 excerpt: 一个超大型 JavaScript 应用该如何设计，其中蕴含哪些哲学？来看看 Malte 在 JSConf 上是怎么说的吧。
 header:
   image: ../assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-teaser.png
-  caption: "From medium.com/@cramforce"
+  caption: "Edited from Twitter@PrimitivePic"
 ---
 
-*前言：前两天情封大大给我推荐了一篇文章，问我是否有意翻译分享一下。乍一看这个才发表两天的文章就有6000多次鼓掌（现在快一万了），快速扫了全文感觉是篇很棒的演讲，便决定开始干，于是，真正的痛苦便开始了。*
+*前言：前两天情封大大给我推荐了一篇文章，问我是否有意翻译分享一下。乍一看这个才发表两天的文章就有6000多次鼓掌（现在已经10000+了），快速扫了全文感觉是篇很棒的演讲，便决定开始干，于是，真正的痛苦便开始了。*
 
-*Medium 预估原文阅读需耗时21分钟，这足以表明原文长度了，但这还不是最糟的，由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍以及遗漏，使得翻译过程发现语段间缺失了不少上下文（但并不妨碍这是一篇好文）。自己答应大大做的事，喊着泪也要完成。于是打开 Youtube 开始了一遍遍的视频暂停、播放、回放等的过程，堪比高考做听力的那段痛苦经历啊。由于文中存在诸多口语表述，翻译时也不像技术文档或者教程那么连贯，也是难点之一。*
+*Medium 预估原文阅读需耗时21分钟，这足以表明原文长度，但耗时还不是最糟的。由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍及遗漏，使得翻译中常发现语段间缺失上下文的现象（但并不妨碍这是一篇好文）。自己答应大大做的事，含着泪也要完成。于是打开 Youtube 开始了一遍遍的视频暂停、播放、回放等的过程，堪比做高考听力回放的痛苦经历啊。由于文中存在诸多口语表述，全文结构也不像框架文档或技术教程那么连贯，也是翻译难点之一。*
 
-*好在最终坚持下来完成了，感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
+*好在最终坚持下来了，由于自己开发经验尚浅，对于译文的主题很有可能把握不好，于是我厚着脸皮求玉伯大大帮忙检查文章结构、看译文是否有较大错误，感谢玉伯大大的反馈，感谢徐飞大大（大大比较忙，但依旧很热心的回复了我），感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
 
-本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。希望本文能让大家有所收获。
+本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。
 
-Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 应用，以确保不论开发人员多少、不论应用逻辑和 UI 多么繁重，用户在交互时首屏加载负担都能维持在较好的水平；二是如何保证应用在整个生命周期的轻量运行，即加载当前不需要的 JS 代码。整体演讲中，Malte 提到了几个概念，分别是懒惰装饰（lazy decoration），异步依赖注入（asynchronous dependency injection）和模块系统的反向依赖关系（reverse dependencies）。
+Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 应用，以确保不论开发人员多少、不论应用逻辑和 UI 多么繁重，用户在交互时首屏加载负担都能维持在较好的水平；二是如何保证应用在整个生命周期的轻量运行，即加载当前不需要的 JS 代码。整个演讲中，Malte 提到了三个概念，分别是懒惰装饰（lazy decoration），异步依赖注入（asynchronous dependency injection）和模块系统的反向依赖关系（reverse dependencies）。希望本文能让大家有所收获。
 
 原文 [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)，译者 [hijiangtao](https://github.com/hijiangtao)，以下开始正文。
 
@@ -146,7 +146,7 @@ Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 
 ![Loadable component example.](/assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-24.png)
 <center><small>可加载组件示例</small></center>
 
-如果你想延迟加载它，你会这样写：使用动态 import——一个新奇的延迟加载 ES6 模块的方法，将 import 包装在一个可加载组件中。当然，可以有成千上万种方法做到这点，我并不是 React 专家，但所有这些方式都会改变你开发应用的方式。
+如果你想延迟加载它，你会这样写：使用动态 import——一个新奇的延迟加载 ES6 模块的方法，将 import 包装在一个可加载组件中。当然，可以有成千上万种方法做到这点，我并不是 React 专家，但所有这些方法都会改变你开发应用的方式。
 
 ![Slide text: Static -> Dynanic](/assets/in-post/2018-04-20-Designing-Very-Large-JavaScript-Applications-25.png)
 <center><small>静态 -> 动态</small></center>
@@ -319,4 +319,4 @@ npm 所使用的 package.json 就是一个很好的例子。每个软件包的�
 
 （完）
 
-*题图来自 <https://medium.com/@cramforce>*
+*题图来自 <https://twitter.com/PrimitivePic>*
