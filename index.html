@@ -1,18 +1,9 @@
 ---
-layout: archive
+layout: home
+author_profile: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: "blogAlbumhomepage-banner-1.jpg"
+  overlay_image: "images/homepage-banner-1.jpg"
   caption:
 excerpt: "All I'm saying is inside, I had the element of surprise."
 ---
-
-{% include base_path %}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
