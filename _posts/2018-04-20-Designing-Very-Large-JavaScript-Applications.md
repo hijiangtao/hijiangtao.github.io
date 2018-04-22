@@ -1,5 +1,5 @@
 ---
-title: \[译\] 超大型 JavaScript 应用设计的哲学
+title: \[译\] 超大型 JavaScript 应用的设计哲学
 layout: post
 thread: 195
 date: 2018-04-20
@@ -16,11 +16,11 @@ header:
 
 *Medium 预估原文阅读需耗时21分钟，这足以表明原文长度，但耗时还不是最糟的。由于文章根据 Malte 演讲视频整理而来，速记稿中有很多字句的取舍及遗漏，使得翻译中常发现语段间缺失上下文的现象（但并不妨碍这是一篇好文）。自己答应大大做的事，含着泪也要完成。于是打开 Youtube 开始了一遍遍的视频暂停、播放、回放等的过程，堪比做高考听力回放的痛苦经历啊。由于文中存在诸多口语表述，全文结构也不像框架文档或技术教程那么连贯，也是翻译难点之一。*
 
-*好在最终坚持下来了，由于自己开发经验尚浅，对于译文的主题很有可能把握不好，于是我厚着脸皮求玉伯大大帮忙检查文章结构、看译文是否有较大错误，感谢玉伯大大的反馈，感谢徐飞大大（大大比较忙，但依旧很热心的回复了我），感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。*
+*好在最终坚持下来了，由于自己开发经验尚浅，对于译文的主题很有可能把握不好，于是我又厚着脸皮去求玉伯大大和徐飞大大的帮忙，希望能帮我检查下文章结构、看译文是否有比较严重的错误。感谢两位大大热心回复，感谢印记中文小伙伴 [QC-L](https://github.com/QC-L) 帮忙校对，感谢情封大大的推荐，感谢 Malte 的演讲。文中如有疏漏或理解偏差，欢迎小伙伴评论指出。*
 
-本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。
+本文基于 [Malte Ubl](https://medium.com/@cramforce) 在 JSConf Australia 的演讲速记稿和现场视频整理而来，[你可以在 YouTube 上观看完整演讲](https://www.youtube.com/watch?v=ZZmUwXEiPm4)。由于全文大部分内容转自口述，译稿并不细究字词的严格一致，但尽力保证了原文语义和结构不发生变化。你也可以在知乎专栏查看[本文](https://zhuanlan.zhihu.com/p/35929167)。
 
-Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 应用，以确保不论开发人员多少、不论应用逻辑和 UI 多么繁重，用户在交互时首屏加载负担都能维持在较好的水平；二是如何保证应用在整个生命周期的轻量运行，即加载当前不需要的 JS 代码。整个演讲中，Malte 提到了三个概念，分别是懒惰装饰（lazy decoration），异步依赖注入（asynchronous dependency injection）和模块系统的反向依赖关系（reverse dependencies）。希望本文能让大家有所收获。
+Malte 在文中主要讨论了两件事：一是如何构建高度复杂的 web 应用，以确保不论开发人员多少、不论应用逻辑和 UI 多么繁重，用户在交互时首屏加载与渲染负担都能维持在较好的水平；二是如何保证应用在整个生命周期的轻量运行，即加载当前不需要的 JS 代码。整个演讲中，Malte 提到了三个概念，分别是懒惰装饰（lazy decoration），异步依赖注入（asynchronous dependency injection）和模块系统的反向依赖关系（reverse dependencies）。希望本文能让大家有所收获。
 
 原文 [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)，译者 [hijiangtao](https://github.com/hijiangtao)，以下开始正文。
 
