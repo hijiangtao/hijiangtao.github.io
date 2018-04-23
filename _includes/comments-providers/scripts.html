@@ -12,6 +12,8 @@
     {% include /comments-providers/staticman.html %}
   {% when "staticman_v2" %}
     {% include /comments-providers/staticman_v2.html %}
+  {% when "gitment" %}
+    {% include /comments-providers/gitment.html %}
   {% when "custom" %}
     {% include /comments-providers/custom.html %}
 {% endcase %}

@@ -27,7 +27,12 @@ teaser                   : # "/images/bio-photo.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "gitment" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  gitment:
+    repo                 : "hijiangtao.github.io.comments"
+    oauth_id             : "202af368def76723e6c5"
+    oauth_secret         : "bae6257004699753146193164d4b3287a66ec656"
+    owner                : "hijiangtao"
   disqus:
     shortname            : "hijiangtao" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:

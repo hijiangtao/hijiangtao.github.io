@@ -1,0 +1,43 @@
+<!-- start gitment comments snippet -->
+{% if site.comments.gitment.repo %}
+<script type="text/javascript">
+  var url = "{{ site.url }}{{ page.url }}";
+  var id = "{{ page.thread }}";
+  console.log(url);
+
+  var execCallback = function () {
+    var gitment = new Gitment({
+      id: url, // 可选。默认为 location.href
+      owner: '{{ site.comments.gitment.owner }}',
+      repo: '{{ site.comments.gitment.repo }}',
+      oauth: {
+        client_id: '{{ site.comments.gitment.oauth_id }}',
+        client_secret: '{{ site.comments.gitment.oauth_secret }}',
+      },
+    })
+    gitment.render('gitcomment-container');
+  }
+
+  var readyEexc = function () {
+    var head = document.getElementsByTagName('head')[0];
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://imsun.github.io/gitment/style/default.css';
+    link.media = 'all';
+
+    var script = document.createElement('script')
+    script.setAttribute("type", "text/javascript")
+    script.setAttribute("src", "https://imsun.github.io/gitment/dist/gitment.browser.js");
+    script.onreadystatechange = execCallback;
+    script.onload = execCallback;
+
+
+    head.appendChild(link);
+    head.appendChild(script);
+  };
+
+  window.onload = readyEexc;
+</script>
+{% endif %}
+<!-- end gitment comments snippet -->

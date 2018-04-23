@@ -163,6 +163,9 @@
           <!-- End new comment form -->
         {% endif %}
       </section>
+    {% when "gitment" %}
+      <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
+      <section id="gitcomment-container"></section>
     {% when "custom" %}
       <section id="custom-comments"></section>
   {% endcase %}
