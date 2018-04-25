@@ -32,6 +32,13 @@ iframe: PUT YOUR URL HERE, such as https://hijiangtao.github.io/slides/s-D3-Basi
 Gitment is a comment system based on GitHub Issues, which can be used in the frontend without any server-side implementation. To open it, you should specify some properties in `_config.yml`, an example shows below:
 
 ```
+comments:
+  provider               : "gitment"
+  gitment:
+    repo                 : "hijiangtao.github.io.comments"
+    oauth_id             : Your_Oauth_ID
+    oauth_secret         : Your_Oauth_Secret
+    owner                : "hijiangtao"
 ```
 
 The comment repositry of this blog is [hijiangtao/hijiangtao.github.io.comments](https://github.com/hijiangtao/hijiangtao.github.io.comments).
