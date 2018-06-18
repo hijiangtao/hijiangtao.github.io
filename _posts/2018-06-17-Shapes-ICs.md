@@ -20,7 +20,7 @@ header:
 4. **高效存储数组**；
 5. **Take-aways**：对全文内容做了一个小结，并给了两点建议。
 
-原文 [JavaScript engine fundamentals: Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics)，译者 [hijiangtao](https://github.com/hijiangtao)，你也可以在知乎专栏查看[本文](https://zhuanlan.zhihu.com/p/38202123)。以下开始正文。
+原文 [JavaScript engine fundamentals: Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics)，作者 [@Benedikt](https://twitter.com/bmeurer) 和 [@Mathias](https://twitter.com/mathias)，译者 [hijiangtao](https://github.com/hijiangtao)，你也可以在知乎专栏查看[本文](https://zhuanlan.zhihu.com/p/38202123)。以下开始正文。
 
 > 如果你倾向看视频演讲，请移步 [YouTube](https://www.youtube.com/embed/5nmpokoRaZI) 查看更多。
 
