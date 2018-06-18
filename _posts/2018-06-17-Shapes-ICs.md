@@ -12,7 +12,9 @@ header:
   caption: "Edited from Twitter@PrimitivePic"
 ---
 
-本文就所有 JavaScript 引擎中常见的一些关键基础内容进行了介绍——这不仅仅局限于 V8 引擎。作为一名 JavaScript 开发者，深入了解 JavaScript 引擎是如何工作的将有助于你了解自己所写代码的性能特征。全文共分五个部分：
+*前言：本文也可以被称做 “JavaScript Engines: The Good Parts™”，其来自 Mathias 和 Benedikt 在 JSConf EU 2018 上为本文主题演讲所起的题目，更多 JSconf EU 2018 上有趣的主题分享可以参考[这个答案](https://www.zhihu.com/question/279637889/answer/408989776)。*
+
+本文就所有 JavaScript 引擎中常见的一些关键基础内容进行了介绍——这不仅仅局限于 V8 引擎。作为一名 JavaScript 开发者，深入了解 JavaScript 引擎是如何工作的将有助于你了解自己所写代码的性能特征。关于本文，全文共由五个部分组成：
 
 1. **JavaScript 引擎工作流程**：介绍 JavaScript 引擎的处理流水线，这一部分会涉及到解释器／编译器的内容，且会分点介绍不同引擎间的差别与共同点；
 2. **JavaScript 对象模型**；
