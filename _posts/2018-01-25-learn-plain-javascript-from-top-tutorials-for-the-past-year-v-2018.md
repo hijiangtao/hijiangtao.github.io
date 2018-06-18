@@ -1,5 +1,5 @@
 ---
-title: \[译\]从2.4万篇文章中挑出的最棒的 JavaScript 学习指南（2018版）
+title: \[译\] 从2.4万篇文章中挑出的最棒的 JavaScript 学习指南（2018版）
 layout: post
 thread: 189
 date: 2018-01-25
