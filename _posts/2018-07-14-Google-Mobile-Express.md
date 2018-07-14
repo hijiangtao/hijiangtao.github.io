@@ -9,14 +9,14 @@ tags: [Google, 2018, 前端, Web, Android, 设计, AI, PWA, AMP]
 excerpt: 这周在 Google 上海办公室参加了一场分享会，他们的华人工程师向与会人员同步了 Google 在移动技术上的最新动态。我尝试从一名前端开发者的视角总结了这次分享会的内容，如有理解不准确的地方欢迎指出。
 header:
   image: ../assets/in-post/2018-07-14-Google-Mobile-Express-teaser.png
-  caption: "From www.ucas.ac.cn"
+  caption: "From Internet"
 ---
 
-# 2018 Google 移动技术最新进展速览
+在 Google，移动技术泛指与 Android 与 Web 相关的技术领域。
 
 这周在 Google 上海办公室参加了一场分享会，他们的华人工程师向与会人员同步了 Google 在移动技术上的最新动态。虽说大部分内容在今年的 Google IO 都有提及，但由于 “Mobile first to AI first” 的大背景，很大一部分目光都被聚焦到了 AI related，单独来一场移动技术的专场分享可以说明移动技术仍在其技术布局中占据举足轻重的地位。
 
-在 Google，移动技术泛指与 Android 与 Web 相关的技术领域。我尝试从一名前端开发者的视角总结了这次分享会的内容，如有理解不准确的地方欢迎指出。
+我尝试从一名前端开发者的视角总结了这次分享会的内容，如有理解不准确的地方欢迎指出。
 
 整个分享会包含以下几个主题，涵盖有安卓新特性介绍、Material Design、机器学习、AMP/PWA、Google Play 最佳实践等：
 
@@ -115,7 +115,9 @@ Kotlin 的优化与更新这一部分，引用 Google 开发者自己的一段�
 * Meaningful motion - motion
 * Adaptive design - device
 
-当然，如果都是老生常谈的内容未免太不 Google 了。由于太多应用在开发的过程中采用 Material Design 以致很多应用长得实在太像了，没有了自己的风格。为了解决这个问题，Google 提出了 Material Theming，这一部分包含两个内容，一个是 Material Components （这已经开源在 [GitHub](https://github.com/material-components)，并提供有 Android, iOS, Web, Flutter 四个版本），另一个则是 [Material Theme Editor](https://material.io/tools/theme-editor/)。
+当然，如果都是老生常谈的内容未免太不 Google 了。由于太多应用在开发的过程中采用 Material Design 以致很多应用长得实在太像了，没有了自己的风格。
+
+为了解决这个问题，Google 提出了 Material Theming，这一部分包含两个内容，一个是 Material Components （这已经开源在 [GitHub](https://github.com/material-components)，并提供有 Android, iOS, Web, Flutter 四个版本），另一个则是 [Material Theme Editor](https://material.io/tools/theme-editor/)。
 
 Material Design 官网 <https://material.io/>，关于这次的引入的新特性可以阅读 Pratik 的文章 [What’s new in Material Design?](https://uxplanet.org/whats-new-in-material-design-5308f62a4082)
 
