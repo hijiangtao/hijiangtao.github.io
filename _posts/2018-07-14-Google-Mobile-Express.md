@@ -36,11 +36,11 @@ header:
 
 举一个常见的社交场景：当用户在同时与不同好友进行聊天时，在 Android 8.1 上只会在通知面板显示该应用的未读信息，但 Android P 开始让应用通知有能力同时提供上下文信息，方便用户理解并提供有开发者定义的快捷回复允许用户进行快捷回应。下图为 Android P 与 Android 8.1 在此场景下的展示差异。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-1.jpg "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-1.jpg )
 
 同时在 Android P 中，通知面板里的图片展示有了更好的布局，可见下图。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-2.png "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-2.png )
 
 ### 1.2 Android 现在更加安全啦
 
@@ -68,7 +68,7 @@ Kotlin 的优化与更新这一部分，引用 Google 开发者自己的一段�
 
 在 Google 手机的刘海布局又叫凹口屏，当下已经有多款机型（未来还会有更多机型）存在刘海设计，且涉及位置也是千奇百怪。所以对你的应用针对凹口屏测试是十分重要的，你可以在 [Android P Beta 的合作伙伴机型](https://juejin.im/post/5af3b98af265da0ba469cdde)上测试，也可以在 Android P 设备的开发者选项里打开对凹口屏的模拟，对您的应用做相应测试。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-6.png "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-6.png )
 
 几点需要注意的地方：
 
@@ -79,15 +79,15 @@ Kotlin 的优化与更新这一部分，引用 Google 开发者自己的一段�
 
 * **App Actions**：可以出现在 Google Assistant、Google Search、All Apps、Smart Text Selection、Google Play 等位置，由开发者定义功能与行为、由系统控制显示方式与时机（比如在下午五点用户想回家时，在 Assistant 中输入回家，系统可以根据使用习惯建议用户使用打车功能，但需要注意的是有一个前提——即用户已经下载了该应用）。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-3.gif "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-3.gif )
 
 * **Slices API**：一种显示 remote content 的新方式，暂定会出现在 Search 结果中，但需要注意的是这项功能仅供开发者尝鲜，确定暂时不会出现在用户端。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-4.gif "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-4.gif )
 
 * **App Bundle**：我看有的文章也把他称作"Dynamic App"，根据不同用户环境进行动态构建，把原有经过开发者将所有内容打到一个 apk 包的过程拆分成 Base 与其他动态内容，实际触达用户端的 apk （包含具体 CPU 架构、应用语言、针对分辨率配置的资源文件等）具体由 Google Play （或其他应用市场）进行构建与分发，其主要的一个目的是为了减少 App 体积。当然，由于最后需要让 Google Play 替你进行应用打包，所以应用的签名是要给到 Google Console 的。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-5.png "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-5.png )
 
 *示意图来自 [[Session] Build the new, modular Android App Bundle](https://events.google.com/io/schedule/?section=may-8&sid=b9eabde0-be05-492c-bf9e-c3f772f1db7e)*
 
@@ -106,7 +106,7 @@ Kotlin 的优化与更新这一部分，引用 Google 开发者自己的一段�
 
 在 Google 的设计历史上曾经存在两条道路，以 Kennedy 代表的 Web 方向，Holo 代表的 Android 方向，直到 Material Design 出现。自从问世以来，Material Design 广受好评，市场上也能看到很多运用它的影子。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-7.png "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-7.png )
 
 有关 Material Design 的内容其实官网已经介绍的很详细了
 
@@ -131,7 +131,7 @@ Material Design 官网 <https://material.io/>，关于这次的引入的新特�
 
 让我们来看一个实际场景。闲鱼上的用户进行商品发布时需要提供商品图片，但是肯定会存在很多重复发布的图片。为了减轻服务器负担，那么就需要对图片进行去重检测，如果按照往常的思路那么就需要用户先把内容传到服务器，然后服务器进行检测。在弱网环境下，你可以想像一下那拙计的体验。 ML Kit 提供的 Image labeling API 便可以让开发者在本地设备上解决这个问题。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-8.png "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-8.png )
 
 ### 3.2 Tensorflow Lite
 
@@ -149,7 +149,7 @@ Tensorflow Lite 文档请移步 <https://www.tensorflow.org/mobile/tflite/>.
 
 作为一家从 Web 起步并在主要产品中大量运用 Web 技术的科技公司，Google 技术人员表示在他们看来，Web 和 Native 一样重要。分享主题从移动端 Web 存在的一些缺陷开始说起，当然这些内容其实你在很多介绍 AMP 或者 PWA 技术的开篇可能也都看过，例如“如果一个网站加载时间超过三秒，那么它就会丧失53%的访问用户，而其中50%的用户再也不会回到你的网站”，此处就不做赘述了。总结来看，三个出发点：速度、交互与转化率。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-9.jpg "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-9.jpg )
 
 这场分享其实是为商务准备的，所以 Google 还说了他们几点在新技术上所采取的倾向措施，以此希望推广这两项技术有更广的应用落地。倾向一、Google 爬虫会优先爬取移动端 site；倾向二、Google 排名会将移动端 site 的访问速度作为影响因素之一纳入考虑范畴。详情可见博文 <https://webmasters.googleblog.com/2018/03/rolling-out-mobile-first-indexing.html>
 
@@ -210,7 +210,7 @@ AMP 的加速原理体现在三个方面：
 
 一个不负责的爆料，PWA 未来将出现在 Google Play 中。
 
-![](/assets/in-post/2018-07-14-Google-Mobile-Express-10.jpg "")
+![](/assets/in-post/2018-07-14-Google-Mobile-Express-10.jpg )
 
 ## 五️、Google Play 应用市场最佳实践
 
