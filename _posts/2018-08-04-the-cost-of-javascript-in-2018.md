@@ -234,7 +234,7 @@ PRPL 即推送，渲染，预缓存和懒加载。结合 [service worker](https:
 
 ### #8.2 监控
 
-为了防止多人协作或持续集成时的合作混乱，作者建议大家采用 [**performance budget](https://timkadlec.com/2013/01/setting-a-performance-budget/)** 来进行管理与度量。
+为了防止多人协作或持续集成时的合作混乱，作者建议大家采用 **[performance budget](https://timkadlec.com/2013/01/setting-a-performance-budget/)** 来进行管理与度量。
 
 ![](/assets/in-post/2018-08-04-the-cost-of-javascript-in-2018-30.jpeg)
 
