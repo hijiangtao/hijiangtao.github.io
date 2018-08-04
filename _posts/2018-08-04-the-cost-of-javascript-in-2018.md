@@ -28,7 +28,7 @@ header:
 7. \#7 分发更少 JavaScript 的常见技巧
 8. \#8 持续集成四部曲
 
-原文地址见 <https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4>，视频地址见 <https://www.youtube.com/watch?v=63I-mEuSvGA>，以下开始正文。
+原文地址见 <https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4>，视频地址见 <https://www.youtube.com/watch?v=63I-mEuSvGA>，精读知乎阅读地址 <https://zhuanlan.zhihu.com/p/41292532>，以下开始正文。
 
 ## #0 写在开头的话
 
