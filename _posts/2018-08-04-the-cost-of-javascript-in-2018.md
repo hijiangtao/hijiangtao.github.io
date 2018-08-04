@@ -145,7 +145,7 @@ Chrome 中提供了 LightHouse 可以对页面的各项性能指标（比如 Tim
 
 ![](/assets/in-post/2018-08-04-the-cost-of-javascript-in-2018-16.png)
 
-[**Android 手机正变得越来越便宜，但却没有越来越快。](https://twitter.com/slightlylate/status/919989184881876992)这些设备的 CPU L2/L3 缓存依旧很小，请不要高估了你的用户群体。让我们再回到文章开头 那张 CNN.com 中 JavaScript 处理时间统计图上看看。
+**[Android 手机正变得越来越便宜，但却没有越来越快](https://twitter.com/slightlylate/status/919989184881876992)。**这些设备的 CPU L2/L3 缓存依旧很小，请不要高估了你的用户群体。让我们再回到文章开头 那张 CNN.com 中 JavaScript 处理时间统计图上看看。
 
 ![](/assets/in-post/2018-08-04-the-cost-of-javascript-in-2018-17.png)
 
