@@ -251,4 +251,7 @@ Skeleton Screen 已经是一个非常成熟的技术方案，国外诸如 Facebo
 
 但实际使用何种方式来改造你的页面，这完全取决于你的需求，没有最好的解决方案，但针对你的场景一定有一个最合适的。
 
+<p data-height="265" data-theme-id="0" data-slug-hash="VBEvMW" data-default-tab="css,result" data-user="hijiangtao" data-pen-title="Skeleton Screen Demo" class="codepen">See the Pen <a href="https://codepen.io/hijiangtao/pen/VBEvMW/">Skeleton Screen Demo</a> by Joe (<a href="https://codepen.io/hijiangtao">@hijiangtao</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 文中所有涉及的代码可以查看 [Codepen](https://codepen.io/hijiangtao/pen/VBEvMW).
