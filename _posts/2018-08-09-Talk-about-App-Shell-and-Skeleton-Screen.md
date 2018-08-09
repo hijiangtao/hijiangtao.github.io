@@ -1,5 +1,5 @@
 ---
-title: 谈 App Shell 与 Skeleton Screen 实现
+title: 谈谈 App Shell 与 Skeleton Screen 实现
 layout: post
 thread: 201
 date: 2018-08-09
