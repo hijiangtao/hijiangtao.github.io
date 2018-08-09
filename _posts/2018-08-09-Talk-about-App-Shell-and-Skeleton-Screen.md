@@ -74,7 +74,7 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 最简单的方法莫过于将页面结构手写入 HTML，待实际数据请求获得时再对此 HTML 做替换。DOM 结构如下：
 
-```
+```html
 <div class="main-item">
   <div class="static-background">
     <div class="background-masker btn-divide-left"></div>
@@ -84,7 +84,7 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 为了达到分隔左右内容栏的目的，我们还需要用绝对定位的方式给出如下样式表（容器给定白色背景色，其余分隔均有绝对定位加白色背景色进行处理）：
 
-```
+```css
 .main-item {
   background-color: #fff;
 }
@@ -118,7 +118,7 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 要用动画我们只需要将上面的代码中 static-background 换成 animated-background 即可，DOM 结构如下：
 
-```
+```html
 <div class="main-item">
   <div class="animated-background">
     <div class="background-masker btn-divide-left"></div>
@@ -132,11 +132,11 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 ### 3.3 共用 HTML 结构但区分展示样式
 
-以上简单实现的方法优点在于不用考虑现有页面结构的兼容性，但缺点也是显而易见的——需要同时维护 Skeleton DOM 和数据回来后的实际 DOM 两套结构。当然，沿用上面的思路我们可以做一个显而易见的改进——共用 HTML 结构但采用不同样式。
+以上简单实现的方法优点在于不用考虑现有页面结构的兼容性，但缺点也是显而易见的——需要同时维护 Skeleton DOM 和数据回来后的实际 DOM 两套结构。和之前的做法一样，设想如果每次真实组件有迭代，那么我们都需要手动去同步每一个变化到 Skeleton Screen 结构上的话，那实在是太繁琐了。当然，沿用上面的思路我们可以做一个显而易见的改进——共用 HTML 结构但采用不同样式。
 
 最直接的做法就是在网络请求回来之后会填充数据的标签上都加上 loading class，但样式中不用再涉及 DOM 的宽高设置，例如：
 
-```
+```css
 .static-background {
   background-color: #f6f7f8;
 }
@@ -152,13 +152,13 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 以下给一个案例，通过自定义 `backgroun-image` 来实现带层次的预加载样式，添加了一个圆形与几个矩形形状，其中通过 [radial-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient) 属性实现圆角效果，以下为 DOM 结构：
 
-```
+```html
 <div class="css-dom"></div>
 ```
 
 以下为 CSS 样式：
 
-```
+```css
 .css-dom:empty {
   width: 280px;
   height: 220px;
@@ -198,7 +198,7 @@ Skeleton Screen 原理是在页面数据尚未加载前先给用户展示出页�
 
 ### 3.5 预渲染/服务端渲染
 
-当然，以上方法的缺点依旧显而易见。虽然不需要手动处理内容加载后的样式变化，但是对于伪类样式的定义依旧比较繁琐。因为你需要设置不同背景图片的大小、颜色与位置。
+当然，上一个方法的缺点依旧显而易见。虽然不需要手动处理内容加载后的样式变化，但是对于伪类样式的定义依旧比较繁琐。因为你需要设置不同背景图片的大小、颜色与位置。
 
 预渲染也好，服务端渲染也罢，本质都是选取现有业务代码进行 Skeleton Screen 的构建。如果使用 React 的同学可以使用 `renderToString` 方法对渲染输出的 HTML 进行控制，保证首次输出即可具有初步的 HTML 结构。为了达到 Skeleton Screen 效果，原来这样写的代码：
 
@@ -235,16 +235,20 @@ class Example extends React.Component {
 }
 ```
 
-预渲染与服务端渲染区别在于预渲染发生在构建时期，而服务端渲染发生在服务器响应请求处理过程中。在我看来，这算是可以给用户很好感知又在代码层面很干净的处理方式了。
+预渲染与服务端渲染区别在于预渲染发生在构建时期，而服务端渲染发生在服务器响应请求处理过程中。但考虑到类似 Vue，React 等框架对服务端渲染的支持，你也可以将服务端渲染挪挪位置。不用真正运行于服务器时再做处理，而是在构建时用它把组件的空状态预先渲染成字符串并注入到 HTML 模板中。
+
+在我看来，这算是可以给用户很好感知又在代码层面很干净的处理方式了。
 
 ## 四、PWA 改造
 
 由于 Skeleton Screen 涉及 HTML 与 CSS 的内容，因此我们可以将 PWA 中 App Shell 用 Skeleton Screen 实现，然后将相应 HTML 文件写入 Service Worker 待缓存文件列表，这样用户再次访问该站点时，将会获得“秒开”且有明显视觉反馈的体验。
 
-多说一句，虽然 Google 将 App Shell 定义为 HTML/CSS/JavaScript 集合，但考虑到资源的加载耗时，建议在 App Shell 实现上可以裁去 JavaScript 部分，并将 CSS 内容以 inline css 形式写入 HTML。个人观点，仅供参考。
+多说一句，虽然 Google 将 App Shell 定义为 HTML/CSS/JavaScript 集合，但考虑到资源的加载耗时，建议在 App Shell 实现上可以裁去 JavaScript 部分，并将 CSS 内容以 inline css 形式写入 HTML。个人观点，供参考。
 
 ## 五、后记
 
-Skeleton Screen 已经是一个非常成熟的技术方案，国外诸如 Facebook、Google 等等，国内诸如豆瓣、饿了么、微博等等都在移动端站点广泛采用 Skeleton Screen，实现方案虽然不尽相同但目的近乎一致，都是为了提升用户体验。进一步说，技术社区还有很多别的实现方案或策略例如 svg 占位等等，本文总结的实现方案肯定不是最全的，但其实我想表达的观点在于，作为程序员的洁癖，但凡我们遇到问题时，都应该在实现的基础上按照层层递进的思路去思考，自己的代码是否有优化的空间，扩展性又如何。
+Skeleton Screen 已经是一个非常成熟的技术方案，国外诸如 Facebook、Google 等等，国内诸如豆瓣、饿了么、微博等等都在移动端站点广泛采用 Skeleton Screen，且有不少专用于实现 Skeleton Screen 的框架，实现方案虽然不尽相同但目的近乎一致，都是为了提升用户体验。进一步说，技术社区还有很多别的实现方案或策略例如 svg 占位等等，本文总结的实现方案肯定不是最全的，但其实我想表达的观点在于，作为程序员的洁癖，但凡我们遇到问题时，都应该在实现的基础上按照层层递进的思路去思考，自己的代码是否有优化的空间，扩展性又如何。
+
+但实际使用何种方式来改造你的页面，这完全取决于你的需求，没有最好的解决方案，但针对你的场景一定有一个最合适的。
 
 文中所有涉及的代码可以查看 [Codepen](https://codepen.io/hijiangtao/pen/VBEvMW).
