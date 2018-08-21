@@ -26,8 +26,6 @@ header:
 
 ![](/assets/in-post/2018-08-21-Prototypes-1.svg )
 
-We also pointed out that although the high-level pipeline is similar between engines, there are often differences in the optimization pipeline. Why is that? Why do some engines have more optimization tiers than others? It turns out there is a trade-off between quickly getting code to run, or taking some more time but eventually running the code with optimal performance.
-
 我们也指出，尽管从高级抽象层面来看，引擎之间的处理流程都很相似，但他们在优化流程上通常都存在差异。为什么呢？**为什么有些引擎的优化层级会比其他引擎更多？**事实证明，在快速获取可运行的代码与花费更多时间获得最优运行性能的代码之间存在取舍与平衡。
 
 ![](/assets/in-post/2018-08-21-Prototypes-2.svg )
