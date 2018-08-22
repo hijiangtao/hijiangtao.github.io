@@ -18,7 +18,7 @@ header:
 
 *本文中会涉及 JavaScript 引擎中 Inline Caches 和 Shapes 的概念使用，如果你想了解其中更多细节可以移步上一篇译文 [JavaScript 引擎基础：Shapes 和 Inline Caches](https://hijiangtao.github.io/2018/06/17/Shapes-ICs/) 查看更多。*
 
-原文 [JavaScript engine fundamentals: optimizing prototypes](https://mathiasbynens.be/notes/prototypes)，作者 [@Benedikt](https://twitter.com/bmeurer) 和 [@Mathias](https://twitter.com/mathias)，译者 [hijiangtao](https://github.com/hijiangtao)，你也可以在[知乎专栏](https://zhuanlan.zhihu.com/p/42630183/)查看此文。以下开始正文。
+原文 [JavaScript engine fundamentals: optimizing prototypes](https://mathiasbynens.be/notes/prototypes)，作者 [@Benedikt](https://twitter.com/bmeurer) 和 [@Mathias](https://twitter.com/mathias)，译者 [hijiangtao](https://github.com/hijiangtao)，你也可以在[知乎专栏](https://zhuanlan.zhihu.com/p/42630183)查看此文。以下开始正文。
 
 > 如果你倾向看视频演讲，请移步 [YouTube](https://www.youtube.com/watch?v=IFWulQnM5E0) 查看更多。
 
