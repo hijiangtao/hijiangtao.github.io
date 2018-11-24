@@ -12,7 +12,7 @@ header:
   caption: "Edited from lethalbrains.com"
 ---
 
-前言：得益于 TC39 从2015年开始对 ECMAScript 标准才去的年更节奏，JavaScript 开发者终生学习的「梦想」得以实现。口口相传的 ES6 已经发布三年有余，而距年中 ECMAScript2018 发布也有几个月了，站在2018年末时间点上，如何赶上 ECMAScript 的潮流呢？
+前言：得益于 TC39 从2015年开始对 ECMAScript 标准采取的年更节奏，JavaScript 开发者终生学习的「梦想」得以实现。口口相传的 ES6 已经发布三年有余，而距年中 ECMAScript2018 发布也有几个月了，站在2018年末时间点上，如何赶上 ECMAScript 的潮流呢？
 
 本文将会介绍一些 [ECMAScript2018](http://www.ecma-international.org/ecma-262/9.0/index.html#Title) 标准新特性与尚在襁褓中的一些[有趣提案](https://github.com/tc39/proposals)，汇总共十个方面。
 
