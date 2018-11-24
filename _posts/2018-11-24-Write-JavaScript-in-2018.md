@@ -16,6 +16,8 @@ header:
 
 本文将会介绍一些 [ECMAScript2018](http://www.ecma-international.org/ecma-262/9.0/index.html#Title) 标准新特性与尚在襁褓中的一些[有趣提案](https://github.com/tc39/proposals)，汇总共十个方面。
 
+如果不想看文字版，也可以查看在线PPT版 <https://hijiangtao.github.io/slides/s-Fliggy/1125-5min.html#/>
+
 > 为了便于读者阅读理解，请注意本文中提到的「ECMAScript2018」等价于「ES9」，「Stage 1/2/3/4」等概念可参考 [TC39 定义](https://tc39.github.io/process-document/)。本文在兼容性评估上选用了「Chrome/Edge/Opera/Safari/Firefox」五类主流浏览器与「Node」运行时进行评判，完整的评估可查阅 [Can I use](https://caniuse.com/)。
 
 ## ECMAScript 新特性与标准提案
