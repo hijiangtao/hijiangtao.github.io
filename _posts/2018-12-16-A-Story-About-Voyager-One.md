@@ -8,17 +8,17 @@ categories: Story
 tags: [2018, NASA, 旅行者, Voyager, 航空, 故事]
 excerpt: Even if they lose their ability to respond to our command, the last, and by far, the longest phase of the Voyager mission will begin.
 header:
-  image: ../assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-teaser.jpg
+  image: ../assets/in-post/2018-12-16-A-Story-About-Voyager-One-teaser.jpg
   caption: "From douban.com"
 ---
 
 北京时间2018年12月11日零点，NASA在美国地球物理年会上宣布，通过比较旅行者2号上搭载的不同仪器传回的数据，旅行者2号于11月5日通过了日球层的外部边缘，进入了星际空间。
 
-![](/assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-1.jpeg )
+![](/assets/in-post/2018-12-16-A-Story-About-Voyager-One-1.jpeg )
 
 但今天我想说说旅行者2号的孪生姐妹—旅行者1号。
 
-![](/assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-2.jpg )
+![](/assets/in-post/2018-12-16-A-Story-About-Voyager-One-2.jpg )
 
 旅行者1号于1977年9月5日发射，35年后，于2012年8月进入星际空间，北京时间2013年9月13日凌晨2:00，NASA通过新闻发布会正式确认旅行者1号进入星际空间，验证的方式是借助2012年3月的日冕物质抛射测定。
 
@@ -26,7 +26,7 @@ header:
 
 不知道你有没有看过这张著名的暗淡蓝点——“最后再看一眼熟悉的家园”原图，它由旅行者1号拍摄，而它背后还有这么一段故事。
 
-![](/assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-3.jpg )
+![](/assets/in-post/2018-12-16-A-Story-About-Voyager-One-3.jpg )
 
 卡尔·萨根是一位天文学家，同时又是一位满怀诗意的科普作家。他一直希望能够在这次行动中拍摄一张引起人们深思的照片。在旅行者1号不断前进的过程中，他一直在等待这个机会。
 
@@ -64,13 +64,13 @@ header:
 
 感兴趣的话推荐看看纪录片《宇宙时空之旅》，即《卡尔·萨根的宇宙》的更新重制版，豆瓣9.7分。
 
-![](/assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-4.jpg )
+![](/assets/in-post/2018-12-16-A-Story-About-Voyager-One-4.jpg )
 
 不论旅行者1号，抑或是旅行者2号，即便失联，它们都已在继续更重要的使命。
 
 Even if they lose their ability to respond to our command, the last, and by far, the longest phase of the Voyager mission will begin.
 
-![](/assets/in-post/2018-12-16-A-Story-About-Voyager-Ⅰ-5.jpg )
+![](/assets/in-post/2018-12-16-A-Story-About-Voyager-One-5.jpg )
 
 *文中图片来自互联网（见图注），英文原文源自豆瓣用户宇宙真理猪大肠在《宇宙时空之旅》中的影评记录。图注：*
 
