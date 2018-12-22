@@ -5,7 +5,7 @@ title: jdk安装与配置教程
 thread: 29
 categories: Tutorial
 tags: [hadoop, jdk]
-excerpt: 
+excerpt: Hadoop全分布式部署很重要的一点就是jdk安装和JAVA的环境配置。
 ---
 
 Hadoop全分布式部署很重要的一点就是jdk安装和JAVA的环境配置。

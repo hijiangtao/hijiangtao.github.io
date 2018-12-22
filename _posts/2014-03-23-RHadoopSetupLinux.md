@@ -5,7 +5,7 @@ title: Linux环境下RHadoop配置笔记
 thread: 90
 categories: Tutorial
 tags: [R, hadoop, Linux]
-excerpt: 
+excerpt: Linux环境下RHadoop配置笔记
 ---
 
 ## 一、硬件环境

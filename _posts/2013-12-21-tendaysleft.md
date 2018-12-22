@@ -3,8 +3,8 @@ date: 2013-12-21
 layout: post
 title: 还有十天，再见2013！
 thread: 9
-categories: Student
-tags: [BIT]
+categories: Recap
+tags: [BIT, student]
 excerpt: Goodbye, my 2013.
 ---
 

@@ -4,8 +4,8 @@ layout: keynote
 thread: 169
 date: 2016-11-10
 author: Joe Jiang
-categories: document
-tags: [Visualization]
+categories: Presentation
+tags: [visualization, vis, 可视化]
 excerpt: I went to Baltimore, USA last week. It's a city near Washington D.C, and IEEE VIS 2016 returned to there after ten years, finally. I shared this keynote at intra-group seminar in Nov 10th, 2016.
 iframe: https://hijiangtao.github.io/slides/s-IEEEVIS2016/
 ---

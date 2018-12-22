@@ -5,7 +5,7 @@ title: Hadoop1.2.1伪分布式升级全分布式集群改装笔记
 thread: 38
 categories: Tutorial
 tags: [hadoop]
-excerpt: 
+excerpt: Hadoop1.2.1伪分布式升级全分布式集群改装笔记
 ---
 
 ## 一、硬件环境

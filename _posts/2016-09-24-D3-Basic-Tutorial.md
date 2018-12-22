@@ -3,8 +3,8 @@ date: 2016-09-24
 layout: keynote
 title: Step by Step - Introduction, installation and simple examples of D3
 thread: 167
-categories: Documents
-tags: [D3, Visualization]
+categories: Presentation
+tags: [D3, visualization, vis]
 excerpt: Introduction, installation and simple examples
 iframe: https://hijiangtao.github.io/slides/s-D3-Basic-Tutorial/
 ---

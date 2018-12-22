@@ -3,9 +3,9 @@ date: 2014-02-19
 layout: post
 title: Hadoop第一个样例Wordcount运行笔记
 thread: 39
-categories: Documents
+categories: Document
 tags: [hadoop]
-excerpt: 
+excerpt: Hadoop第一个样例Wordcount运行笔记
 ---
 
 ## 一、硬件环境

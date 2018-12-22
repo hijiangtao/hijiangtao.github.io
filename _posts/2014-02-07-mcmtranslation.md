@@ -3,9 +3,9 @@ date: 2014-02-07
 layout: post
 title: 2014年美国数学建模题目及翻译
 thread: 22
-categories: Documents
+categories: Document
 tags: [数学建模, Translation]
-excerpt: 
+excerpt: 参加数学建模，刚拿到题目便开始了繁忙的翻译工作，以下为我的翻译成果，顺带附上一些参考资料与常识。
 ---
 
 参加数学建模，刚拿到题目便开始了繁忙的翻译工作，以下为我的翻译成果，顺带附上一些参考资料与常识。

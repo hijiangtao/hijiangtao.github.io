@@ -12,18 +12,6 @@ header:
   caption: "From Internet"
 ---
 
-> 原文 - A recap of front-end development in 2017
->
-> 原文作者 - Trey Huffine
->
-> 原文地址 - <https://levelup.gitconnected.com/a-recap-of-front-end-development-in-2017-7072ce99e727>
-> 
-> 译者 - [hijiangtao](https://github.com/hijiangtao)
->
-> 译文地址 - <https://hijiangtao.github.io/2017/12/18/A-Recap-of-Front-End-Development-in-2017/>
->
-> 知乎专栏 - <https://zhuanlan.zhihu.com/p/32119668>
-
 前端领域在 2017 年再次以狂热的节奏向前发展。以下列出过去的一年中最值得关注的一系列事情。
 
 ![](/assets/in-post/2017-12-18-A-Recap-of-Front-End-Development-in-2017-1.jpeg "Profile")
@@ -138,6 +126,19 @@ gitconnected 发起为开发人员和软件工程师创建社区。它提供了�
 * 人们使用区块链和 [web3.js](https://github.com/ethereum/web3.js/)（由 Marek Kotewicz 和 Fabian Vogelsteller 创建）构建了一些非常酷的应用程序。
 
 如果我遗漏了任何大事件，请评论告知，我一定会加上的！
+
+
+> 原文 - A recap of front-end development in 2017
+>
+> 原文作者 - Trey Huffine
+>
+> 原文地址 - <https://levelup.gitconnected.com/a-recap-of-front-end-development-in-2017-7072ce99e727>
+> 
+> 译者 - [hijiangtao](https://github.com/hijiangtao)
+>
+> 译文地址 - <https://hijiangtao.github.io/2017/12/18/A-Recap-of-Front-End-Development-in-2017/>
+>
+> 知乎专栏 - <https://zhuanlan.zhihu.com/p/32119668>
 
 ----
 

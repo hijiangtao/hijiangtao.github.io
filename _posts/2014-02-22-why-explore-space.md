@@ -1,7 +1,7 @@
 ---
 date: 2014-02-22
 layout: post
-title: 为什么要探索宇宙？(Why Explore Space?)
+title: 为什么要探索宇宙？
 thread: 47
 categories: Read
 tags: [宇宙]

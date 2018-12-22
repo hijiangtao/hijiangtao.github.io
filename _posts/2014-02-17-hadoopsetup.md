@@ -5,7 +5,7 @@ title: Hadoop1.2.1伪分布模式安装教程
 thread: 36
 categories: Tutorial
 tags: [hadoop]
-excerpt: 
+excerpt: Hadoop1.2.1伪分布模式安装教程
 ---
 
 ## 一、硬件环境

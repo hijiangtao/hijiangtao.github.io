@@ -1,19 +1,19 @@
 ---
-title: 你看看 这一年
+title: 你看看，这一年
 layout: post
 thread: 158
 date: 2015-01-03 12:00
 author: Joe Jiang
-categories: Student
+categories: Recap
 tags: [BIT]
 excerpt: 终于，该和旧时光说再见了。
 ---
 
 ![](/assets/in-post/2015-01-03-Goodbye-My-Old-Times.png)
 
-新年第一篇博客，时光过得真快，就十年了。
+新年第一篇博客，时光过得真快，又一年了。
 
-截止1月3日，一年里Gmail一共留存423 primary + 282 Social + 228 Promotions + 607 Updates，学习、交流、工作、机会维系了这一年林林总总的e-mail。
+截止1月3日，一年里Gmail一共留存423 Primary + 282 Social + 228 Promotions + 607 Updates，学习、交流、工作、机会维系了这一年林林总总的e-mail。
 
 这一年，过得很漫长。大年初六回学院，两个星期一个人从Hadoop摸索到Wordcount，2.2.0 SSH再不通也只能一个人望着基地的书柜默默冥想，直到天亮；长达一个月的组队，到最后为了中软杯的通宵达旦，到三辩前晚修改到两点而后通宵难眠；那一个星期天天跑北大，白天听课晚上整理笔记，晚上三点上床都成为了理所当然；从毫无准备到博弈选择UCAS，回京当天体检、笔试、机试、面试，到等待迟迟不出结果。
 

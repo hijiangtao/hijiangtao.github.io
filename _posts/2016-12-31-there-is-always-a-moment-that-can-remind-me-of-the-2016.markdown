@@ -1,10 +1,10 @@
 ---
-title: 总有那么一刻会让我回忆起 不说再见这一年
+title: 总有那么一刻会让我回忆起，不说再见这一年
 layout: post
 thread: 170
 date: 2016-12-31
 author: Joe Jiang
-categories: documents
+categories: Recap
 tags: [student, UCAS, 2016]
 excerpt: 虽然有那么一次次感慨时间过得真慢,很想快进到新年,但真的只剩最后一天的时候,又开始有点感伤.2016,毕竟即将结束.
 header:
