@@ -4,7 +4,7 @@ layout: post
 thread: 172
 date: 2017-05-03
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [Visualization, JavaScript, threejs]
 excerpt: WebGL 是基于 OpenGL ES 2.0 的 Web 标准，可以通过 HTML5 Canvas 元素作为 DOM 接口访问。Three.js 封装了底层的的图形操作接口,使用户可以便捷的操作构建空间物体与场景,实现 3D 可视化. 一个完整的 Three.js 必定包含一些必要的结构,例如场景,相机等等,而在深入了解 Three.js 及相关操作之前,有几个概念有必要完整的学习一遍. 本文基于此目的, 详细的描述了一个完整的 Three.js 程序的基本结构, 空间坐标系以及汇总了常用的 Three.js 中的几何类型.
 ---

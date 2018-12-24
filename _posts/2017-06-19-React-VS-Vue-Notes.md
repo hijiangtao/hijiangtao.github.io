@@ -4,7 +4,7 @@ layout: post
 thread: 176
 date: 2017-06-19
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [Vue, React, 框架]
 excerpt: 最近花了比较大段的时间用于了解和实践主流三大框架其中的两个 - Vue 和 React, 总结一下自己在使用中感受到的两者在提升开发效率上的一些异同之处。
 ---

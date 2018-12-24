@@ -4,7 +4,7 @@ layout: post
 thread: 161
 date: 2015-08-28
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [JavaScript]
 excerpt: When I had my internship in DeepGlint, my supervisor gave me a lot of advice about how to obtain the ability to develop the interesting web world. 
 ---

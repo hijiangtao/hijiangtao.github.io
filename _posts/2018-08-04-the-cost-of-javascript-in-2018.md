@@ -4,7 +4,7 @@ layout: post
 thread: 200
 date: 2018-08-04
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [前端, Web, JavaScript, PWA, 页面交互成本]
 excerpt: 如今，JavaScript 仍然是我们向移动终端分发页面时成本最高的资源，因为它可以在很大程度上延迟页面的交互性。一个页面在开发时都要考虑哪些问题，用户实际访问页面的效果与感受又是如何，Google 开发 Lighthouse 的初衷以及其具体用途，JavaScript 的成本究竟有多高，如何降低 JavaScript 成本与优雅的持续集成实践等等。
 header:

@@ -4,7 +4,7 @@ layout: post
 thread: 177
 date: 2017-07-02
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [React, Redux, 框架]
 excerpt: 此处以 Redux 为例，总结如何利用其设计思想以及实践经验，来使得应用的 state 管理变得容易。
 ---

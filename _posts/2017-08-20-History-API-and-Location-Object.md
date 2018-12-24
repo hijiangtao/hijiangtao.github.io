@@ -4,7 +4,7 @@ layout: post
 thread: 180
 date: 2017-08-20
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [DOM, JavaScript, History, Location]
 excerpt: 这次也不长篇大论，只搞清楚两件事 —— History API & Location 对象。了解清楚这些，将能够使我们在不同 web 页面之间穿梭自如。
 ---

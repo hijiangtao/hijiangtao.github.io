@@ -3,7 +3,7 @@ date: 2014-04-30 21:00:00
 layout: post
 title: 大数据利器：浅谈数据可视化
 thread: 116
-categories: Documents
+categories: Document
 tags: [data, 数据可视化]
 excerpt: 
 ---

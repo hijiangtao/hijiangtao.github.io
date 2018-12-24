@@ -4,7 +4,7 @@ layout: post
 thread: 175
 date: 2017-06-13
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [跨域, CORS, HTTP]
 excerpt: 同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。但是有时候跨域请求资源是合理的需求，本文尝试从多篇文章中汇总至今存在的所有跨域请求解决方案。
 ---

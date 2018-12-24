@@ -4,7 +4,7 @@ layout: post
 thread: 198
 date: 2018-07-14
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [Google, 2018, 前端, Web, Android, 设计, AI, PWA, AMP]
 excerpt: 这周在 Google 上海办公室参加了一场分享会，他们的华人工程师向与会人员同步了 Google 在移动技术上的最新动态。我尝试从一名前端开发者的视角总结了这次分享会的内容，如有理解不准确的地方欢迎指出。
 header:

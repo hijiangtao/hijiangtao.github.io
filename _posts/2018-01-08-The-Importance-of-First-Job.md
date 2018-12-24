@@ -4,7 +4,7 @@ layout: post
 thread: 187
 date: 2018-01-12
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [2018, UCAS, Student, 校招, 求职, 工作]
 excerpt: 刚将三方寄给了签约公司，我的校招终于结束了。正好看到这个问题，看到很多人力资源相关的人士解读收获很大，那我就从自身的经历来聊聊这几个月里我对「第一份工作的重要性，以及我们都需要考虑清楚什么」这个问题的认识吧。总结自己求职过程的所见所闻所想，算是对自己的一个交代，也希望让大家看到一个普通校招生的思考。
 ---

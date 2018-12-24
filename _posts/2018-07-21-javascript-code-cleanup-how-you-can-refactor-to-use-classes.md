@@ -4,7 +4,7 @@ layout: post
 thread: 199
 date: 2018-07-21
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [JavaScript, 重构, Class, 前端]
 excerpt: 起手一个项目时，我们都是想着“多快好省”地以完成业务功能为主，而在推进的过程中随着项目越滚越大，为了提高代码的可维护性，我们不得不择机对代码进行重构……
 ---

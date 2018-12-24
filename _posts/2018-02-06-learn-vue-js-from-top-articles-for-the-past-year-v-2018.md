@@ -4,7 +4,7 @@ layout: post
 thread: 191
 date: 2018-02-06
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [2018, Web, Vue, JavaScript, Software]
 excerpt: 原文作者研究了近1万篇 Vue 生态相关的文章得出这篇总结，全文既包含新手指南、年度回顾也包括框架对比、案例分析等专题，非常适合 Vue 开发者用于查漏补缺、收藏阅读。
 header:

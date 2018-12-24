@@ -4,7 +4,7 @@ layout: post
 thread: 178
 date: 2017-07-09
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [CSS, Pixel, Viewport]
 excerpt: 什么是物理像素、虚拟像素、逻辑像素、设备像素，什么又是 PPI, DPI, DPR 和 DIP？有关 viewport 以及苹果安卓设备上的页面呈现为什么效果不一样，又有哪些方法去改变和统一呢？网络上有很多资源对这些知识点进行了介绍，但是查看之后我发现大都比较零散且阅读顺序容易让新人疑惑，在这里我尝试根据几篇文章糅合了一个循序渐进的知识点整理...
 ---

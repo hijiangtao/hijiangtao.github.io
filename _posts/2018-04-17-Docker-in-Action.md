@@ -4,7 +4,7 @@ layout: post
 thread: 194
 date: 2018-04-17
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [Docker, VM, Tutorial]
 excerpt: 一篇了解与使用 Docker 的新手笔记，记录了 Docker 的相关概念与基本组成，以及从 Docker 环境安装、运行加速、镜像使用、镜像构成到镜像定制与发布等过程的实践笔记。
 header:

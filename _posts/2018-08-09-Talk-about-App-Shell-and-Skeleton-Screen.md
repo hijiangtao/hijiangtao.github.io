@@ -4,7 +4,7 @@ layout: post
 thread: 201
 date: 2018-08-09
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [前端, Web, JavaScript, PWA, CSS]
 excerpt: 作为前端开发老生常谈的话题之一，提升用户体验的口号一直不绝于耳。但怎样的体验改进才算是有提升，用户一方是否认可你的改进与优化，这些都是可以展开详细讨论的话题。
 ---

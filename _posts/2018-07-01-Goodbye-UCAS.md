@@ -6,7 +6,7 @@ date: 2018-07-01
 author: Joe Jiang
 categories: Student
 tags: [UCAS, 2018, 研究生, 毕业, 学生]
-excerpt: 三年时光荏苒，回首贺和研究生时光说一声再见。
+excerpt: 三年时光荏苒，回首和和研究生时光说一声再见。
 header:
   image: ../assets/in-post/2018-07-01-Goodbye-UCAS-teaser.jpg
   caption: "From www.ucas.ac.cn"

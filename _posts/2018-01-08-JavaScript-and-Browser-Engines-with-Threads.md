@@ -4,7 +4,7 @@ layout: post
 thread: 186
 date: 2018-01-08
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [JavaScript, 浏览器, 线程, 引擎, 内核]
 excerpt: 聊聊 JavaScript 的单线程与异步，浏览器的多线程、引擎和内核。
 ---

@@ -4,7 +4,7 @@ layout: post
 thread: 183
 date: 2017-12-18
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [2017, JavaScript, FE, Translation]
 excerpt: 前端领域在 2017 年再次以狂热的节奏向前发展。该文章列出过去的一年中最值得关注的一系列事情。
 header:

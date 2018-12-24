@@ -4,7 +4,7 @@ layout: post
 thread: 181
 date: 2017-11-10
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [Koa, JavaScript, Middleware, Nodejs, Koajs, Expressjs, Translation]
 excerpt: 随着 Node 默默的实现了 async-await 的用法，Koa2 也在最近发布了。Express 似乎还占领着这场人气比赛的上风，但自 Koa2 发布以来我一直愉快的使用着，并且总是害怕回到老项目中去使用 Express...
 ---

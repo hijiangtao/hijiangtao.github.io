@@ -4,7 +4,7 @@ layout: post
 thread: 188
 date: 2018-01-23
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [2018, React, JavaScript, Web, Software]
 excerpt: 原文作者研究了近1.8万篇 React.js 文章得出这篇总结，全文既包含 React 入门，进阶和综合应用专题，也包括对路由、React Native、动画、PWA等内容的专题介绍，非常适合用于对自己 React 技术栈的比对，用于查漏补缺，适合收藏阅读。译者保留了原文链接以及对应作者的 medium 或者 twitter 链接地址，方便读者进行进一步查看和学习。文中如有错误，欢迎评论指出。
 header:

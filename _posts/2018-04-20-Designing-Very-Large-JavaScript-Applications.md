@@ -4,7 +4,7 @@ layout: post
 thread: 195
 date: 2018-04-20
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [Application, Design, JavaScript, Software, 软件开发, 软件设计]
 excerpt: 一个超大型 JavaScript 应用该如何设计，其中蕴含哪些哲学？来看看 Malte 在 JSConf 上是怎么说的吧。
 header:

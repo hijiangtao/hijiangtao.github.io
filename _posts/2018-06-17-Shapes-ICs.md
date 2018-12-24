@@ -4,7 +4,7 @@ layout: post
 thread: 196
 date: 2018-06-17
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [JavaScript, 2018, 引擎, Shapes, Cache, 前端]
 excerpt: 本文就所有 JavaScript 引擎中常见的一些关键基础内容进行了介绍——这不仅仅局限于 V8 引擎。作为一名 JavaScript 开发者，深入了解 JavaScript 引擎是如何工作的将有助于你了解自己所写代码的性能特征。
 header:

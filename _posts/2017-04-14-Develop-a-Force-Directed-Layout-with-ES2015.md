@@ -4,7 +4,7 @@ layout: post
 thread: 171
 date: 2017-04-14
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [Visualization, JavaScript, ForceLayout]
 excerpt: 正好熟练一下 ES2015 的新特性, 用它开发一个简单的力导向图库怎么样?
 ---

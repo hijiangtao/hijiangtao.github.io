@@ -4,7 +4,7 @@ layout: post
 thread: 173
 date: 2017-05-07
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [JavaScript, Methods, Translation]
 excerpt: 昨天参加百度的春季实习生招聘, 二面面试官人出了一道极其简单的 JavaScript 内置函数的基础实现题, 但由于自己太弱鸡没有答出来. 不过面试官人还是特别好, 认为可能正好说到了我的知识盲点, 看了我的简历就从别的入手点和我聊了起来, 非常羞愧... 遂找了一篇介绍 Apply, Call 和 Bind 比较详细的文章通读, 尝试翻译并加入了一些新的内容.
 ---

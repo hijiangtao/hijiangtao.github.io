@@ -4,7 +4,7 @@ layout: post
 thread: 174
 date: 2017-06-03
 author: Joe Jiang
-categories: documents
+categories: Document
 tags: [JavaScript, PWA, Web]
 excerpt: Google 在 Web 领域持续投入的两个技术 PWA 和 AMP 吸引了很多人的目光, 我今天尝试通过 Google 的介绍文档体验了一个构建 PWA 应用的过程, 以下为实践过程中对 PWA 结构与开发关键细节的整理笔记.
 ---

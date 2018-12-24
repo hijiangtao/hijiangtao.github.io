@@ -4,7 +4,7 @@ layout: post
 thread: 192
 date: 2018-02-11
 author: Joe Jiang
-categories: Documents
+categories: Document
 tags: [2018, Web, JavaScript, Summary]
 excerpt: 从本月起，我开始坚持翻译 JavaScript 十大新闻清单。
 header:
