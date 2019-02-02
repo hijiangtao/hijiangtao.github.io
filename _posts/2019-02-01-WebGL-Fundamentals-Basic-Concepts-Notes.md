@@ -1,5 +1,5 @@
 ---
-title: WebGL 基础概念摘要（上）
+title: WebGL 基础概念学习摘要（上）
 layout: post
 thread: 213
 date: 2019-02-01
