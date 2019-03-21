@@ -53,9 +53,6 @@ header:
 
 我们在 CSS 中设置的字体样式、大小以及其他文本属性，都是 Flutter 中一个 [Text](https://docs.flutter.io/flutter/widgets/Text-class.html) widget 子元素 [TextStyle](https://docs.flutter.io/flutter/painting/TextStyle-class.html) 中单独的属性。
 
-In both HTML and Flutter, child elements or widgets are anchored at
-the top left, by default.
-
 不论是 HTML 还是 Flutter，子元素或者 widget 都默认锚定在左上方。
 
 * Web
