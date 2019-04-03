@@ -15,7 +15,7 @@ header:
 前言：本教程为「从零开始学习时空数据可视化」系列第一篇教程——three.js 简介与示例教学，主要通过一个简单示例教学让读者轻松上手 three.js 的一些基本 API。关于这个系列以及代码等细节可见：
 
 * 项目 [GitHub](https://github.com/hijiangtao/glmaps) 地址，欢迎 watch 关注与 star 鼓励
-* [从零开始学习时空数据可视化（序）](./2019/02/24/Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch/)
+* [从零开始学习时空数据可视化（序）](https://hijiangtao.github.io/2019/02/24/Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch/)
 * [Zero to One: How I mastered Data Visualization and how you can too](https://medium.com/@hijiangtao/data-visualization-examples-and-tutorials-from-scratch-with-glmaps-2b93f478607f)
 
 众所周知，得益于浏览器在 canvas 上实现了 WebGL 接口，开发者可以按照规范在 canvas 画布上建立场景、几何体与动画。WebGL 是基于 OpenGL ES 2.0 的 Web 标准，可以通过 HTML5 Canvas 元素作为 DOM 接口访问。但由于 WebGL (OpenGL ES) 的特殊性，基于 canvas 3D 上下文的开发相距常规的前端开发还是有不少差距，面对大量的 API 时，刚入门的同学大概率会被绕的头晕目眩。
@@ -241,7 +241,7 @@ function render() {
 
 ![](/assets/in-post/2019-04-03-Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch-One-2.png )
 
-## 总结
+## 四、总结
 
 总结一下，我们简单聊了下 WebGL，并对 three.js 的一些基本情况作了介绍。之后通过一个示例，我们接触到了场景、相机、渲染器、几何体、材质、对象组等概念，requestAnimationFrame API 以及更新几何体位置等属性的方法。
 
