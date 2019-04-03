@@ -15,7 +15,7 @@ header:
 前言：本教程为「从零开始学习时空数据可视化」系列第一篇教程——three.js 简介与示例教学，主要通过一个简单示例教学让读者轻松上手 three.js 的一些基本 API。关于这个系列以及代码等细节可见：
 
 * 项目 [GitHub](https://github.com/hijiangtao/glmaps) 地址，欢迎 watch 关注与 star 鼓励
-* [从零开始学习时空数据可视化（序）](./Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch/)
+* [从零开始学习时空数据可视化（序）](./2019/02/24/Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch/)
 * [Zero to One: How I mastered Data Visualization and how you can too](https://medium.com/@hijiangtao/data-visualization-examples-and-tutorials-from-scratch-with-glmaps-2b93f478607f)
 
 众所周知，得益于浏览器在 canvas 上实现了 WebGL 接口，开发者可以按照规范在 canvas 画布上建立场景、几何体与动画。WebGL 是基于 OpenGL ES 2.0 的 Web 标准，可以通过 HTML5 Canvas 元素作为 DOM 接口访问。但由于 WebGL (OpenGL ES) 的特殊性，基于 canvas 3D 上下文的开发相距常规的前端开发还是有不少差距，面对大量的 API 时，刚入门的同学大概率会被绕的头晕目眩。
@@ -79,12 +79,12 @@ three.js 是一个轻量的 3D 可视化库，它通过抽象隐藏了 WebGL 的
 
 说到 3D 场景，我们有一些概念需要提前了解：
 
-1.场景：是物体、光源等元素的容器；
-2.相机：场景中的相机，代替人眼去观察，场景中只能添加一个，决定哪些东西将在屏幕上渲染；
-3.物体对象：包括二维物体（点、线、面）、三维物体，模型等等，他们是在相机透视图里主要的渲染对象；
-4.光源：场景中的光照，如果不添加光照场景将会是一片漆黑，包括全局光、平行光、点光源等；
-5.渲染器：场景的渲染方式，如 WebGL/canvas2D/CSS3D；
-6.控制器：可通过键盘、鼠标控制相机的移动，用于交互；
+1. 场景：是物体、光源等元素的容器；
+2. 相机：场景中的相机，代替人眼去观察，场景中只能添加一个，决定哪些东西将在屏幕上渲染；
+3. 物体对象：包括二维物体（点、线、面）、三维物体，模型等等，他们是在相机透视图里主要的渲染对象；
+4. 光源：场景中的光照，如果不添加光照场景将会是一片漆黑，包括全局光、平行光、点光源等；
+5. 渲染器：场景的渲染方式，如 WebGL/canvas2D/CSS3D；
+6. 控制器：可通过键盘、鼠标控制相机的移动，用于交互；
 
 关于 three.js 的一些详细介绍，可以参阅如下资源：
 
