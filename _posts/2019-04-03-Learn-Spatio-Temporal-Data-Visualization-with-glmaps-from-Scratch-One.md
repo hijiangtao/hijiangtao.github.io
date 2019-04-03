@@ -14,7 +14,7 @@ header:
 
 前言：本教程为「从零开始学习时空数据可视化」系列第一篇教程——three.js 简介与示例教学，主要通过一个简单示例教学让读者轻松上手 three.js 的一些基本 API。关于这个系列以及代码等细节可见：
 
-* 项目 GitHub 地址 [glmaps](https://github.com/hijiangtao/glmaps)
+* 项目 [GitHub](https://github.com/hijiangtao/glmaps) 地址，欢迎 watch 关注与 star 鼓励
 * [从零开始学习时空数据可视化（序）](./Learn-Spatio-Temporal-Data-Visualization-with-glmaps-from-Scratch/)
 * [Zero to One: How I mastered Data Visualization and how you can too](https://medium.com/@hijiangtao/data-visualization-examples-and-tutorials-from-scratch-with-glmaps-2b93f478607f)
 
