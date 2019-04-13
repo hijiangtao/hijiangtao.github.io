@@ -1,5 +1,5 @@
 ---
-title: 社交网络配图安全指南（前端版）
+title: 社交网络配图安全指南
 layout: post
 thread: 217
 date: 2019-04-12
