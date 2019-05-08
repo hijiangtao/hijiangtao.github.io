@@ -6,9 +6,9 @@ date: 2019-05-08
 author: Joe Jiang
 categories: Document
 tags: [2019, Flutter, Web, Google, IO19, 跨平台框架, 移动开发]
-excerpt: 好久没写日记了。
+excerpt: Google I/O 2019 来啦，作为一名 Web 开发，今年比较关注的是 Flutter 的动态，一起来看看都有哪些动态吧。
 header:
-  image: ../assets/in-post/2019-05-08-Flutter-for-Web-Teaser.png
+  image: ../assets/in-post/2019-05-08-Flutter-for-Web-0.png
   caption: "@Google I/O 2019"
 ---
 
