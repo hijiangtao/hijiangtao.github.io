@@ -119,6 +119,12 @@ fn main() {
 }
 ```
 
+数组的类型比较有趣；它看起来像 [type; number]，例如：
+
+```rust
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+```
+
 ## 2. 控制流
 
 Rust 有三种循环：loop、while 和 for
