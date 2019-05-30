@@ -5,8 +5,8 @@ thread: 219
 date: 2019-05-28
 author: Joe Jiang
 categories: Document
-tags: [2019, Rust, WebAssembly]
-excerpt: Rust 学习笔记，变量、数据类型与控制流。
+tags: [2019, Rust, WebAssembly, 笔记]
+excerpt: Rust 学习笔记，关于变量、数据类型与控制流等。
 ---
 
 ## 0. 变量
