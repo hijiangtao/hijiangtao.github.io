@@ -1,12 +1,12 @@
 ---
-title: Rust学习笔记 - 测试
+title: Rust学习笔记 - 测试与字符串操作
 layout: post
 thread: 221
 date: 2019-05-30
 author: Joe Jiang
 categories: Document
 tags: [2019, Rust, WebAssembly, 笔记]
-excerpt: Rust 学习笔记，关于测试。
+excerpt: Rust 学习笔记，关于测试与字符串操作的内容。
 ---
 
 ## 0. 测试
@@ -44,3 +44,46 @@ mod tests {
     }
 }
 ```
+
+## 1. 字符串
+
+Rust 的核心语言中只有一种字符串类型： `str`。`String` 类型由标准库提供，是可增长的、可变的、有所有权的、UTF-8 编码的字符串类型。
+
+### 新建字符串
+
+```rust
+// 第一种方法
+let data = "initial contents";
+let s = data.to_string();
+
+// 第二种方法
+let s = String::from("initial contents");
+```
+
+### 更新字符串
+
+利用 + 的示例如下：
+
+```rust
+let mut s = String::from("foo");
+s.push_str("bar");
+s.push('l');
+
+let s2 = String::from("world!");
+
+let s3 = s + &s2; // 注意 s 被移动了，不能继续使用，且 + 不能将两个 String 相加
+```
+
+利用 `format!` 的示例（不会获取任何参数的所有权）如下：
+
+```rust
+let s1 = String::from("tic");
+let s2 = String::from("tac");
+let s3 = String::from("toe");
+
+let s = format!("{}-{}-{}", s1, s2, s3);
+```
+
+### 索引字符串
+
+Rust 字符串不支持索引。
