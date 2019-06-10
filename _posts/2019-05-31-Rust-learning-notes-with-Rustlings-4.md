@@ -6,7 +6,7 @@ date: 2019-05-30
 author: Joe Jiang
 categories: Document
 tags: [2019, Rust, WebAssembly, 笔记]
-excerpt: Rust 学习笔记。
+excerpt: Rust 学习笔记，模块系统。
 ---
 
 模块是 Rust 中的 私有性边界，如果你希望函数或结构体是私有的，将其放入模块。私有性规则有如下：
