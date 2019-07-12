@@ -101,7 +101,7 @@ const obj = Array.from(map).reduce((acc, [ key, val ]) => {
 该提案的目的在于为对象添加一个新的静态方法 `Object.fromEntries`，用于将符合键值对的列表（例如 Map、数组等）转换为一个对象。如此一来，以上转换我们只需要一行代码即可搞定：
 
 ```js
-Object.entries(map);
+Object.fromEntries(map);
 ```
 
 ## 5. `JSON.stringify`
