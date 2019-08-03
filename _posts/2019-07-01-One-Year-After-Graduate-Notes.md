@@ -25,4 +25,4 @@ excerpt: 去年是7月2号入职的，仔细想想还是为过去这一年写上
 
 听首80年代的老歌断续写下这些，是为这一年想说的几句话。明天还是起个大早吧。
 
-<video style="width: 100%; height: auto;" src="/assets/in-post/2019-07-01-One-Year-After-Graduate-Notes.mp4" controls="controls">
+<video style="width: 100%; height: auto;" src="/assets/in-post/2019-07-01-One-Year-After-Graduate-Notes.mp4" controls="controls"></video>
