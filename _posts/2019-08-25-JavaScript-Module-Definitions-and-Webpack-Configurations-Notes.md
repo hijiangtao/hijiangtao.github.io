@@ -1,17 +1,17 @@
 ---
-title: JavaScript 模块化总结与打包配置概述
+title: JavaScript 模块化方案总结
 layout: post
 thread: 229
 date: 2019-08-25
 author: Joe Jiang
 categories: Document
-tags: [2019, 前端, JavaScript, 模块化, ES6, CommonJS, UMD]
+tags: [2019, 前端, JavaScript, 模块化, ES6, CommonJS, UMD, AMD, CMD, 前端]
 excerpt: 
 ---
 
 本文包含两部分，第一部分通过简明的描述介绍什么是 CommonJS、AMD、CMD、UMD、ES Module 以及它们的常见用法，第二部分则根据实际问题指出在正常的 webpack 构建过程中该如何指定打包配置重的模块化参数。
 
-## JavaScript 模块化
+## JavaScript 模块化方案
 
 模块化这个话题在 ES6 之前是不存在的，因此这也被诟病为早期 JavaScript 开发**全局污染**和**依赖管理混乱**问题的源头。这类历史渊源和发展概述在本文将不会提及，因此感兴趣可以自行搜索 JavaScript 发展史进行了解。
 
