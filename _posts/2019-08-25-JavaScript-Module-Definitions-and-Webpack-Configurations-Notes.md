@@ -9,7 +9,7 @@ tags: [2019, 前端, JavaScript, 模块化, ES6, CommonJS, UMD, AMD, CMD, 前端
 excerpt: 
 ---
 
-本文包含两部分，第一部分通过简明的描述介绍什么是 CommonJS、AMD、CMD、UMD、ES Module 以及它们的常见用法，第二部分则根据实际问题指出在正常的 webpack 构建过程中该如何指定打包配置重的模块化参数。
+本文包含两部分，第一部分通过简明的描述介绍什么是 CommonJS、AMD、CMD、UMD、ES Module 以及它们的常见用法，第二部分则根据实际问题指出在正常的 webpack 构建过程中该如何指定打包配置中的模块化参数。
 
 ## JavaScript 模块化方案
 
@@ -218,7 +218,7 @@ import { firstName as newName } from 'module';
 import * as moduleA from 'module';
 ```
 
-c除以上两种明另外，还有一个 `export default` 命令用于指定模块的默认输出（一个模块只能有一个默认输出）。如果使用了 `export default` 语法，在 import 时则可以任意命名。由于 `export default` 命令的本质是将后面的值，赋给 `default` 变量，所以也可以直接将一个值写在 `export default` 之后。当然，引用方式也存在多种：
+除以上两种命令外，还有一个 `export default` 命令用于指定模块的默认输出（一个模块只能有一个默认输出）。如果使用了 `export default` 语法，在 import 时则可以任意命名。由于 `export default` 命令的本质是将后面的值，赋给 `default` 变量，所以也可以直接将一个值写在 `export default` 之后。当然，引用方式也存在多种：
 
 ```javascript
 import { default as foo } from 'module';
