@@ -6,7 +6,7 @@ date: 2019-08-31
 author: Joe Jiang
 categories: Document
 tags: [2019, 前端, webpack, 配置]
-excerpt: 
+excerpt: 关于 webpack 核心概念、基础配置以及样板代码的摘要。
 ---
 
 ## 一、核心概念
