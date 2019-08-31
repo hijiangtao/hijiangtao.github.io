@@ -5,7 +5,7 @@ thread: 229
 date: 2019-08-25
 author: Joe Jiang
 categories: Document
-tags: [2019, 前端, JavaScript, 模块化, ES6, CommonJS, UMD, AMD, CMD, 前端]
+tags: [2019, 前端, JavaScript, 模块化, ES6, CommonJS, UMD, AMD, CMD]
 excerpt: 
 ---
 
