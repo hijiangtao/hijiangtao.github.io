@@ -1,7 +1,7 @@
 ---
 title: Flat、Gouraud、Phong Shading 着色方法对比
 layout: post
-thread: 231
+thread: 232
 date: 2019-09-19
 author: Joe Jiang
 categories: Document
