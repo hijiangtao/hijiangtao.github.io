@@ -11,7 +11,7 @@ excerpt: 当前，常见的三类多边形着色方法分别是 Flat Shading、G
 
 当前，常见的三类多边形着色方法分别是 Flat Shading、Gouraud Shading 和 Phong Shading。其实从效果图就能看出它们之间大致的区别，以下为三类着色的效果图：
 
-![](/assets/in-post/2019-09-19-Shading-Methods-Comparison.png )
+<center>![](/assets/in-post/2019-09-19-Shading-Methods-Comparison.png )</center>
 
 ## Shading: Phong vs Gouraud vs Flat
 
