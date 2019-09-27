@@ -1,6 +1,6 @@
 ---
 title: Introduction of Algebraic Effects
-layout: post
+layout: keynote
 thread: 233
 date: 2019-09-27
 author: Joe Jiang
