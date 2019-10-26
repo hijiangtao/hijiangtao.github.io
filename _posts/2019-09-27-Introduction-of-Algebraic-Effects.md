@@ -11,7 +11,7 @@ iframe: https://hijiangtao.github.io/slides/s-Fliggy/Introduction-of-Algebraic-E
 
 ---
 
-> [扫码或点击链接查看](https://hijiangtao.github.io/slides/s-Fliggy/Hello-Flutter-at-Beginning-of-2019.html#/)
+> [扫码或点击链接查看](https://hijiangtao.github.io/slides/s-Fliggy/Introduction-of-Algebraic-Effects.html#/)
 
-[![](/assets/in-post/2019-09-27-Introduction-of-Algebraic-Effects-1.png)](https://hijiangtao.github.io/slides/s-Fliggy/Hello-Flutter-at-Beginning-of-2019.html#/)
+[![](/assets/in-post/2019-09-27-Introduction-of-Algebraic-Effects-1.png)](https://hijiangtao.github.io/slides/s-Fliggy/Introduction-of-Algebraic-Effects.html#/)
 
