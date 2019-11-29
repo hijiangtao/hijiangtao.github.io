@@ -156,8 +156,7 @@ const response = `onmessage = ({ data: { data } }) => {
 const blob = new Blob([response], {type: 'application/javascript'});
 
 const worker = new Worker(
-  URL.createObjectURL(blob),
-  { type: 'text/javascript' }
+  URL.createObjectURL(blob)
 );
 
 // 事件处理
