@@ -7,6 +7,8 @@ author: Joe Jiang
 categories: Document
 tags: [Git, CR, Shell]
 excerpt: 本文从只会 add/commit/push 三连的新手出发，看看 Code Review 时遇到的一些 Git 问题都要如何处理。
+header:
+  image: ../assets/in-post/2020-01-12-Tips-of-Git-for-Code-Review-Teaser.png
 ---
 
 往日干活，都是自己代码一时爽，后人维护XXX。如果可以的话，还是要坚持 Code Review (CR)，不仅团队内熟悉代码风格，更能在学习他人优秀的代码风格的同时补足自己的短板。
