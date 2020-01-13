@@ -26,6 +26,8 @@ RxJS 是 Reactive Extensions for JavaScript 的缩写，起源于 Reactive Exten
 
 想想连我都能学会，你还怕什么呢，那么我们开始吧。
 
+> 转载请注明作者与本文地址 <https://hijiangtao.github.io/2020/01/13/RxJS-Introduction-and-Actions/>, 你也可以在知乎查看此文 <https://zhuanlan.zhihu.com/p/102446217>。
+
 # 一、一个控制数据流动的示例
 
 我们看一个简单示例。假设我们的页面中有一个输入框，我们想将用户的输入打印出来，但有个条件，若是输入字符长度小于3我们则忽略处理，即控制台输出的第一个值应为 "hel" 字符串。现在我们要用 RxJs 来实现，该怎么做呢？
@@ -379,5 +381,7 @@ Hot Observable 示例
 - [https://zhuanlan.zhihu.com/p/27678951](https://zhuanlan.zhihu.com/p/27678951)
 - [https://hateonion.me/posts/19jul16/](https://hateonion.me/posts/19jul16/)
 - [https://rxmarbles.com/](https://rxmarbles.com/#interval)
+
+> 转载请注明作者与本文地址 <https://hijiangtao.github.io/2020/01/13/RxJS-Introduction-and-Actions/>, 你也可以在知乎查看此文 <https://zhuanlan.zhihu.com/p/102446217>。
 
 （完）
