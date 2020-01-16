@@ -36,12 +36,12 @@ excerpt: 回到图形化编辑器的开发上，当用户添加文字、图片�
 
 |属性|类型|描述|
 |---|---|---|
-|target |	EventTarget	事件对应的 DOM 树顶级顶级元素|
-|currentTarget |	EventTarget	挂载监听器的节点|
-|screenX |	long	全局屏幕坐标系下鼠标指针的 X 轴坐标值|
-|screenY |	long	全局屏幕坐标系下鼠标指针的 Y 轴坐标值|
-|clientX |	long	当前（DOM 元素）坐标系下鼠标指针的 X 轴坐标值|
-|clientY |	long	当前（DOM 元素）坐标系下鼠标指针的 Y 轴坐标值|
+|target |	EventTarget|	事件对应的 DOM 树顶级顶级元素|
+|currentTarget |	EventTarget|	挂载监听器的节点|
+|screenX |	long|	全局屏幕坐标系下鼠标指针的 X 轴坐标值|
+|screenY |	long|	全局屏幕坐标系下鼠标指针的 Y 轴坐标值|
+|clientX |	long|	当前（DOM 元素）坐标系下鼠标指针的 X 轴坐标值|
+|clientY |	long|	当前（DOM 元素）坐标系下鼠标指针的 Y 轴坐标值|
 
 关于 click 事件存在一些细节，咬文嚼字一下：
 
