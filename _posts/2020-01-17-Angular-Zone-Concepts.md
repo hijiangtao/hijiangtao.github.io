@@ -76,7 +76,7 @@ excerpt: 要不是代码里看到 NgZone，我都不知道什么时候会接触�
       }
     }
 
-如果做到 Zone 外的操作虽然不会实时触发变更检测，但在特定时机还是通知到 Angular Zone 内呢？或者换句话说，即在 Zone 外创建数据流、Zone 内订阅数据流？可以看看下面的 Subject 应用：
+如何做到 Zone 外的操作虽然不会实时触发变更检测，但在特定时机还是通知到 Angular Zone 内呢？或者换句话说，即在 Zone 外创建数据流、Zone 内订阅数据流？可以看看下面的 Subject 应用：
 
     export class AppComponent implements OnInit {
       notify$ = new Subject();
