@@ -62,7 +62,7 @@ excerpt: 本文是学习 Angular ControlValueAccessor 过程中的笔记摘要�
 
 在 Angular 中，类似的自定义表单其实是有相应接口实现的，这里就用到我们今天要谈的主角——ControlValueAccessor，其官方定义是
 
-- Implement this interface to create a custom form control directive that integrates with Angular forms.
+> Implement this interface to create a custom form control directive that integrates with Angular forms.
 
 简单来说，这个对象桥接原生表单控件和 `formControl` 指令，并同步两者的值。
 
@@ -96,34 +96,38 @@ excerpt: 本文是学习 Angular ControlValueAccessor 过程中的笔记摘要�
 
 - `counter.component.html`
 
-    <div>
-        <p>当前值: {{ count }}</p>
-        <button (click)="increment()"> + </button>
-        <button (click)="decrement()"> - </button>
-    </div>
+```html
+<div>
+    <p>当前值: {{ count }}</p>
+    <button (click)="increment()"> + </button>
+    <button (click)="decrement()"> - </button>
+</div>
+```
 
 - `counter.component.ts`
 
-    import { Component, Input } from '@angular/core';
+```javascript
+import { Component, Input } from '@angular/core';
     
-    @Component({
-      selector: 'app-counter',
-      templateUrl: './counter.component.html',
-      styleUrls: ['./counter.component.css'],
-    })
-    export class Counter {
-        @Input() count: number = 0;
-    
-        ngOnInit() {}
-    
-        increment() {
-            this.count++;
-        }
-    
-        decrement() {
-            this.count--;
-        }
+@Component({
+    selector: 'app-counter',
+    templateUrl: './counter.component.html',
+    styleUrls: ['./counter.component.css'],
+})
+export class Counter {
+    @Input() count: number = 0;
+
+    ngOnInit() {}
+
+    increment() {
+        this.count++;
     }
+
+    decrement() {
+        this.count--;
+    }
+}
+```
 
 ### 3.2 完善 ControlValueAccessor 接口
 
@@ -211,12 +215,14 @@ excerpt: 本文是学习 Angular ControlValueAccessor 过程中的笔记摘要�
 
 然后我们完善调用自定义控件的代码，假设我们是在一个叫 hello 的 component 中调用它，那么代码分以下两步，首先是 HTML：
 
-    <ng-container>
-        <p>counter 控件测试</p>
-        <form [formGroup]="helloForm">
-            <app-counter formControlName="counter"></app-counter>
-        </form>
-    </ng-container>
+```html
+<ng-container>
+    <p>counter 控件测试</p>
+    <form [formGroup]="helloForm">
+        <app-counter formControlName="counter"></app-counter>
+    </form>
+</ng-container>
+```
 
 其次，我们完善 ts 代码：
 
