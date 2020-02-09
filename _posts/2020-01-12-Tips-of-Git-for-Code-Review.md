@@ -98,7 +98,7 @@ header:
 
 ## 问题四：挑选合入其他分支的提交
 
-比如我在 dev 分支提交了一个 commit A，这个时候我想起来 dev_2 分支也需要这个提交，那么我如何只“挑选” dev 分支的 A 到 dev_2 合入，而保持其他不变呢？此时， `cherrt-pick` 登场。`cherrt-pick` 可以理解为”挑拣”提交，它会获取某一个分支的单笔提交，并作为一个新的提交引入到你当前分支上。
+比如我在 dev 分支提交了一个 commit A，这个时候我想起来 dev_2 分支也需要这个提交，那么我如何只“挑选” dev 分支的 A 到 dev_2 合入，而保持其他不变呢？此时， `cherry-pick` 登场。`cherry-pick` 可以理解为”挑拣”提交，它会获取某一个分支的单笔提交，并作为一个新的提交引入到你当前分支上。
 
     git checkout dev
     git log --oneline -3
@@ -115,6 +115,16 @@ header:
     // ...
 
 当然，如果 cherry-pick 遇到冲突，手动解决完 `git commit` 一次即可。
+
+## 问题五：合并代码无法提交
+
+当我们使用一些代码评审工具比如 Gerrit 时，在合并已审阅过的代码到特定分支时，可能会遇到无法提交的情况。失败时，命令行提示：
+
+> ! [remote rejected] HEAD -> refs/for/*** (no new changes)
+
+正常情况下我们合并代码只需要 `git merge branchA` 即可，但由此产生的合并，是个线性的合并。由于历史上的 commit 节点已经在 Gerrit 上都评审过了，所以此时 Gerrit 会认为没有新的提交。
+
+这个问题非常好解，即给你的合并命令提交一个参数即可。在 `git merge branchA` 的时候，加上 `--no-ff` 参数，使其生成一个新的 commit 节点，这样便可以提交了。
 
 ## 问题零：远程 URL 变更
 
