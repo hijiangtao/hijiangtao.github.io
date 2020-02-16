@@ -1,5 +1,5 @@
 ---
-title: 组合 <a> 标签与 canvas 实现图片资源的安全下载
+title: 组合 a 标签与 canvas 实现图片资源的安全下载
 layout: post
 thread: 242
 date: 2020-02-15
