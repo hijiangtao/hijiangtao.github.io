@@ -6,7 +6,7 @@ date: 2020-02-15
 author: Joe Jiang
 categories: Document
 tags: [canvas, JavaScript, 图片下载, HTML, 跨域, base64, URL, download, 正则表达式]
-excerpt: 让我们看看如何用 JavaScript 实现下载一张图片的功能。
+excerpt: 普通用户下载图片时只需一个「右键另存为」操作即可完成，但当我们做在线编辑器、整个 UI 都被自定义实现时，如何解决不同域问题并实现页面中图片资源的安全下载呢？本文就解决该问题过程中所涉及的正则表达式、Web API 和 canvas 操作进行记录。
 ---
 
 普通用户下载图片时只需一个「右键另存为」操作即可完成，但当我们做在线编辑器、整个 UI 都被自定义实现时，如何解决不同域问题并实现页面中图片资源的安全下载呢？本文就解决该问题过程中所涉及的正则表达式、Web API 和 canvas 操作进行记录。
