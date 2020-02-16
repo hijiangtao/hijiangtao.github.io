@@ -1,23 +1,23 @@
 ---
-title: 利用 canvas 与 Data URLs 安全地下载一张图片
+title: 组合 <a> 标签与 canvas 实现图片资源的安全下载
 layout: post
 thread: 242
 date: 2020-02-15
 author: Joe Jiang
 categories: Document
-tags: [canvas, JavaScript, 图片下载, HTML, 跨域, base64, ]
+tags: [canvas, JavaScript, 图片下载, HTML, 跨域, base64, URL, download, 正则表达式]
 excerpt: 让我们看看如何用 JavaScript 实现下载一张图片的功能。
 ---
 
-普通用户下载图片时只需一个「右键另存为」操作即可完成，但当我们做在线编辑器、整个 UI 都被自定义时，要如何赋予用户一个安全下载页面中图片功能的能力呢？
+普通用户下载图片时只需一个「右键另存为」操作即可完成，但当我们做在线编辑器、整个 UI 都被自定义实现时，如何解决不同域问题并实现页面中图片资源的安全下载呢？本文就解决该问题过程中所涉及的正则表达式、Web API 和 canvas 操作进行记录。
 
-## 0. 利用 `<a>` 标签下载资源
+## 0. 利用 `<a>` 标签下载任意资源
 
 最简单的办法，当然是利用 `<a>` 标签。根据 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) 描述，`<a>` 标签有一个属性叫 `download`，此属性指示浏览器下载 URL 而不是导航到它，因此将提示用户将其保存为本地文件。如果我们再给该属性赋值，那么此值将在下载保存过程中作为预填充的文件名。
 
 所以我们可以将需要资源链接附在一个带 `download` 属性的 `<a>` 标签上，以此实现下载的功能，例如：
 
-```HTML
+```html
 <a 
     href="http://hijiangtao.github.io/README.md"
     download="default"
@@ -47,9 +47,9 @@ const matchArray = re.exec(rawHTML);
 const src = matchArray && matchArray[1]) || '';
 ```
 
-*关于 `<img>` 标签有 `<img>` 和 `<img />` 两种形式的讨论，本文不做讨论，详情可以移步 [StackOverflow](https://stackoverflow.com/questions/23890716/why-is-the-img-tag-not-closed-in-html/23890817)。*
+*注：关于 `<img>` 标签有 `<img>` 和 `<img />` 两种形式的讨论，本文不做讨论，详情可以移步 [StackOverflow](https://stackoverflow.com/questions/23890716/why-is-the-img-tag-not-closed-in-html/23890817)。*
 
-## 2. 拆分链接处理情况
+## 2. 分情况处理图片链接
 
 拿到 src 即图片链接后我们来分情况讨论下，处理逻辑应该分这几步（本文中 Data URLs 特指 base64 形式图片 URL，以下不再额外说明）：
 
@@ -81,9 +81,9 @@ export const getDownloadSafeImgSrc = (src: string): Promise<string> => {
 };
 ```
 
-*关于 base64 格式的编码和解码本文不做过多解释，Web APIs 已经有对 base64 进行编码解码的方法:，详情可移步 [Base64 encoding and decoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Base64_encoding_and_decoding) 查看更多。*
+*注：关于 base64 格式的编码和解码本文不做过多解释，Web APIs 已经有对 base64 进行编码解码的方法:，详情可移步 [Base64 encoding and decoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Base64_encoding_and_decoding) 查看更多。*
 
-## 3. 各项工具函数代码完善
+## 3. 工具函数中的正则表达式完善
 
 上例中我们新增了很多处理函数，在这里我们把他们一一实现，首先来看看判断图片是否为 base64 格式的函数实现。
 
@@ -155,11 +155,11 @@ export const getImgMIMEType = (src: string): string => {
 };
 ```
 
-## 4. 用 canvas 绘制图片并转 Data URLs
+## 4. canvas 绘制图片资源并转 Data URLs 返回
 
-关于 canvas 这里不再多说，我们首先创建一个 canvas 画布，然后我们通过新建一个 `Image()` 对象来加载我们想要的图片资源，并调用画布 2D 上下文的 `ctx.drawImage()` API 来绘制图片，接着我们调用 `canvas.toDataURL()` 将资源转换成 Data URLs 并返回。
+关于 canvas 这里不再多说，我们首先创建一个 canvas 画布，当开始下载图片时，我们使用 `Image()` 构造器创建新的 `HTMLImageElement` 对象，将图片的 `crossOrigin` 属性设置为"匿名"（即，允许对未经过验证的图像进行跨域下载）。之后添加图片的 `load` 事件的监听来判断图片数据是否已接收，再决定是否调用画布 2D 上下文的 `ctx.drawImage()` API 来绘制图片，然后调用 `canvas.toDataURL()` 将资源转换成 Data URLs 并返回。
 
-其中，之前提到的 MIME，我们将其作为参数传入 `canvas.toDataURL()`，默认入参为 `'image/png'`。
+其中，之前提到的 MIME，我们将其作为参数传入 `canvas.toDataURL()`，默认入参为 `'image/png'`。最后，将图片的 src属性设置为图片的URL以触发图片下载。
 
 ```javascript
 function convertImgToBase64(url: string, callback: Function, mime?: string) {
@@ -192,12 +192,13 @@ function convertImgToBase64(url: string, callback: Function, mime?: string) {
 
 最后，我们再将之前的 `getImgToBase64(src, resolve)` 调用改成 `getImgToBase64(src, resolve, getImgMIMEType(src))`，这个模块便大功告成。
 
-## 5. 实际使用使用
+*注：关于图片安全性和“被污染”的 canvas 可以查看[启用了 CORS 的图片](https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_enabled_image)了解更多。*
 
-以 Angular 为例，我们的代码可能长成这样：
+## 5. 实际使用与总结
 
-```
-// 1. HTML 部分
+以 Angular 为例，我们的 HTML 代码可能要增加这么一段：
+
+```html
 <a 
     *ngIf="downloadImageUrl" 
     href="{{downloadImageUrl}}" 
@@ -206,14 +207,16 @@ function convertImgToBase64(url: string, callback: Function, mime?: string) {
 >
     保存图片至本地
 </a>
+```
 
-// 2. TypeScript 部分
-// 引入 getDownloadSafeImgSrc 实现
+而对于 TypeScript 脚本，除了引入 getDownloadSafeImgSrc 实现外，我们需要在某一个流更新所通知到的方法中增加如下引用：
+
+```javascript
 import { getDownloadSafeImgSrc } from './utils.ts';
 
 // ...
 
-// 某一个流更新索通知到的方法
+// 某一个流更新所通知到的方法
 function updateDownloadImgState(editors: any[]) {
     // 假设 editors 里面存有各类选中的 DOM HTML
     const rawHTML = editors.getSelectionInnerHTML(); 
@@ -223,7 +226,7 @@ function updateDownloadImgState(editors: any[]) {
 }
 ```
 
-至此，不论图片资源是否跨域，我们都可以利用 `<a>` + `canvas` 的方式将其安全地下载下来，并保留图片的原始格式。这其中涉及不少 Web API 与概念，包含 `canvas`, `<a>` download 属性, MIME 以及人见人爱的正则表达式，这些都是可以细细探究的方面，欢迎深入学习。
+至此，不论图片资源是否跨域，我们都可以利用 `<a>` + `canvas` 的方式将其安全地下载下来，并保留图片的原始格式。这其中涉及不少 Web API 与概念，包含 `canvas`, `<a>` download 属性, Data URLs, MIME 以及人见人爱的正则表达式，这些都是可以细细探究的方面，欢迎深入学习。
 
 ## 参考
 
@@ -236,4 +239,5 @@ function updateDownloadImgState(editors: any[]) {
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes>
 * <https://angular.cn/guide/template-syntax>
 * <https://stackoverflow.com/questions/23890716/why-is-the-img-tag-not-closed-in-html/23890817>
+* <https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_enabled_image>
 * <https://hijiangtao.github.io/2017/06/13/Cross-Origin-Resource-Sharing-Solutions/>
