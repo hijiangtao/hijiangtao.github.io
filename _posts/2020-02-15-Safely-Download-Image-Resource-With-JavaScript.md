@@ -174,7 +174,7 @@ export const getImgMIMEType = (src: string): string => {
 其中，之前提到的 MIME，我们将其作为参数传入 `canvas.toDataURL()`，默认入参为 `'image/png'`。最后，将图片的 src属性设置为图片的URL以触发图片下载。
 
 ```javascript
-function convertImgToBase64(url: string, callback: Function, mime?: string) {
+function getImgToBase64(url: string, callback: Function, mime?: string) {
     // canvas 画布
     const canvas: HTMLCanvasElement = document.createElement('CANVAS'),
     ctx = canvas.getContext('2d'),
