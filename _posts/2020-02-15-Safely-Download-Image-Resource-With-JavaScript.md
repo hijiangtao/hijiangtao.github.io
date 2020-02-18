@@ -206,6 +206,8 @@ function getImgToBase64(url: string, callback: Function, mime?: string) {
 
 *注：关于图片安全性和“被污染”的 canvas 可以查看[启用了 CORS 的图片](https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_enabled_image)了解更多。*
 
+*注2: 由于编码格式有所差别，Blob URL 比起 Data URLs 所占的空间资源更少，性能也更好。经网友指明，Blob URL 性能会好于 Data Urls，感兴趣的话可以尝试。*
+
 ## 5. 实际使用与总结
 
 以 Angular 为例，我们的 HTML 代码可能要增加这么一段：
