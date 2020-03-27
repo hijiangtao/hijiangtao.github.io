@@ -126,6 +126,33 @@ header:
 
 这个问题非常好解，即给你的合并命令提交一个参数即可。在 `git merge branchA` 的时候，加上 `--no-ff` 参数，使其生成一个新的 commit 节点，这样便可以提交了。
 
+## 问题六：同步远程分支状态
+
+有的时候，提交的一个 commit 被我们在 code review 时 abandon 了，但在本地这个提交已经存在，如果我们不把它清理掉，那么之后的 commit 都会带上他的影子。这个时候我们可以抛弃本地所有的修改，回到远程仓库的状态：
+
+```
+git fetch --all && git reset --hard origin/master
+```
+
+## 问题七：本地修改一团糟
+
+当我们不熟悉 git 操作时，再加上遇到除 add/commit/push 外的多种工作流状态，很容易把本地代码弄的一团糟，这个时候我们当然希望代码回到最初的模样，首先通过如下命令查阅历史操作：
+
+```
+git reflog
+
+// 结果
+b7057a9 HEAD@{0}: reset: moving to b7057a9
+98abc5a HEAD@{1}: commit: more stuff added to foo
+b7057a9 HEAD@{2}: commit (initial): initial commit
+```
+
+它可以查看所有分支的所有操作记录，假设我们需要回到最开始的提交，那么我们这么操作：
+
+```
+git reset --hard HEAD@{2}
+```
+
 ## 问题零：远程 URL 变更
 
 当然，还有一个小问题值得一提，你可能在克隆项目时用的是 HTTPS 方式，但却觉得每次输入用户名密码麻烦，最好的办法是将远程 URL 设置成 SSH 地址，这时就可以用到一个简单的命令解决问题：
