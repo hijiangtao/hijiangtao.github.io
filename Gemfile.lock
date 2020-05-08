@@ -11,7 +11,7 @@ PATH
       jemoji (~> 0.8)
 
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://rubygems.org/
   specs:
     activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -112,4 +112,4 @@ DEPENDENCIES
   rake (~> 12.3)
 
 BUNDLED WITH
-   1.16.2
+   1.17.2

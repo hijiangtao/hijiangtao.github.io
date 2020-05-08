@@ -6,7 +6,7 @@ date: 2020-05-08
 author: Joe Jiang
 categories: Document
 tags: [Angular, Redux, ngrx, ngxs, State, 状态管理, 前端, JavaScript]
-excerpt: 
+excerpt: 关于在 Angular 项目中引入状态管理方案的一些调研内容。
 ---
 
 
