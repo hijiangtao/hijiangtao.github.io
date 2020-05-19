@@ -1,5 +1,5 @@
 ---
-title: 用 D3 和 React 造一个更科学的 TreeMap
+title: 绘制 D3 TreeMap 动画的一些设计思路
 layout: post
 thread: 228
 date: 2019-08-03
