@@ -6,7 +6,7 @@ date: 2020-05-21
 author: Joe Jiang
 categories: Document
 tags: [Angular, 依赖, 调试, 自动化, 前端, JavaScript]
-excerpt: 关于在 Angular 项目中引入状态管理方案的一些调研内容。
+excerpt: 本文介绍了前端组件库本地开发调试如何实现自动化流程的一些细节。
 ---
 
 *注：文中涉及到的三方/二方组件库、组件、本地依赖、依赖、开源库、component 和 library 等词汇在此均指同一概念，即抽象出来的通用组件。*
@@ -159,7 +159,7 @@ push: # 手动构建与 push
 	cd dist/hello && yalc push
 
 watch: # 自动监听文件变化并执行构建与 push 任务
-	nodemon --ignore dist/ --ignore node_modules/ --watch projects -C -e ts,html,less,scss --debug -x "npm run build && cd dist/hello && yalc push"
+	nodemon --ignore dist/ --ignore node_modules/ --watch projects -C -e ts,html,less,scss --debug -x "make push"
 ```
 
 而在业务项目中，若是你不喜欢 Makefile，可以直接在 `package.json` 中指定几个 commands，这样你就可以直接 `npm run *` 一把梭了:
