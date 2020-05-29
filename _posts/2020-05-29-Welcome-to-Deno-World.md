@@ -1,6 +1,6 @@
 ---
 title: 欢迎来到 Deno 世界
-layout: post
+layout: keynote
 thread: 249
 date: 2020-05-29
 author: Joe Jiang
