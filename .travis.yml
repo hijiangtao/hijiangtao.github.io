@@ -1,7 +1,10 @@
 language: ruby
 rvm:
 - 2.3.1
-
+install:
+  - gem uninstall bundler
+  - gem install bundler --version '1.7.4'
+  
 script: bundle exec jekyll build
 
 sudo: false 
