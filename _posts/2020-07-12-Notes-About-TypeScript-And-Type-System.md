@@ -167,7 +167,7 @@ type NonNullable<T> = T extends null | undefined ? never : T;
 
 ## 后记
 
-以上，是对这两部分内容的一些笔记，这不适用于针对 TypeScript 的整体入门，相关内容应该会另起篇幅书写。
+以上，是对这两部分内容的一些笔记，但这不适用于针对 TypeScript 的整体入门，因为相关内容还是欠缺太少，相关内容应该会另起篇幅书写。另外，如果你想尝试写些 TypeScript 代码，[TypeScript Playground](https://www.typescriptlang.org/play/) 会是一个比较不错的选择。
 
 参考的资料与可以进一步阅读的资料包含在如下链接中：
 
@@ -178,3 +178,4 @@ type NonNullable<T> = T extends null | undefined ? never : T;
 5. [https://www.typescriptlang.org/docs/handbook/basic-types.html](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 6. [http://notebook.xyli.me/TAPL/type-system/](http://notebook.xyli.me/TAPL/type-system/)
 7. [http://lucacardelli.name/papers/typesystems.pdf](http://lucacardelli.name/papers/typesystems.pdf)
+8. [https://www.typescriptlang.org/play/](https://www.typescriptlang.org/play/)
