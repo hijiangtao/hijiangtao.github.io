@@ -7,6 +7,8 @@ author: Joe Jiang
 categories: Document
 tags: [2020, 前端, puppeteer, Chrome, 截图, 分页算法, 打印样式]
 excerpt: 最近因为工作中的一个需求，需要针对用户数据页面进行分页并截屏并返回 PDF 文件，期间用到了 puppeteer 与 HTML 分页算法，还找到了一个不错的插件，于是来聊些有趣的事。
+header:
+  image: ../assets/in-post/2020-07-21-Play-With-Puppeteer-Teaser.jpg
 ---
 
 最近因为工作中的一个需求，需要针对用户数据页面进行分页并截屏并返回 PDF 文件，期间用到了 puppeteer 与 HTML 分页算法，还找到了一个不错的插件，于是来聊些其中遇到的趣事，先附上目录。
