@@ -131,10 +131,10 @@ const maxTimeout: number;
 const url: string;
 
 const gotoAction = () => {
-	return page.goto(url, {
-	    waitUntil: waitUntil as 'networkidle0' | 'networkidle2' | 'domcontentloaded' | 'load',
-	    timeout: maxTimeout,
-	});
+    return page.goto(url, {
+        waitUntil: waitUntil as 'networkidle0' | 'networkidle2' | 'domcontentloaded' | 'load',
+        timeout: maxTimeout,
+    });
 };
 ```
 
