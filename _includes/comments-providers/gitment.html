@@ -3,17 +3,16 @@
 <script type="text/javascript">
   //   var url = "{{ site.url }}{{ page.url }}";
   var id = "{{ page.thread }}";
-  //   console.log(url);
 
   var execCallback = function () {
-    var gitment = new Gitment({
-      id: id, // 可选。默认为 location.href
+    var gitment = new Gitalk({
+      clientID: '{{ site.comments.gitment.oauth_id }}',
+      clientSecret: '{{ site.comments.gitment.oauth_secret }}',
       owner: '{{ site.comments.gitment.owner }}',
       repo: '{{ site.comments.gitment.repo }}',
-      oauth: {
-        client_id: '{{ site.comments.gitment.oauth_id }}',
-        client_secret: '{{ site.comments.gitment.oauth_secret }}',
-      },
+      admin: ['{{ site.comments.gitment.owner }}'],
+      id: id,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: true  // Facebook-like distraction free mode
     })
     gitment.render('gitcomment-container');
   }
@@ -23,12 +22,12 @@
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://imsun.github.io/gitment/style/default.css';
+    link.href = 'https://hijiangtao.github.io/assets/gitment.css';
     link.media = 'all';
 
     var script = document.createElement('script')
     script.setAttribute("type", "text/javascript")
-    script.setAttribute("src", "https://imsun.github.io/gitment/dist/gitment.browser.js");
+    script.setAttribute("src", "https://hijiangtao.github.io/assets/js/gitment.browser.js");
     script.onreadystatechange = execCallback;
     script.onload = execCallback;
 
