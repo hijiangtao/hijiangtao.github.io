@@ -4,7 +4,7 @@ layout: post
 thread: 256
 date: 2020-08-04
 author: Joe Jiang
-categories: Daily
+categories: Document
 tags: [2020, RxJS, Subject, 多播, BehaviorSubject, ReplaySubject, AsyncSubject]
 excerpt: RxJS Subject 及其变体一探究竟
 ---
