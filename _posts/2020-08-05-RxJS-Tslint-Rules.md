@@ -133,7 +133,7 @@ const ob = of(1).pipe(
 "rxjs-no-create": true,
 ```
 
-## Optional: Rules with NgRx
+## Optional: Rules
 
 ```jsx
 "rxjs-no-unsafe-first": true,
