@@ -1,5 +1,5 @@
 ---
-title: 2020年末，你能再给我写封信吗？
+title: 2020，你能再给我写封信吗？
 layout: post
 thread: 259
 date: 2020-12-06
