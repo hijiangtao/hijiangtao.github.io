@@ -160,7 +160,7 @@ HTTP 请求与响应汇集，即我们常说的 HAR 格式数据。打开 chrome
 
 ### 3.4 network 与 webRequest API
 
-利用 chrome.webRequest API 可以允许我们观察和分析流量，并在运行中拦截、阻止或修改它。从上文描述来看，要收集 HAR 只能通过这个 API 来实现，下面给出一个调用 network 对请求拦截处理的示例，详细用法可参照文档 h[ttps://developer.chrome.com/extensions/webRequest](https://developer.chrome.com/extensions/webRequest)
+利用 chrome.webRequest API 可以允许我们观察和分析流量，并在运行中拦截、阻止或修改它。从上文描述来看，要收集 HAR 只能通过这个 API 来实现，下面给出一个调用 network 对请求拦截处理的示例，详细用法可参照文档 [https://developer.chrome.com/extensions/webRequest](https://developer.chrome.com/extensions/webRequest)
 
 ```jsx
 chrome.devtools.network.onRequestFinished.addListener(function (req) {
@@ -315,3 +315,18 @@ const puppeteer = require('puppeteer');
 ## 4 / 结语
 
 本文通过组合介绍了各类 Web API 及一些新技术，试图通过技术调研以及实际项目开发中总结的经验，为大家在考虑解决「如何实现一个前端监控回放系统」这一问题上提供思路，本文介绍中若有未涉及到的缺漏之处，也欢迎评论告知补充。
+
+本文提及的内容与部分参考如下：
+
+* <https://github.com/rrweb-io/rrweb>
+* <https://hijiangtao.github.io/slides/s-YFD/Play-with-Canvas>
+* <https://blog.logrocket.com/the-ultimate-guide-to-iframes/>
+* <https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder>
+* <https://developer.chrome.com/extensions/webRequest>
+* <https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers>
+* <https://github.com/inikulin/parse5>
+* <https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback>
+* <https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers>
+* <https://hijiangtao.github.io/2020/07/22/Play-With-Puppeteer/>
+* <https://pptr.dev/>
+* <http://www.ruanyifeng.com/blog/2018/07/web-worker.html>
