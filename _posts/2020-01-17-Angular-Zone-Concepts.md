@@ -35,73 +35,79 @@ excerpt: 要不是代码里看到 NgZone，我都不知道什么时候会接触�
 
 首先，函数 `runOutsideAngular` 用于确保代码于 NgZone 之外运行，即保证 Angular 的变更检测不会因为相关代码而触发。例如，以下 `setInterval` 定时器便不会触发变更检测：
 
-    constructor(private ngZone: NgZone) {
-      this.ngZone.runOutsideAngular(() => {
-        setInterval(() => doSomething(), 100)
-      });
-    }
+```javascript
+constructor(private ngZone: NgZone) {
+  this.ngZone.runOutsideAngular(() => {
+    setInterval(() => doSomething(), 100)
+  });
+}
+```
 
 `run` 方法的目的与 `runOutsideAngular` 正好相反：任何写在 run 里的方法，都会进入 Angular Zone 的管辖范围。例如在如下示例中，我们通过 `run()` 方法使得在 Zone 之外的操作重新又进入了 Zone 的管辖范围。
 
-    import { Component, NgZone } from '@angular/core';
+```javascript
+import { Component, NgZone } from '@angular/core';
     
-    @Component({
-      selector: 'my-app',
-      template: `
-      <p>
-    	  <label>Count: </label>
-        {{ num }}
-      </p>  
-      `
-    })
-    export class AppComponent {
-      num = 0;
-      constructor(private zone: NgZone) {
-        this.zone.runOutsideAngular(() => {
-          let i = 0;
-          const token = setInterval(() => {
-            this.zone.run(() => {
-              this.num = ++i;
-            })
-
-            if (i == 10) {
-              clearInterval(token);
-            }
-          }, 1000);
+@Component({
+  selector: 'my-app',
+  template: `
+  <p>
+    <label>Count: </label>
+    {{ num }}
+  </p>  
+  `
+})
+export class AppComponent {
+  num = 0;
+  constructor(private zone: NgZone) {
+    this.zone.runOutsideAngular(() => {
+      let i = 0;
+      const token = setInterval(() => {
+        this.zone.run(() => {
+          this.num = ++i;
         })
-      }
-    }
+
+        if (i == 10) {
+          clearInterval(token);
+        }
+      }, 1000);
+    })
+  }
+}
+```
 
 如何做到 Zone 外的操作虽然不会实时触发变更检测，但在特定时机还是通知到 Angular Zone 内呢？或者换句话说，即在 Zone 外创建数据流、Zone 内订阅数据流？
 
 可以看看下面的 AppComponent 类，我们将过期时间保存在 localStorage 中，一旦时间过期，`runOutsideAngular` 中的定时器便会通知 Zone 中的 message 更新并同时清除自己。
 
-    export class AppComponent implements OnInit {
-      notify$ = new Subject();
-    
-      ngOnInit() {
-        this.notify$.subscribe(() => {
-           this.message = 'timeout';
-        })
-      }
-    
-      constructor(private zone: NgZone) {
-        localStorage.setItem('expiredDate', addMinutes(new Date(), 1).getTime().toString());
-        this.zone.runOutsideAngular(() => {
-          const i = setInterval(() => {
-            const expiredDate = +localStorage.getItem('expiredDate');
-            if (new Date().getTime() - expiredDate > 0) {
-              this.zone.run(() => {
-                this.notify$.next();
-              })
-              clearInterval(i);
-            };
-          }, 1000)
-        })
-      }
-    }
+```javascript
+export class AppComponent implements OnInit {
+  notify$ = new Subject();
 
-有关 Zone.js 和 RxJS 一起使用的细节，详见 [angular 文档](https://github.com/angular/angular/blob/master/packages/zone.js/NON-STANDARD-APIS.md#usage)；而其他更深入的阅读，可参考如下材料：
+  ngOnInit() {
+    this.notify$.subscribe(() => {
+        this.message = 'timeout';
+    })
+  }
+
+  constructor(private zone: NgZone) {
+    localStorage.setItem('expiredDate', addMinutes(new Date(), 1).getTime().toString());
+    this.zone.runOutsideAngular(() => {
+      const i = setInterval(() => {
+        const expiredDate = +localStorage.getItem('expiredDate');
+        if (new Date().getTime() - expiredDate > 0) {
+          this.zone.run(() => {
+            this.notify$.next();
+          })
+          clearInterval(i);
+        };
+      }, 1000)
+    })
+  }
+}
+```
+
+有关 Zone.js 和 RxJS 一起使用的细节，详见 [Angular 文档](https://github.com/angular/angular/blob/master/packages/zone.js/NON-STANDARD-APIS.md#usage)；而其他更深入的阅读，可参考如下材料：
 
 - [https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html](https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html)
 - [https://blog.thoughtram.io/angular/2016/02/01/zones-in-angular-2.html](https://blog.thoughtram.io/angular/2016/02/01/zones-in-angular-2.html)
