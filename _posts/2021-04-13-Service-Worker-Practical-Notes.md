@@ -1,5 +1,5 @@
 ---
-title: Service Worker 实践大全
+title: Service Worker 实践指南
 layout: post
 thread: 262
 date: 2021-04-13
