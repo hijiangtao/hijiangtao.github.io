@@ -5,7 +5,7 @@ thread: 262
 date: 2021-04-13
 author: Joe Jiang
 categories: Document
-tags: [2020, JavaScript, 前端监控, chrome, iframe, ServiceWorker, postMessage, MessageChannel, IndexedDB, Web, 前端]
+tags: [2021, JavaScript, 前端监控, chrome, iframe, ServiceWorker, postMessage, MessageChannel, IndexedDB, Web, 前端]
 excerpt: 本文就利用 Service Worker 解决问题的过程中遇到的不少问题加以总结，进行记录，主要关注点在 Service Worker 的注册注销、运行时判断、线程间通信及调试几方面，涉及的内容从技术细节上包含 postMessage、MessageChannel、IndexedDB 及开发者调试工具等。
 header:
   image: ../assets/in-post/2021-04-13-Service-Worker-Practical-Notes-Teaser.png

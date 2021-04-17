@@ -5,7 +5,7 @@ thread: 261
 date: 2021-01-25
 author: Joe Jiang
 categories: Document
-tags: [2020, Web, JavaScript, 前端监控, 沙箱, DOM, chrome, 序列化, MutationObserver, iframe, puppeteer]
+tags: [2021, Web, JavaScript, 前端监控, 沙箱, DOM, chrome, 序列化, MutationObserver, iframe, puppeteer]
 excerpt: 本文通过组合介绍了各类 Web API 及一些新技术，试图通过技术调研以及实际项目开发中总结的经验，为大家在考虑解决「如何实现一个前端监控回放系统」这一问题上提供思路，本文介绍中若有未涉及到的缺漏之处，也欢迎评论告知补充。
 header:
   image: ../assets/in-post/2021-01-25-Web-Record-and-Replay-Teaser.jpeg
