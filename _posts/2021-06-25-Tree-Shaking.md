@@ -6,7 +6,7 @@ date: 2021-06-25
 author: Joe Jiang
 categories: Presentation
 tags: [2021, Daily, 希望]
-excerpt: 先生之风，山高水长。大师精神，千古流芳。
+excerpt: 本周分享会上，给团队同学分享了 Tree Shaking 的相关内容。哈哈是的，这已经不是一个新鲜事了……
 iframe: https://hijiangtao.github.io/slides/s-YFD/Tree-Shaking.html
 ---
 
