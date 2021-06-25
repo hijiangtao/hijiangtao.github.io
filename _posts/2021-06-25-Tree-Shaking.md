@@ -1,6 +1,6 @@
 ---
 title: Tree Shaking 简介
-layout: post
+layout: keynote
 thread: 265
 date: 2021-06-25
 author: Joe Jiang
