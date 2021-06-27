@@ -14,7 +14,7 @@ iframe: https://hijiangtao.github.io/slides/s-YFD/Tree-Shaking.html
 
 [![](/assets/in-post/2021-06-25-Tree-Shaking-qrcode.png)](https://hijiangtao.github.io/slides/s-YFD/Tree-Shaking.html)
 
-本周分享会上，给团队同学分享了 Tree Shaking 的相关内容。哈哈是的，这已经不是一个新鲜事了，最开始是想分享 esbuild 的，但最新杂事多，期间没有准备太多资料，所以让我偷一次懒吧。
+本周分享会上，给团队同学分享了 Tree Shaking 的相关内容。哈哈是的，这已经不是一个新鲜事了，最开始是想分享 esbuild 的，但最近杂事多，期间没有准备太多资料，所以让我偷一次懒吧。
 
 以下为目录，主要包含概念介绍、模块化标准介绍、SideEffects、webpack 相关内容以及一些最佳实践。
 
