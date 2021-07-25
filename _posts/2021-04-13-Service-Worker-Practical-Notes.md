@@ -12,6 +12,8 @@ header:
   caption: "©️hijiangtao"
 ---
 
+> 本文亦有分享 Slides，详见 <https://hijiangtao.github.io/slides/s-YFD/Service-Worker-Practical-Notes.pdf>.
+
 当我们谈到 Service Worker 的时候，往往是和 PWA 绑在一起说出来的，但即便不用来做渐进式增强 Web 应用，我们也可以利用 Service Worker 的全局拦截能力，来自定义一个满足我们需要的全局代理。
 
 本文就利用 Service Worker 解决问题的过程中遇到的不少问题加以总结，进行记录，主要关注点在 Service Worker 的注册注销、运行时判断、线程间通信及调试几方面，涉及的内容从技术细节上包含 postMessage、MessageChannel、IndexedDB 及开发者调试工具等。
