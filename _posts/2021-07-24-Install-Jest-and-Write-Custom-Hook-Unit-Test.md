@@ -1,12 +1,12 @@
 ---
-title: Jest 安装配置与自定义 React Hook 单元测试教程
+title: Jest 配置与 React Hook 单元测试教程
 layout: post
 thread: 267
 date: 2021-07-30
 author: Joe Jiang
 categories: Document
 tags: [2021, React, Jest, 单元测试, Hook, TypeScript]
-excerpt: 什么是 npx？npx 都有哪些使用场景？
+excerpt: 本文基于 Jest 框架的集成配置以及如何编写 React 单元测试进行介绍，本文不关注 UI 层的测试实现，且不关注常规的 util 方法类测试实现，只围绕如何就 React 特性 Hook 进行单元测试用例编写展开。
 ---
 
 **前言**
