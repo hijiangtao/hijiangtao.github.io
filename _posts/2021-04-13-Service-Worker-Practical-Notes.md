@@ -82,7 +82,7 @@ navigator.serviceWorker?.ready
 
 利用三方库 workbox，可以将 active 以及 controlling 加入 await 队列，从而解决如上所述问题。此外，我们也可以自己实现一个 Promise，来安排触发页面已经被 Service Worker 控制的通知，代码如下所示：
 
-```JavaScript
+```javascript
 window._controlledPromise = new Promise(function(resolve) {
   // Resolve with the registration, to match the .ready promise's behavior.
   var resolveWithRegistration = function() {

@@ -1,5 +1,5 @@
 ---
-title: RxJS Subject 及其变体一探究竟
+title: RxJS Subject 及其变体
 layout: post
 thread: 256
 date: 2020-08-04
