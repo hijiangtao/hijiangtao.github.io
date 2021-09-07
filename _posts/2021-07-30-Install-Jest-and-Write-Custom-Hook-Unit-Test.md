@@ -195,7 +195,7 @@ test('async test', async () => {
 
 ### 2.2 如何测试自定义 React Hook
 
-如何测试 hook？我们可以使用 `[@testing-library/react-hooks](https://github.com/testing-library/react-hooks-testing-library)` 来辅助实现。
+如何测试 hook？我们可以使用 [`@testing-library/react-hooks`](https://github.com/testing-library/react-hooks-testing-library) 来辅助实现。
 
 `@testing-library/react-hooks` 允许你为 React 钩子创建一个简单的测试工具，用来处理在函数组件内去运行它们，并提供有各种有用的实用函数来更新输入输出。
 
