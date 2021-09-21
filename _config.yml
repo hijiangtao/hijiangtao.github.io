@@ -12,128 +12,126 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Joe's Blog"
-title_separator          : "-"
-name                     : "hijiangtao"
-description              : "All I'm saying is inside, I had the element of surprise."
-url                      : "https://hijiangtao.github.io" # the base hostname & protocol for your site e.g. 
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "hijiangtao/hijiangtao.github.io"
-teaser                   : # "/images/bio-photo.jpg"
+locale: "en-US"
+title: "Joe's Blog"
+title_separator: "-"
+name: "hijiangtao"
+description: "All I'm saying is inside, I had the element of surprise."
+url: "https://hijiangtao.github.io" # the base hostname & protocol for your site e.g.
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: "hijiangtao/hijiangtao.github.io"
+teaser: # "/images/bio-photo.jpg"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute: 200
 comments:
-  provider               : "gitment" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider: "gitment" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   gitment:
-    repo                 : "hijiangtao.github.io.comments"
-    oauth_id             : "202af368def76723e6c5"
-    oauth_secret         : "bae6257004699753146193164d4b3287a66ec656"
-    owner                : "hijiangtao"
+    repo: "hijiangtao.github.io.comments"
+    oauth_id: "202af368def76723e6c5"
+    oauth_secret: "8fdcc35d602a4cd0587ac9bbc63f0dc1dd098a49"
+    owner: "hijiangtao"
   disqus:
-    shortname            : "hijiangtao" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: "hijiangtao" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: "dark" # "light" (default), "dark"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  allowedFields: # ['name', 'email', 'url', 'message']
+  branch: # "master"
+  commitMessage: # "New comment."
+  filename: # comment-{@timestamp}
+  format: # "yml"
+  moderation: # true
+  path: # "/_data/comments/{options.slug}" (default)
+  requiredFields: # ['name', 'email', 'message']
   transforms:
-    email                : # "md5"
+    email: # "md5"
   generatedFields:
     date:
-      type               : # "date"
+      type: # "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey:
+  secret:
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia
+  path: # blank (default) uses feed.xml
+search: # true, false (default)
+search_full_content: # true, false (default)
+search_provider: # lunr (default), algolia
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+naver_site_verification:
 
 # Social Sharing
 twitter:
-  username               :
+  username:
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username:
+  app_id:
+  publisher:
+og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : "google"
+  provider: "google"
   google:
-    tracking_id          : "UA-48887175-1"
-
+    tracking_id: "UA-48887175-1"
 
 # Site Author
 author:
-  name             : "hijiangtao"
-  avatar           : "images/bio-photo.jpg"
-  bio              : "VIS and FE."
-  location         : "Beijing, China"
-  email            : "hijiangtao@gmail.com"
-  uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "hijiangtao"
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : "hijiangtao"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          : "hijiangtao"
-  vine             :
-  weibo            : "hijiangtao"
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  cv               : "/assets/doc/TaoJiang-ResumeCN.pdf"
-
+  name: "hijiangtao"
+  avatar: "images/bio-photo.jpg"
+  bio: "VIS and FE."
+  location: "Beijing, China"
+  email: "hijiangtao@gmail.com"
+  uri:
+  home: # null (default), "absolute or relative url to link to author home"
+  bitbucket:
+  codepen:
+  dribbble:
+  flickr:
+  facebook:
+  foursquare:
+  github: "hijiangtao"
+  gitlab:
+  google_plus:
+  keybase:
+  instagram:
+  lastfm:
+  linkedin: "hijiangtao"
+  pinterest:
+  soundcloud:
+  stackoverflow: # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam: # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  tumblr:
+  twitter: "hijiangtao"
+  vine:
+  weibo: "hijiangtao"
+  xing:
+  youtube: # "https://youtube.com/c/MichaelRoseDesign"
+  cv: "/assets/doc/TaoJiang-ResumeCN.pdf"
 
 # Reading Files
 include:
@@ -171,14 +169,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -191,19 +187,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins (previously gems:)
 plugins:
@@ -220,7 +213,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
 
 # Archives
 #  Type
@@ -250,14 +242,12 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
