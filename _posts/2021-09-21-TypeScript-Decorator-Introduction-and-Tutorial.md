@@ -6,7 +6,7 @@ date: 2021-09-21
 author: Joe Jiang
 categories: Document
 tags: [2021, TypeScript, Decorator, 装饰器, metadata, 元数据, Angular, 依赖注入]
-excerpt: 本文按照时间顺序梳理为「美国2008年次贷危机部分事件时间表」。
+excerpt: 如果你使用过 Angular，那么在日常的开发过程中，你已经大量使用过由 Angular 官方提供的各类由装饰器封装的特性了，比如 @Component 以及 @ViewChild 等等。即便不了解其实现原理，这也不影响我们熟练的通过它来实现各种需求。但如果我们深入了解隐藏在其背后的装饰器，便能将这个黑盒变成我们的代码能力，利用它来实现很多复用逻辑的代码抽象，给我们提供一个有别于组件抽象的方式，来使我们的项目更健壮、代码更简洁。
 header:
   image: ../assets/in-post/2021-09-21-TypeScript-Decorator-Introduction-and-Tutorial-Teaser.png
   caption: "©️hijiangtao"
