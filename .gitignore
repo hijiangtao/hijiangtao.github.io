@@ -12,5 +12,6 @@ vendor/*
 
 _drafts
 trash
+.idea/
 
 _posts/2019-01-04-Visualize-Earth-and-Curve-with-Three.md
