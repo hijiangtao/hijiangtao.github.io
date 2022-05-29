@@ -8,7 +8,7 @@ categories: Investment
 tags: [2022, 货币, 货币供给, 美联储, 央行, 银行]
 excerpt: 在广义的货币形式没有出现之前，人们通过物物交换到达交易的目的。这种经济需要需求的双向一致性，即刚好彼此都有对方想要的物品或服务。
 header:
-  image: ../assets/images/posts/2022-05-29-Monetary-System-Teaser.png
+  image: ../assets/in-post/2022-05-29-Monetary-System-Teaser.png
   caption: "©️hijiangtao"
 ---
 
