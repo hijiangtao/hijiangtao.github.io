@@ -8,8 +8,8 @@ categories: Document
 tags: [微前端, 隔离, 沙箱机制, JavaScript 运行环境, iframe, Proxy, ShadowRealm]
 excerpt: 随着微前端的不断发展、被更多的团队采用，越来越多开始对沙箱这个概念有所了解。沙箱，即 sandbox，意指一个允许你独立运行程序的虚拟环境，沙箱可以隔离当前执行的环境作用域和外部的其他作用域，外界无法修改该环境内任何信息，沙箱内的东西单独运行，环境间相互不受影响。本文计划谈谈微前端的 JavaScript 隔离，即沙箱机制的古往今来。
 header:
-image: ../assets/in-post/2022-06-11-JavaScript-Sandbox-Mechanism-and-Its-History-Teaser.png
-caption: "©️hijiangtao"
+  image: ../assets/in-post/2022-06-11-JavaScript-Sandbox-Mechanism-and-Its-History-Teaser.png
+  caption: "©️hijiangtao"
 ---
 
 ## 前言
