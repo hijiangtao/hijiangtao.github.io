@@ -123,7 +123,7 @@ const unscopables = {
 
 如上代码中，关于 eval 的拦截判断很好理解，这里我们停下简要介绍一下一个概念： `Symbol.unscopables`。
 
-`**Symbol.unscopables`属性，指用于指定对象值，其对象自身和继承的从关联对象的 with 环境绑定中排除的属性名称。**当我们在 `unscopables` 对象上将属性设置为 true，将使其 *unscopable* 并且因此该属性也将不会在词法环境变量中出现。我们来看一个简单例子，以了解其效果：
+`Symbol.unscopables` 属性，指用于指定对象值，其对象自身和继承的从关联对象的 with 环境绑定中排除的属性名称。当我们在 `unscopables` 对象上将属性设置为 true，将使其 *unscopable* 并且因此该属性也将不会在词法环境变量中出现。我们来看一个简单例子，以了解其效果：
 
 ```jsx
 const object1 = {
@@ -390,7 +390,7 @@ const newSandboxWindow = new SandboxWindow(context, sandboxGlobal);
 
 但需要注意的是，iframe 方案下，JavaScript 沙箱只是其中一部分，还需要通过完备的 HTML/JavaScript 代码拆分等方案辅助达到微前端环境的目的，这部分实现可参考 kuitos 的开源库 [import-html-entry](https://github.com/kuitos/import-html-entry)；同样的，之前的几类沙箱方案也需要考虑与这些方案组合。
 
-*注：在实现上，如果需要区分 iframe 与主应用环境，可以通过代码**`window**.parent !== **window**`进行判断。*
+*注：在实现上，如果需要区分 iframe 与主应用环境，可以通过代码 `window.parent !== window` 进行判断。*
 
 ![](/assets/in-post/2022-06-11-JavaScript-Sandbox-Mechanism-and-Its-History-5.png )
 
@@ -425,7 +425,7 @@ const newSandboxWindow = new SandboxWindow(context, sandboxGlobal);
 </body>
 ```
 
-在前面 iframe 沙箱机制中我们也有介绍，由于每个 `iframe` 都有一个独立的运行环境，于是在执行时，当前 html 中的全局对象肯定与 `iframe`的全局对象不相同（A），类似的，全局对象上的 `Array`与 `iframe` 中获取到的 `Array` 也不同（B）。
+在前面 iframe 沙箱机制中我们也有介绍，由于每个 `iframe` 都有一个独立的运行环境，于是在执行时，当前 html 中的全局对象肯定与 `iframe`的全局对象不相同（A），类似的，全局对象上的 `Array`与 `iframe` 中获取到的 `Array` 也不同（B）。
 
 这就是 realm，一个 JavaScript 运行环境（JavaScript platform）实例：包含其所必须的全局环境及内建函数等。
 
@@ -441,10 +441,10 @@ declare class ShadowRealm {
 }
 ```
 
-**每个 `ShadowRealm` 实例都有自己独立的运行环境实例，在 realm 中，提案提供了两种方法让我们来执行运行环境实例中的 JavaScript 代码：**
+**每个 `ShadowRealm` 实例都有自己独立的运行环境实例，在 realm 中，提案提供了两种方法让我们来执行运行环境实例中的 JavaScript 代码：**
 
-- `**.evaluate()`：同步执行代码字符串，类似 `eval()`。**
-- `**.importValue()`：返回一个 `Promise` 对象，异步执行代码字符串。**
+- `.evaluate()`：同步执行代码字符串，类似 `eval()`。
+- `.importValue()`：返回一个 `Promise` 对象，异步执行代码字符串。
 
 通过 evaluate 执行代码与 eval 类似，比如：
 
@@ -495,9 +495,9 @@ TypeError: Error encountered during evaluation
 
 由于没有实践经历，这里仅对 ShadowRealm 提案及相关概念进行了简要介绍，但可以看出，这个提案的落地可能对于一个更完美的 JavaScript 沙箱设计有所帮助，当然，这个提案的应用场景远不止此，比如：
 
-- **Web 应用诸如 `IDE` 或绘图等程序可以运行第三方代码，允许其以插件或者配置的方式引入；**
-- **利用 `ShadowRealms` 建立一个可编程环境，来运行用户的代码；**
-- **服务器可以在 `ShadowRealms` 中运行第三方代码；**
+- **Web 应用诸如 `IDE` 或绘图等程序可以运行第三方代码，允许其以插件或者配置的方式引入；**
+- **利用 `ShadowRealms` 建立一个可编程环境，来运行用户的代码；**
+- **服务器可以在 `ShadowRealms` 中运行第三方代码；**
 - **在 ShadowRealms 中可以运行测试运行器（Test Runner），这样外部的 JS 执行环境不会受到影响，并且每个套件都可以在新环境中启动（这有助于提高可复用性），这种场景类似于微前端的 JavaScript 沙箱；**
 - **网页抓取和网页应用测试等；**
 
