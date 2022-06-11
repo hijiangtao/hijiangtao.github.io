@@ -333,7 +333,7 @@ document.body.appendChild(iframe);
 const sandboxGlobal = iframe.contentWindow;
 ```
 
-而如果要单独构建通信机制，也可以利用自定义 props、event 等方式实现，或者通过 Web API 诸如 postMessage 或者 BroadcastChannel 来实现，关于此部分我在曾经的一篇文章中稍有提及，感兴趣的话可以查看《****[Service Worker 实践指南](https://hijiangtao.github.io/2021/04/13/Service-Worker-Practical-Notes/)****》。
+而如果要单独构建通信机制，也可以利用自定义 props、event 等方式实现，或者通过 Web API 诸如 postMessage 或者 BroadcastChannel 来实现，关于此部分我在曾经的一篇文章中稍有提及，感兴趣的话可以查看《**[Service Worker 实践指南](https://hijiangtao.github.io/2021/04/13/Service-Worker-Practical-Notes/)**》。
 
 **说回路由状态**，要保证 JavaScript 沙箱环境内与主应用路由状态保持一致，我们有两种实现方案：
 
@@ -392,7 +392,7 @@ const newSandboxWindow = new SandboxWindow(context, sandboxGlobal);
 
 *注：在实现上，如果需要区分 iframe 与主应用环境，可以通过代码 `window.parent !== window` 进行判断。*
 
-![](/assets/in-post/2022-06-11-JavaScript-Sandbox-Mechanism-and-Its-History-5.png )
+![](/assets/in-post/2022-06-11-JavaScript-Sandbox-Mechanism-and-Its-History-6.png )
 
 ## 各类沙箱机制对比
 
