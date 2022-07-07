@@ -349,9 +349,9 @@ git commit -m "fix: implement functionality discussed in issue #2"
 1. **在脚手架的选择上，你可以使用 create-react-app 或者 umi 等社区方案，但如果想要更灵活的脚手架，当你使用 CRA 的时候，可以一并考虑 craco；**
 2. **CSS Modules 的作用无需多说，但同样需要注意 TypeScript 检查以及你在命名 CSS 变量写法上的兼容；**
 3. **ESLINT 现在已经是大部分项目的标配了，如果你的项目涉及多人协作，可以配置一些额外的 plugin 协助保持风格一致、减少代码合并冲突。当然，在统一代码风格上，还可以通过 husky 定制 git 钩子与具体需要执行的任务，比如：**
-4. **commit-msg**
-5. **pre-commit**
-6. **其中通过 lint-staged 在 pre-commit 时机定制各类文件格式化的操作（主要用 eslint 和 prettier 保证执行），通过 commitlint 保证 commit msg 信息符合规范。**
-7. **本地开发代理环境在很多团队是必须的，你可以选用一个中间件来增强你的 dev server。**
-8. **我们同样可以考虑通过代码复用来提升我们的开发效率，这里的场景主要可以分为两类：code snippets 以及组件级别的文件修改。**
-9. **每当项目上线，规范来说，都需要发版及记录日志变更，我们可以引入 standard-version 对自动打 tag 以及 CHANGELOG 生成进行规范。**
+   1. **commit-msg**
+   2. **pre-commit**
+4. **其中通过 lint-staged 在 pre-commit 时机定制各类文件格式化的操作（主要用 eslint 和 prettier 保证执行），通过 commitlint 保证 commit msg 信息符合规范。**
+5. **本地开发代理环境在很多团队是必须的，你可以选用一个中间件来增强你的 dev server。**
+6. **我们同样可以考虑通过代码复用来提升我们的开发效率，这里的场景主要可以分为两类：code snippets 以及组件级别的文件修改。**
+7. **每当项目上线，规范来说，都需要发版及记录日志变更，我们可以引入 standard-version 对自动打 tag 以及 CHANGELOG 生成进行规范。**
