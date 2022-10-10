@@ -95,9 +95,9 @@ social:
 
 # Analytics
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
-    tracking_id: "UA-48887175-1"
+    tracking_id: "G-XBWNBW5M8B"
 
 # Site Author
 author:
