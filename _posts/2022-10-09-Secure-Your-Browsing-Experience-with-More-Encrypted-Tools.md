@@ -6,7 +6,7 @@ date: 2022-10-09
 author: Joe Jiang
 categories: Document
 tags: []
-excerpt: 
+excerpt: 有了 HTTPS 我们的网络访问就完美无缺了吗？TLS 在握手 Client Hello 阶段的数据包，包含客户端想访问的地址等信息，而这些信息是明文传输的，这使得第三方可以通过监听等手段知道你想访问哪些网址。本文会按照加密方式的加工流程倒序介绍，先介绍关于 TLS 握手阶段的 SNI 相关信息，再谈谈 DNS 安全层，最后会介绍下 TLS 握手指纹……
 header:
   image: ../assets/in-post/2022-10-09-Secure-Your-Browsing-Experience-with-More-Encrypted-Tools-0.png
   caption: "©️hijiangtao"
