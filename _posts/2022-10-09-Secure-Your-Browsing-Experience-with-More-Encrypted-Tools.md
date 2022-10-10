@@ -8,7 +8,7 @@ categories: Document
 tags: []
 excerpt: 
 header:
-  image: ../assets/in-post/2022-10-09-Secure-Your-Browsing-Experience-with-More-Encrypted-Tools-Teaser.png
+  image: ../assets/in-post/2022-10-09-Secure-Your-Browsing-Experience-with-More-Encrypted-Tools-0.png
   caption: "©️hijiangtao"
 ---
 
