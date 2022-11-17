@@ -7,6 +7,7 @@ author: Joe Jiang
 categories: Document
 tags: [自动化, 提效, 前端, CHANGELOG, 脚手架, craco, husky, git hooks]
 excerpt: 随着前端的发展，越来越多的工具库、方法被用在日常研发流程中，这大大提升了业务开发的效率，而随着各类自动化流程的建设，开发同学也不再需要关注到每一个细节。前段时间项目阶段性交付，在推进的过程中也做了不少尝试，虽然从长期看，这类工作最后可能都该收敛到基础设施部门或者标准的自动化流程中去，但并不妨碍我通过实践来落实一些对项目开发的思考和想法。
+toc: true
 header:
   image: ../assets/in-post/2022-07-07-Practice-of-Project-Development-and-Auto-Workflow-Teaser.png
   caption: "©️hijiangtao"
