@@ -9,8 +9,8 @@ tags: [居家隔离, 物资储备, 食品, 食物, 储备, 生活必需品]
 excerpt: 食物储备清单，分为摄入量建议、储备清单简介、必需大类、非必需大类等几个章节。与此同时，本计划因为个人常识所限，可能存在缺漏，如有偏差后续会纠偏补充，如有迭代会及时更新至 https://hijiangtao.github.io
 toc: true
 header:
-image: ../assets/in-post/2022-11-24-Food-Reserve-Plan-Teaser.png
-caption: "©️hijiangtao"
+  image: ../assets/in-post/2022-11-24-Food-Reserve-Plan-Teaser.png
+  caption: "©️hijiangtao"
 ---
 
 **本计划因为个人常识所限，可能存在缺漏，如有偏差后续会纠偏补充，如有迭代会及时更新至 <https://hijiangtao.github.io/>**
