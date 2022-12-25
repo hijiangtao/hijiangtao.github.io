@@ -1,5 +1,5 @@
 ---
-title: 网络安全科普系列：详解 HTTPS 与 TLS
+title: 网络安全科普：详解 HTTPS 与 TLS
 layout: post
 thread: 286
 date: 2022-12-25
