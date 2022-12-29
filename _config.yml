@@ -103,7 +103,7 @@ analytics:
 author:
   name: "hijiangtao"
   avatar: "images/bio-photo.jpg"
-  bio: "VIS and FE."
+  bio: "Yet another web developer."
   location: "Beijing, China"
   email: "hijiangtao@gmail.com"
   uri:
@@ -196,7 +196,7 @@ sass:
 permalink: /:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
