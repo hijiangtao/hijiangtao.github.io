@@ -5,8 +5,8 @@ thread: 292
 date: 2023-11-30
 author: Joe Jiang
 categories: Document
-tags: []
-excerpt: 
+tags: [前端, 表单, chrome, fiber, react, mock, DOM, 事件, 工具]
+excerpt: 作为一名前端工程师，不论你处于什么业务方向，肯定都与表单打过交道，当然如果你是服务端、产品、测试同学，想必也早已接触过表单这类场景。让我们试想一下，如果研发需求的功能测试依赖一个复杂表单的填写而得以继续，那么频繁的表单填写在研发自测和 QA 验证过程中就会占用过多碎片化的时间，此类需要频繁执行以生成测试数据或推进执行流程的事情，简单一想貌似规则可循、可以被工具替代。既然可以自动化来实现，那为什么还要我们一个个手动点呢？
 toc: true
 header:
   image: ../assets/in-post/2023-11-30-Technical-Attempt-of-Non-intrusive-Automated-Forms-with-React-Fiber-and-Chrome-Plugins-Teaser.png
