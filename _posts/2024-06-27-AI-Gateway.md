@@ -7,6 +7,10 @@ author: Joe Jiang
 categories: Document
 tags: [AI, AIGC, 大模型, AI网关, AI Gateway,]
 excerpt: 本文将详细介绍 AI Gateway 的概念、功能，并通过丰富的应用场景展示其在实际应用中的巨大潜力。通过阅读本文，相信你会对 AI Gateway 有一个全新的认识，并为你在广阔的 AI 世界中探索工具箱增添一个新的技术，那么我们就开始吧。
+toc: true
+header:
+  image: ../assets/in-post/2024-06-27-AI-Gateway.png
+  caption: "©️hijiangtao"
 ---
 
 ## 写在最开始
