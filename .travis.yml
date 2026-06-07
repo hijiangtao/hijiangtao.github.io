@@ -1,9 +1,0 @@
-language: ruby
-rvm:
-- 2.3.1
-install:
-  - gem uninstall bundler
-  - gem install bundler --version '1.12.6'
-  - bundle install
-
-script: bundle exec jekyll build
